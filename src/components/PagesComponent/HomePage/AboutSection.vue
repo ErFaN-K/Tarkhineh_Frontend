@@ -1,3 +1,7 @@
+<script setup>
+import AboutBox from './AboutBox.vue';
+</script>
+
 <template>
     <section class="mb-4 about-section md:mb-12">
         <div class="py-4 bg-feature md:py-12">
@@ -27,36 +31,11 @@
                         </div>
                     </div>
                     <!-- Box Icons -->
-                    <div
-                        class="grid grid-cols-2 gap-x-12 gap-y-4 md:gap-x-6 md:gap-y-2 max-xl:place-items-center max-xl:w-full">
-                        <div
-                            class="md:w-46 md:h-34 w-34 h-12.5 flex flex-col items-center justify-center md:gap-y-4 gap-y-1 text-white ">
-                            <svg class="size-6 md:size-12">
-                                <use href="#user"></use>
-                            </svg>
-                            <span class="text-xs font-Dana md:text-lg">پرسنلی مجرب و حرفه‌ای</span>
-                        </div>
-                        <div
-                            class="md:w-46 md:h-34 w-34 h-12.5 flex flex-col items-center justify-center md:gap-y-4 gap-y-1 text-white ">
-                            <svg class="size-6 md:size-12">
-                                <use href="#chart"></use>
-                            </svg>
-                            <span class="text-xs font-Dana md:text-lg">کیفیت بالای غذاها</span>
-                        </div>
-                        <div
-                            class="md:w-46 md:h-34 w-34 h-12.5 flex flex-col items-center justify-center md:gap-y-4 gap-y-1 text-white ">
-                            <svg class="size-6 md:size-12">
-                                <use href="#home"></use>
-                            </svg>
-                            <span class="text-xs font-Dana md:text-lg">محیطی دلنشین و آرام</span>
-                        </div>
-                        <div
-                            class="md:w-46 md:h-34 w-34 h-12.5 flex flex-col items-center justify-center md:gap-y-4 gap-y-1 text-white ">
-                            <svg class="size-6 md:size-12">
-                                <use href="#calender"></use>
-                            </svg>
-                            <span class="text-xs font-Dana md:text-lg">منوی متنوع</span>
-                        </div>
+                    <div class="grid grid-cols-2 gap-x-12 gap-y-4 md:gap-x-6 md:gap-y-2 max-xl:place-items-center max-xl:w-full">
+                        <AboutBox iconName="user" content="پرسنلی مجرب و حرفه‌ای"/>
+                        <AboutBox iconName="chart" content="کیفیت بالای غذاها"/>
+                        <AboutBox iconName="home" content="محیطی دلنشین و آرام"/>
+                        <AboutBox iconName="calender" content="منوی متنوع"/>
                     </div>
                 </div>
             </div>

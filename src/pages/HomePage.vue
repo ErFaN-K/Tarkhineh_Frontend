@@ -1,6 +1,7 @@
 <script setup>
+
 import Header from "../components/Header.vue";
-import HeroSection from "../components/HeroSection.vue";
+import HeroSection from "../components/HeroSectionWithSlider.vue";
 import MenuSection from "../components/PagesComponent/HomePage/MenuSection.vue"
 import AboutSection from "../components/PagesComponent/HomePage/AboutSection.vue";
 import BranchSection from "../components/PagesComponent/HomePage/BranchSection.vue"
@@ -11,6 +12,7 @@ import Overlay from '../components/Overlay.vue'
 </script>
 
 <template>
+
   <!-- Home Page -->
   <Header />
   <!-- Home | Hero Section -->
@@ -21,11 +23,12 @@ import Overlay from '../components/Overlay.vue'
   <AboutSection />
   <!-- Home | Branch Section -->
   <BranchSection />
-  <!-- Home | Footer -->
+  <!-- Footer -->
   <Footer />
   <!-- Hamburger Menu -->
   <HamburgerMenu />
-  <!-- Home | Overlay -->
+  <!-- Overlay -->
   <Overlay />
+
 </template>
 
