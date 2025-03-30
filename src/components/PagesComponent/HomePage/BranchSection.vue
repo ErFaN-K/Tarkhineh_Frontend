@@ -1,5 +1,5 @@
 <script setup>
-import BranchBox from './BranchBox.vue';
+import BranchBox from './BranchCard.vue';
 </script>
 
 <template>
