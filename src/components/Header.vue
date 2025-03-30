@@ -1,16 +1,22 @@
+<script setup>
+import { usePublicStore } from '../stores/publicStore';
+const publicStore = usePublicStore()
+
+</script>
+
 <template>
   <header class="header bg-white">
     <div class="container">
       <div class="flex items-center justify-between py-4 md:py-9">
         <!-- Hamburger Icon -->
-        <div class="block md:hidden">
+        <div class="block md:hidden" @click="publicStore.showHamburgerMenu()">
           <svg class="size-6 text-Primary">
             <use href="#bars-3"></use>
           </svg>
         </div>
         <!-- Logo -->
         <span>
-          <svg class="w-25.5 md:w-38.75 h-8 md:h-12.75">
+          <svg class="w-25.5 md:w-38.75 h-8 md:h-12.75 text-Primary">
             <use href="#logo-type"></use>
           </svg>
         </span>

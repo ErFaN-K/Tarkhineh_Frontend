@@ -1,5 +1,5 @@
 <script setup>
-import MenuBox from '../../MenuBox.vue';
+import MenuBox from './MenuBox.vue';
 </script>
 
 <template>

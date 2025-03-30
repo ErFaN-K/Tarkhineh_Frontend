@@ -57,6 +57,104 @@
   }
 }
 
+@layer utilities {
+  .nav__active--link {
+    @apply relative text-Primary font-Dana-SemiBold;
+  }
+
+  .nav__active--link::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    background-color: #417f56;
+  }
+
+  .bg-hero,
+  .bg-footer,
+  .bg-hamburger {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .bg-hero--1 {
+    background-image:
+      linear-gradient(to right, rgba(0, 0, 0, 0.568) 50%, transparent 100%),
+      url(./assets/images/Hero-Background-1.png);
+  }
+
+  .bg-hero--2 {
+    background-image:
+      linear-gradient(to right, rgba(0, 0, 0, 0.568) 50%, transparent 100%),
+      url(./assets/images/Hero-Background-2.png);
+  }
+
+  .bg-hero--3 {
+    background-image:
+      linear-gradient(to right, rgba(0, 0, 0, 0.568) 50%, transparent 100%),
+      url(./assets/images/Hero-Background-3.png);
+  }
+
+  .bg-hero--4 {
+    background-image:
+      linear-gradient(to right, rgba(0, 0, 0, 0.568) 50%, transparent 100%),
+      url(./assets/images/Hero-Background-4.png);
+  }
+
+  .bg-feature {
+    background-image:
+      linear-gradient(to right, rgba(0, 0, 0, 0.734) 50%, transparent 100%),
+      url(./assets/images/Features-Background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .bg-footer--image {
+    background-image:
+      linear-gradient(to right, rgba(0, 0, 0, 0.734) 50%, transparent 100%),
+      url(./assets/images/Footer.png);
+  }
+
+  .hamburger-menu__img {
+    background-image: url(./assets/images/Top-Frame-Mobile.png);
+  }
+
+  .swiper-pagination-bullet-active {
+    @apply md:!size-3 !size-2 !bg-Primary !m-0;
+  }
+
+  .section__title {
+    @apply text-base text-center text-gray-800 font-Dana-SemiBold md:text-2xl;
+  }
+
+  .custom-scroll::-webkit-scrollbar {
+    width: 2px;
+    background-color: var(--color-gray-700);
+  }
+}
+
+@layer component {
+  .hamburger-menu--show {
+    @apply !right-0
+  }
+
+  .hamburger-menu--close {
+    @apply !-right-64  
+  }
+  
+  .overlay--show {
+    @apply opacity-100 visible
+  }
+  
+  .overlay--close {
+    @apply opacity-0 invisible
+  }
+}
+
 @theme {
   /* Primary Colors */
   --color-Primary: #417f56;
@@ -128,79 +226,4 @@
 
 @utility container {
   @apply mx-auto px-5 lg:px-7;
-}
-
-@layer utilities {
-  .nav__active--link {
-    @apply relative text-Primary font-Dana-SemiBold;
-  }
-
-  .nav__active--link::before {
-    content: "";
-    width: 100%;
-    height: 1px;
-    display: block;
-    position: absolute;
-    bottom: 0;
-    background-color: #417f56;
-  }
-
-  .bg-hero,
-  .bg-footer {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-
-  .bg-hero--1 {
-    background-image:
-      linear-gradient(to right, rgba(0, 0, 0, 0.568) 50%, transparent 100%),
-      url(./assets/images/Hero-Background-1.png);
-  }
-
-  .bg-hero--2 {
-    background-image:
-      linear-gradient(to right, rgba(0, 0, 0, 0.568) 50%, transparent 100%),
-      url(./assets/images/Hero-Background-2.png);
-  }
-
-  .bg-hero--3 {
-    background-image:
-      linear-gradient(to right, rgba(0, 0, 0, 0.568) 50%, transparent 100%),
-      url(./assets/images/Hero-Background-3.png);
-  }
-
-  .bg-hero--4 {
-    background-image:
-      linear-gradient(to right, rgba(0, 0, 0, 0.568) 50%, transparent 100%),
-      url(./assets/images/Hero-Background-4.png);
-  }
-
-  .bg-feature {
-    background-image:
-      linear-gradient(to right, rgba(0, 0, 0, 0.734) 50%, transparent 100%),
-      url(./assets/images/Features-Background.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-
-  .bg-footer--image {
-    background-image:
-      linear-gradient(to right, rgba(0, 0, 0, 0.734) 50%, transparent 100%),
-      url(./assets/images/Footer.png);
-  }
-
-  .swiper-pagination-bullet-active {
-    @apply md:!size-3 !size-2 !bg-Primary !m-0;
-  }
-
-  .section__title {
-    @apply text-base text-center text-gray-800 font-Dana-SemiBold md:text-2xl;
-  }
-
-  .custom-scroll::-webkit-scrollbar {
-    width: 2px;
-    background-color: var(--color-gray-700);
-  }
 }
