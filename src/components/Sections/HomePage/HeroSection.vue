@@ -1,6 +1,18 @@
+<script setup>
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Autoplay, Pagination, EffectFade } from 'swiper/modules';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/effect-fade';
+import 'swiper/css/pagination';
+
+</script>
+
 <template>
     <section class="mb-4 md:mb-12 hero-section">
+        <!-- Swiper -->
         <Swiper :modules="[Autoplay, Pagination, EffectFade]" :pagination="{ clickable: true, el: '.hero__page--swiper' }" :grabCursor="true" effect="fade" :autoplay="{ delay: 5000 }" :loop="true">
+            <!-- Swiper Slide -->
             <SwiperSlide>
                 <div class="relative flex items-center justify-center bg-green-800 bg-hero bg-hero--1 h-44 sm:h-84">
                     <!-- Title & Button -->
@@ -69,13 +81,3 @@
         </Swiper>
     </section>
 </template>
-
-<script setup>
-import { Swiper, SwiperSlide } from 'swiper/vue';
-import { Autoplay, Pagination, EffectFade } from 'swiper/modules';
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/effect-fade';
-import 'swiper/css/pagination';
-
-</script>
