@@ -23,6 +23,9 @@ import Overlay from '../components/Overlay.vue'
   <AboutSection />
   <!-- Home | Branch Section -->
   <BranchSection />
+
+  <!----------------------->
+
   <!-- Footer -->
   <Footer />
   <!-- Hamburger Menu -->
