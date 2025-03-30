@@ -1,5 +1,4 @@
 <template>
-  <!-- App Header -->
   <header class="header bg-white">
     <div class="container">
       <div class="flex items-center justify-between py-4 md:py-9">
