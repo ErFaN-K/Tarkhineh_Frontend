@@ -1,5 +1,6 @@
 <!-- Hero Section Component With Slider ( For Home & Branch & Menu Page Only Use ) -->
 <script setup>
+// Swiper Config
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Autoplay, Pagination, EffectFade } from 'swiper/modules';
 // Import Swiper styles
@@ -8,8 +9,7 @@ import 'swiper/css/effect-fade';
 import 'swiper/css/pagination';
 
 // Component
-import HeroSectionBanner from './HeroSectionBanner.vue';
-
+import HeroSectionBanner from './HeroSectionWithSliderBanner.vue';
 </script>
 
 <template>
