@@ -13,7 +13,7 @@ import HeroSectionBanner from './HeroSectionWithSliderBanner.vue';
 </script>
 
 <template>
-    <section class="mb-4 md:mb-12 hero-section">
+    <section class="mb-6 md:mb-12 hero-section">
         <!-- Swiper -->
         <Swiper :modules="[Autoplay, Pagination, EffectFade]" :pagination="{ clickable: true, el: '.hero__page--swiper' }" :grabCursor="true" effect="fade" :autoplay="{ delay: 5000 }" :loop="true">
             <!-- Swiper Slide -->

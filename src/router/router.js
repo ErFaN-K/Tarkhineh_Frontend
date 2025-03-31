@@ -9,6 +9,12 @@ const routes = [
     component: () => import("../pages/HomePage.vue"),
     meta: { title: `${baseTitle} | صفحه اصلی` },
   },
+  {
+    path: "/branch/:branchName",
+    name: "BranchPage",
+    component: () => import("../pages/BranchPage.vue"),
+    meta: { title: (route) => `${baseTitle} | صفحه شعبه ${route.params.branchName}` },
+  },
 ];
 
 const router = createRouter({
@@ -18,7 +24,8 @@ const router = createRouter({
 
 // Before Each Route
 router.beforeEach((to, from, next) => {
-  document.title = to.meta.title;
+  const title = typeof to.meta.title === 'function' ? to.meta.title(to) : to.meta.title || baseTitle; // Change Page Title ( Dynamic )
+  document.title = title
   next();
 });
 

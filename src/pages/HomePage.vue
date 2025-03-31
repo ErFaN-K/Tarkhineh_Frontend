@@ -22,9 +22,9 @@ import Overlay from '../components/Overlay.vue'
   <!-- Home | About Section -->
   <AboutSection />
   <!-- Home | Branch Section -->
-  <BranchSection />
-
-  <!----------------------->
+  <BranchSection />  
+   
+  <!----------------------->  
 
   <!-- Footer -->
   <Footer />

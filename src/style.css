@@ -128,12 +128,28 @@
   }
 
   .section__title {
-    @apply text-base text-center text-gray-800 font-Dana-SemiBold md:text-2xl;
+    @apply text-base text-gray-800 font-Dana-SemiBold md:text-2xl;
   }
 
   .custom-scroll::-webkit-scrollbar {
     width: 2px;
     background-color: var(--color-gray-700);
+  }
+
+  .old-price__offer { 
+    @apply text-gray-500 text-custom font-Dana relative
+  }
+
+  .old-price__offer::before { 
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #adadad;
+    margin-block: auto;
+    top: -2px;
+    bottom: 0;
   }
 }
 
