@@ -15,7 +15,7 @@ import MenuBox from './MenuCard.vue';
                 </button>
         </div>
         <!-- Title -->
-        <h2 class="section__title text-center">منوی رستوران</h2>
+        <h2 class="section__title text-center text-gray-800">منوی رستوران</h2>
         <!-- Menu Box Container -->
         <div class="grid grid-cols-2 mt-18 md:mt-38 gap-y-26.5 md:gap-y-40 gap-x-4 lg:grid-cols-4">
             <MenuBox link="#" linkTitle="غذای اصلی"  imageSrc="src/assets/images/menu/Menu-Main-Food.png"/>

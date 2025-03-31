@@ -128,7 +128,11 @@
   }
 
   .section__title {
-    @apply text-base text-gray-800 font-Dana-SemiBold md:text-2xl;
+    @apply text-base font-Dana-SemiBold md:text-2xl;
+  }
+  
+  .section__body { 
+    @apply mt-3 md:mt-6
   }
 
   .custom-scroll::-webkit-scrollbar {

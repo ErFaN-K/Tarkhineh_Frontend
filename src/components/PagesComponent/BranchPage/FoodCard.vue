@@ -1,6 +1,6 @@
 <template>
     <!-- Food Card -->
-    <div class="border border-gray-400 md:rounded-lg rounded-sm overflow-hidden">
+    <div class="border border-gray-400 md:rounded-lg bg-white rounded-sm overflow-hidden">
         <!-- Food Image -->
         <div class="w-full md:h-64 h-27.25">
             <img src="/src/assets/images/Food-Image.png" alt="Food image" class="size-full object-cover">
