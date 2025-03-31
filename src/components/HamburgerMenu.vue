@@ -10,7 +10,7 @@ const toggleSection = (sectionName) => {
 </script>
 
 <template>
-  <div class="fixed top-0 bottom-0 z-30 h-svh bg-white max-w-64 w-full transition-all" :class="{'hamburger-menu--show': publicStore.isShowHamburgerMenu, 'hamburger-menu--close': !publicStore.isShowHamburgerMenu}">
+  <div class="fixed top-0 bottom-0 z-101 h-svh bg-white max-w-64 w-full transition-all" :class="{'hamburger-menu--show': publicStore.isShowHamburgerMenu, 'hamburger-menu--close': !publicStore.isShowHamburgerMenu}">
     <!-- Top Frame -->
     <div class="bg-burger hamburger-menu__img px-4 py-8 mb-2 relative text-white">
         <!-- Logo Type -->
