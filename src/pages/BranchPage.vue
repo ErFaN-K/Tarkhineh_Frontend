@@ -4,6 +4,7 @@ import Header from '../components/Header.vue'
 import HeroSection from "../components/HeroSectionWithSlider.vue";
 import SpecialOfferSection from '../components/PagesComponent/BranchPage/SpecialOfferSection.vue';
 import PopularFoodSection from '../components/PagesComponent/BranchPage/PopularFoodSection.vue';
+import NotIranianFoodSection from '../components/PagesComponent/BranchPage/NotIranianFoodSection.vue';
 import Footer from "../components/Footer.vue";
 import HamburgerMenu from "../components/HamburgerMenu.vue";
 import Overlay from '../components/Overlay.vue'
@@ -20,6 +21,8 @@ import Overlay from '../components/Overlay.vue'
     <SpecialOfferSection />
     <!-- Branch | Popular Food Section -->
     <PopularFoodSection />
+    <!-- Branch | Not Iranian Food Section -->
+    <NotIranianFoodSection />
 
     <!----------------------->
 
