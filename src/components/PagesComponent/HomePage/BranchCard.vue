@@ -25,7 +25,7 @@ defineProps({
         <div class="flex flex-col items-center w-full p-2 text-center md:px-2 md:py-4 gap-y-1">
             <h3 class="text-sm text-gray-800 md:text-xl font-Morabba-Bold">{{ branchName }}</h3>
             <p
-                class="text-gray-700 text-custom md:text-sm font-Dana line-clamp-2 h-8 md:h-12.5 flex items-center md:mb-2">
+                class="text-gray-700 text-custom md:text-sm font-Dana line-clamp-2 h-8 md:h-10 md:mb-2">
                 {{ branchAddress }}</p>
             <button
                 class="flex items-center justify-center w-32 h-8 border rounded-sm gap-x-1 max-md:hidden border-Primary text-Primary">
