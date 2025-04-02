@@ -13,16 +13,20 @@ import Overlay from "../components/Overlay.vue";
 <template>
   <!-- Branch Page -->
   <Header />
-  <!-- Branch | Hero Section -->
-  <HeroSection />
-  <!-- Branch | Special Offer Section -->
-  <SpecialOfferSection />
-  <!-- Branch | Popular Food Section -->
-  <PopularFoodSection />
-  <!-- Branch | Not Iranian Food Section -->
-  <NotIranianFoodSection />
-  <!-- Branch | About Branch Section -->
-  <AboutBranchSection />
+  
+  <!-- Branch | Main -->
+  <main>
+    <!-- Branch | Hero Section -->
+    <HeroSection />
+    <!-- Branch | Special Offer Section -->
+    <SpecialOfferSection />
+    <!-- Branch | Popular Food Section -->
+    <PopularFoodSection />
+    <!-- Branch | Not Iranian Food Section -->
+    <NotIranianFoodSection />
+    <!-- Branch | About Branch Section -->
+    <AboutBranchSection />
+  </main>
 
   <!----------------------->
 

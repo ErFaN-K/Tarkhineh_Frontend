@@ -11,7 +11,7 @@ import AboutBox from "./AboutBox.vue";
         >
           <!-- Content -->
           <div class="text-white">
-            <!-- Title -->
+            <!-- Section Title -->
             <h2 class="mb-2 text-base md:mb-6 font-Morabba-Bold md:text-2xl">
               رستوران‌های زنجیره‌ای ترخینه
             </h2>

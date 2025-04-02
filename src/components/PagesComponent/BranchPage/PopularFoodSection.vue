@@ -12,8 +12,9 @@ import FoodCard from "./FoodCard.vue";
 </script>
 
 <template>
-  <section class="mb-6 md:mb-12 specia-offer-section bg-Primary">
-    <div class="container">
+  <section class="mb-6 md:mb-12 popular-food-section">
+    <div class="bg-Primary">
+      <div class="container">
       <div class="md:pt-6 pt-3 md:pb-10 pb-6">
         <!-- Section Title -->
         <h2 class="section__title relative z-99 text-white">غذاهای محبوب</h2>
@@ -55,6 +56,7 @@ import FoodCard from "./FoodCard.vue";
             </SwiperSlide>
           </Swiper>
         </div>
+      </div>
       </div>
     </div>
   </section>

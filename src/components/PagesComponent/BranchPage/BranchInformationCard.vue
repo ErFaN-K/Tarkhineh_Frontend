@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex items-start max-md:flex-col max-md:gap-y-2 md:py-4 py-2 md:justify-between md:px-12 px-2 h-14 md:h-32.5 md:max-w-202.5 w-full mx-auto md:-mt-8.25 -mt-2.5 bg-white border border-Primary md:rounded-lg rounded-sm relative z-10"
+    class="flex md:items-start max-md:flex-col md:py-4 py-2 justify-between md:px-12 px-2 h-15 md:h-32.5 md:max-w-202.5 w-full mx-auto md:-mt-8.25 -mt-2.5 bg-white border border-Primary md:rounded-lg rounded-sm relative z-10"
   >
     <!-- Desktop ( Phone Number ) -->
     <div

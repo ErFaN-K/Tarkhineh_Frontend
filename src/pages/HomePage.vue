@@ -12,15 +12,19 @@ import Overlay from "../components/Overlay.vue";
 <template>
   <!-- Home Page -->
   <Header />
-  <!-- Home | Hero Section -->
-  <HeroSection />
-  <!-- Home | Menu Section -->
-  <MenuSection />
-  <!-- Home | About Section -->
-  <AboutSection />
-  <!-- Home | Branch Section -->
-  <BranchSection />
 
+  <!-- Home | Main -->
+  <main>
+    <!-- Home | Hero Section -->
+    <HeroSection />
+    <!-- Home | Menu Section -->
+    <MenuSection />
+    <!-- Home | About Section -->
+    <AboutSection />
+    <!-- Home | Branch Section -->
+    <BranchSection />
+  </main>
+  
   <!----------------------->
 
   <!-- Footer -->

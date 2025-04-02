@@ -12,7 +12,7 @@ import FoodCard from "./FoodCard.vue";
 </script>
 
 <template>
-  <section class="mb-6 md:mb-12 specia-offer-section">
+  <section class="mb-6 md:mb-12 special-offer-section">
     <div class="container">
       <!-- Section Title -->
       <h2 class="section__title relative z-99">پیشنهاد ویژه</h2>

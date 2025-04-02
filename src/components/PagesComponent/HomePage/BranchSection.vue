@@ -5,7 +5,7 @@ import BranchBox from "./BranchCard.vue";
 <template>
   <section class="mb-4 md:mb-12 branch-section">
     <div class="container">
-      <!-- Title -->
+      <!-- Section Title -->
       <h1 class="section__title text-center text-gray-800">ترخینه گردی</h1>
       <!-- Branch Box Container -->
       <div

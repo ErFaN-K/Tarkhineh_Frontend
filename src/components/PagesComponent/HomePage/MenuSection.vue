@@ -20,7 +20,7 @@ import MenuBox from "./MenuCard.vue";
           </svg>
         </button>
       </div>
-      <!-- Title -->
+      <!-- Section Title -->
       <h2 class="section__title text-center text-gray-800">منوی رستوران</h2>
       <!-- Menu Box Container -->
       <div

@@ -4,8 +4,9 @@ const publicStore = usePublicStore();
 </script>
 
 <template>
-  <header class="header bg-white">
-    <div class="container">
+  <header class="header">
+    <div class="bg-white">
+      <div class="container">
       <div class="flex items-center justify-between py-4 md:py-9">
         <!-- Hamburger Icon -->
         <div class="block md:hidden" @click="publicStore.showHamburgerMenu()">
@@ -95,6 +96,7 @@ const publicStore = usePublicStore();
             </svg>
           </button>
         </div>
+      </div>
       </div>
     </div>
   </header>
