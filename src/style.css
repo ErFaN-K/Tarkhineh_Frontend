@@ -120,7 +120,7 @@
       url(./assets/images/Footer.png);
   }
 
-  .bg-branch-test { 
+  .bg-branch-test {
     background-image: url(./assets/images/Branch-Image-2.png);
   }
 
@@ -135,9 +135,9 @@
   .section__title {
     @apply text-base font-Dana-SemiBold md:text-2xl;
   }
-  
-  .section__body { 
-    @apply mt-3 md:mt-6
+
+  .section__body {
+    @apply mt-3 md:mt-6;
   }
 
   .custom-scroll::-webkit-scrollbar {
@@ -145,12 +145,12 @@
     background-color: var(--color-gray-700);
   }
 
-  .old-price__offer { 
-    @apply text-gray-500 text-custom font-Dana relative
+  .old-price__offer {
+    @apply text-gray-500 text-custom font-Dana relative;
   }
 
-  .old-price__offer::before { 
-    content: '';
+  .old-price__offer::before {
+    content: "";
     position: absolute;
     display: block;
     width: 100%;
@@ -164,19 +164,19 @@
 
 @layer component {
   .hamburger-menu--show {
-    @apply !right-0
+    @apply !right-0;
   }
 
   .hamburger-menu--close {
-    @apply !-right-64  
+    @apply !-right-64;
   }
-  
+
   .overlay--show {
-    @apply opacity-100 visible
+    @apply opacity-100 visible;
   }
-  
+
   .overlay--close {
-    @apply opacity-0 invisible
+    @apply opacity-0 invisible;
   }
 }
 
