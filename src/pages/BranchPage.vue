@@ -5,6 +5,7 @@ import SpecialOfferSection from "../components/PagesComponent/BranchPage/Special
 import PopularFoodSection from "../components/PagesComponent/BranchPage/PopularFoodSection.vue";
 import NotIranianFoodSection from "../components/PagesComponent/BranchPage/NotIranianFoodSection.vue";
 import AboutBranchSection from "../components/PagesComponent/BranchPage/AboutBranchSection.vue";
+import UserCommentsSection from "../components/PagesComponent/BranchPage/UserCommentsSection.vue";
 import Footer from "../components/Footer.vue";
 import HamburgerMenu from "../components/HamburgerMenu.vue";
 import Overlay from "../components/Overlay.vue";
@@ -26,6 +27,8 @@ import Overlay from "../components/Overlay.vue";
     <NotIranianFoodSection />
     <!-- Branch | About Branch Section -->
     <AboutBranchSection />
+    <!-- Branch | User Commnets Section -->
+    <UserCommentsSection />
   </main>
 
   <!----------------------->

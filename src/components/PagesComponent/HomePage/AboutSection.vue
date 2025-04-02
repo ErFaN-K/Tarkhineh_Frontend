@@ -3,7 +3,7 @@ import AboutBox from "./AboutBox.vue";
 </script>
 
 <template>
-  <section class="mb-4 about-section md:mb-12">
+  <section class="mb-4 md:mb-12 about-section">
     <div class="py-4 bg-feature md:py-12">
       <div class="container">
         <div

@@ -27,7 +27,7 @@ defineProps({
       <img :src="branchImage" class="max-md:min-w-36 max-md:max-h-20" />
     </a>
     <div
-      class="flex flex-col items-center w-full p-2 text-center md:px-2 md:py-4 gap-y-1"
+      class="flex flex-col items-center max-md:justify-between w-full p-2 text-center md:px-2 md:py-4 gap-y-1"
     >
       <h3 class="text-sm text-gray-800 md:text-xl font-Morabba-Bold">
         {{ branchName }}
