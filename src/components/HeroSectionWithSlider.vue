@@ -15,7 +15,7 @@ import HeroSectionBanner from './HeroSectionWithSliderBanner.vue';
 <template>
     <section class="mb-6 md:mb-12 hero-section">
         <!-- Swiper -->
-        <Swiper :modules="[Autoplay, Pagination, EffectFade]" :pagination="{ clickable: true, el: '.hero__page--swiper' }" :grabCursor="true" effect="fade" :autoplay="{ delay: 5000 }" :loop="true">
+        <Swiper :modules="[Autoplay, Pagination, EffectFade]" :pagination="{ clickable: true, el: '.pagination-button--swiper' }" :grabCursor="true" effect="fade" :autoplay="{ delay: 5000 }" :loop="true">
             <!-- Swiper Slide -->
             <SwiperSlide>
                 <HeroSectionBanner bgNumber="1" content="تجربه غذای سالم و گیاهی به سبک ترخینه"/>
@@ -31,7 +31,7 @@ import HeroSectionBanner from './HeroSectionWithSliderBanner.vue';
             </SwiperSlide>
 
             <!-- Slider Pagination -->
-            <div class="hero__page--swiper !bottom-1.25 !translate-x-1/2 !left-1/2 !right-1/2 md:bottom-2.5 absolute flex items-center justify-center z-50 gap-x-1 *:!bg-gray-500 *:!rounded-full md:*:!size-2 *:!size-1 *:!transition-all *:!m-0">
+            <div class="pagination-button--swiper !bottom-1.25 !translate-x-1/2 !left-1/2 !right-1/2 md:bottom-2.5 absolute flex items-center justify-center z-50 gap-x-1 *:!bg-gray-500 *:!rounded-full md:*:!size-2 *:!size-1 *:!transition-all *:!m-0">
             </div>
 
             <!-- Rect Angle Desktop -->

@@ -74,7 +74,8 @@
 
   .bg-hero,
   .bg-footer,
-  .bg-hamburger {
+  .bg-hamburger,
+  .bg-branch {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -119,12 +120,16 @@
       url(./assets/images/Footer.png);
   }
 
+  .bg-branch-test { 
+    background-image: url(./assets/images/Branch-Image-2.png);
+  }
+
   .hamburger-menu__img {
     background-image: url(./assets/images/Top-Frame-Mobile.png);
   }
 
   .swiper-pagination-bullet-active {
-    @apply md:!size-3 !size-2 !bg-Primary !m-0;
+    @apply md:!size-3 !size-2 !bg-Primary !m-0 !scale-110 !border !border-white;
   }
 
   .section__title {
