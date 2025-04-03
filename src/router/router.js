@@ -17,6 +17,14 @@ const routes = [
       title: (route) => `${baseTitle} | صفحه شعبه ${route.params.branchName}`,
     },
   },
+  {
+    path: "/menu/:branchName",
+    name: "MenuPage",
+    component: () => import('../pages/MenuPage.vue'),
+    meta: {
+      title: (route) => `${baseTitle} | منو شعبه ${route.params.branchName}`
+    }
+  }
 ];
 
 const router = createRouter({

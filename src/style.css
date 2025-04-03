@@ -141,8 +141,17 @@
   }
 
   .custom-scroll::-webkit-scrollbar {
-    width: 2px;
-    background-color: var(--color-gray-700);
+    background-color: transparent; 
+    height: 4px;
+    width: 4px;
+  }
+
+  .custom-scroll::-webkit-scrollbar-thumb {
+    background-color: #adadad;
+  }
+
+  .hidden-scroll::-webkit-scrollbar {
+    display: none;
   }
 
   .old-price__offer {
@@ -159,6 +168,26 @@
     margin-block: auto;
     top: -2px;
     bottom: 0;
+  }
+
+  .category__link--active {
+    position: relative;
+    color: #417F56;
+  }
+
+  .category__link--active::before { 
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #417F56;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    @variant md {
+      height: 2px;
+    }
   }
 }
 

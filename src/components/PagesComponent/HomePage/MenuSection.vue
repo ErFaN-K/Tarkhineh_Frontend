@@ -1,4 +1,5 @@
 <script setup>
+import SearchBox from "../../SearchBox.vue";
 import MenuBox from "./MenuCard.vue";
 </script>
 
@@ -9,16 +10,7 @@ import MenuBox from "./MenuCard.vue";
       <div
         class="items-center justify-between hidden h-8 px-4 mb-6 text-gray-800 border border-gray-400 rounded-sm max-lg:flex"
       >
-        <input
-          type="text"
-          class="w-full text-sm border-none outline-none font-Dana placeholder:text-gray-800"
-          placeholder="جستجو"
-        />
-        <button>
-          <svg class="size-4">
-            <use href="#magnifying-glass"></use>
-          </svg>
-        </button>
+        <SearchBox />
       </div>
       <!-- Section Title -->
       <h2 class="section__title text-center text-gray-800">منوی رستوران</h2>
