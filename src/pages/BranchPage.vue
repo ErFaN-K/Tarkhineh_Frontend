@@ -1,4 +1,5 @@
 <script setup>
+// Components
 import Header from "../components/Header.vue";
 import HeroSection from "../components/HeroSectionWithSlider.vue";
 import SpecialOfferSection from "../components/PagesComponent/BranchPage/SpecialOfferSection.vue";
@@ -9,6 +10,7 @@ import UserCommentsSection from "../components/PagesComponent/BranchPage/UserCom
 import Footer from "../components/Footer.vue";
 import HamburgerMenu from "../components/HamburgerMenu.vue";
 import Overlay from "../components/Overlay.vue";
+import FoodCardSkeletonLoader from "../components/PagesComponent/BranchPage/FoodCardSkeletonLoader.vue";
 </script>
 
 <template>

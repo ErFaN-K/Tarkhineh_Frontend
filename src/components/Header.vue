@@ -5,7 +5,7 @@ const publicStore = usePublicStore();
 
 <template>
   <header class="header">
-    <div class="bg-white">
+    <div class="bg-white shadow-sm">
       <div class="container">
       <div class="flex items-center justify-between py-4 md:py-9">
         <!-- Hamburger Icon -->
