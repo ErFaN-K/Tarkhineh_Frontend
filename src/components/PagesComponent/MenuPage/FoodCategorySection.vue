@@ -1,4 +1,5 @@
 <script setup>
+import FoodCard from './HorizontalFoodCard.vue'
 
 defineProps({
     sectionTitle: {
@@ -16,7 +17,14 @@ defineProps({
             <!-- Food Card Container -->
             <div class="section__body">
                 <div class="grid grid-cols-1 gap-y-3 lg:grid-cols-2 md:gap-6">
-                    <!-- Import HorizontalFoodCard -->
+                    <FoodCard />
+                    <FoodCard />
+                    <FoodCard />
+                    <FoodCard />
+                    <FoodCard />
+                    <FoodCard />
+                    <FoodCard />
+                    <FoodCard />
                 </div>
             </div>
         </div>

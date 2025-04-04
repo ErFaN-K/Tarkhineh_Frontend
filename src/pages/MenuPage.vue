@@ -24,6 +24,8 @@ import Overlay from '../components/Overlay.vue';
     <FoodFilterSection />
     <!-- Menu | Food Category Section -->
     <FoodCategorySection sectionTitle="غذاهای ایرانی"/>
+    <!-- Menu | Food Category Section -->
+    <FoodCategorySection sectionTitle="غذاهای غیر ایرانی"/>
   </main>
   
   <!----------------------->

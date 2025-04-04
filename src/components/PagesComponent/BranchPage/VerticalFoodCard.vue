@@ -23,10 +23,10 @@
         class="h-10 md:h-13 flex items-center justify-between md:mt-4 mt-1 mb-3 md:mb-4"
       >
         <!-- Right -->
-        <div class="flex flex-col max-md:gap-y-2">
-          <!-- Add To Favorite -->
+        <div class="flex flex-col items-start max-md:gap-y-2">
+          <!-- Add To Favorite Button -->
           <div class="flex items-center gap-x-1 text-gray-500 text-custom">
-            <span>
+            <span class="cursor-pointer">
               <svg class="size-4">
                 <use href="#heart"></use>
               </svg>
@@ -51,9 +51,9 @@
           </div>
         </div>
         <!-- Left -->
-        <div class="flex flex-col max-md:gap-y-1">
+        <div class="flex flex-col items-end max-md:gap-y-1">
           <!-- Offer ( If Have It ) -->
-          <div class="flex items-center md:gap-x-2 gap-x-1 mr-auto">
+          <div class="flex items-center md:gap-x-2 gap-x-1">
             <!-- Old Price -->
             <span class="old-price__offer">210,000</span>
             <!-- Offer % -->
@@ -70,7 +70,7 @@
       </div>
       <!-- Button -->
       <button
-        class="w-full flex items-center justify-center md:h-10 h-8 bg-Primary font-Dana text-custom md:text-base text-white rounded-sm hover:bg-Primary/90 cursor-pointer"
+        class="w-full flex items-center justify-center md:h-10 h-8 bg-Primary font-Dana text-custom md:text-base text-white rounded-sm hover:bg-Primary/90 transition-all cursor-pointer"
       >
         افزودن به سبد خرید
       </button>
