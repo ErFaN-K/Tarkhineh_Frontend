@@ -21,7 +21,7 @@ defineProps({
 
 <template>
   <div
-    class="flex flex-row w-full delay-100 border border-gray-400 rounded-lg md:flex-col hover:border-Primary"
+    class="flex flex-row w-full delay-100 border border-gray-400 rounded-lg md:flex-col hover:border-Primary transition-all"
   >
     <a :href="branchPageLink">
       <img :src="branchImage" class="max-md:min-w-36 max-md:max-h-20" />
