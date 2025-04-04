@@ -10,7 +10,7 @@ import UserCommentsSection from "../components/PagesComponent/BranchPage/UserCom
 import Footer from "../components/Footer.vue";
 import HamburgerMenu from "../components/HamburgerMenu.vue";
 import Overlay from "../components/Overlay.vue";
-import FoodCardSkeletonLoader from "../components/PagesComponent/BranchPage/FoodCardSkeletonLoader.vue";
+import FoodCardSkeletonLoader from "../components/PagesComponent/BranchPage/VerticalFoodCardSkeletonLoader.vue";
 </script>
 
 <template>

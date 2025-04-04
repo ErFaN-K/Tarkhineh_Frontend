@@ -1,5 +1,6 @@
 <script setup>
 import FoodCard from './HorizontalFoodCard.vue'
+import FoodCardSkeletonLoader from './HorizontalFoodCardSkeletonLoader.vue'
 
 defineProps({
     sectionTitle: {
@@ -16,15 +17,13 @@ defineProps({
             <h2 class="section__title">{{ sectionTitle }}</h2>
             <!-- Food Card Container -->
             <div class="section__body">
-                <div class="grid grid-cols-1 gap-y-3 lg:grid-cols-2 md:gap-6">
+                <div class="grid grid-cols-1 gap-y-3 xl:grid-cols-2 md:gap-6">
                     <FoodCard />
                     <FoodCard />
                     <FoodCard />
                     <FoodCard />
-                    <FoodCard />
-                    <FoodCard />
-                    <FoodCard />
-                    <FoodCard />
+                    <FoodCardSkeletonLoader />
+                    <FoodCardSkeletonLoader />
                 </div>
             </div>
         </div>
