@@ -18,7 +18,6 @@ import HeroSectionBanner from "./HeroSectionWithSliderBanner.vue";
     <Swiper
       :modules="[Autoplay, Pagination, EffectFade]"
       :pagination="{ clickable: true, el: '.pagination-button--swiper' }"
-      :grabCursor="true"
       effect="fade"
       :autoplay="{ delay: 5000 }"
       :loop="true"

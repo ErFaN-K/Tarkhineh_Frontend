@@ -5,10 +5,10 @@
         <div class="p-2 md:pr-8 md:pl-4 flex flex-col w-full">
             <div class="flex items-center justify-between mb-2 md:mb-3">
                 <div class="w-25 md:w-66 h-4.5 md:h-6 bg-gray-300 animate-pulse"></div>
-                <diva class="flex items-center gap-x-2">
+                <div class="flex items-center gap-x-2">
                     <div class="md:hidden w-8 h-4.5 bg-gray-300 animate-pulse"></div>
                     <div class="size-6 max-md:w-8 max-md:h-4.5 bg-gray-300 animate-pulse"></div>
-                </diva>
+                </div>
             </div>
             <div class="flex max-md:items-center items-start justify-between mb-1 md:mb-3">
                 <!-- Mobile Loader -->

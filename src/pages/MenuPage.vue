@@ -8,6 +8,7 @@ import FoodCategorySection from '../components/PagesComponent/MenuPage/FoodCateg
 import Footer from '../components/Footer.vue';
 import HamburgerMenu from '../components/HamburgerMenu.vue';
 import Overlay from '../components/Overlay.vue';
+import FoodInfoCard from '../components/FoodInfoCard.vue';
 </script>
 
 <template>
@@ -34,6 +35,8 @@ import Overlay from '../components/Overlay.vue';
   <Footer />
   <!-- Hamburger Menu -->
   <HamburgerMenu />
+  <!-- Food Information Card -->
+  <FoodInfoCard />
   <!-- Overlay -->
   <Overlay />
 </template>

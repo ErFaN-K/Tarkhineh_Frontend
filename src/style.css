@@ -207,6 +207,14 @@
   .overlay--close {
     @apply opacity-0 invisible;
   }
+
+  .food-info__card--hidden  { 
+    @apply opacity-0 invisible
+  }
+
+  .food-info__card--show {
+    @apply opacity-100 visible
+  }
 }
 
 @theme {
