@@ -16,7 +16,7 @@ import FoodCardSkeletonLoader from "../components/PagesComponent/BranchPage/Vert
 <template>
   <!-- Branch Page -->
   <Header />
-  
+
   <!-- Branch | Main -->
   <main>
     <!-- Branch | Hero Section -->

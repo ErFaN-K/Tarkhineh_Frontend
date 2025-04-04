@@ -20,11 +20,11 @@ const routes = [
   {
     path: "/menu/:branchName",
     name: "MenuPage",
-    component: () => import('../pages/MenuPage.vue'),
+    component: () => import("../pages/MenuPage.vue"),
     meta: {
-      title: (route) => `${baseTitle} | منو شعبه ${route.params.branchName}`
-    }
-  }
+      title: (route) => `${baseTitle} | منو شعبه ${route.params.branchName}`,
+    },
+  },
 ];
 
 const router = createRouter({

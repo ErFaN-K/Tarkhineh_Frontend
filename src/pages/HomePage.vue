@@ -24,7 +24,7 @@ import Overlay from "../components/Overlay.vue";
     <!-- Home | Branch Section -->
     <BranchSection />
   </main>
-  
+
   <!----------------------->
 
   <!-- Footer -->

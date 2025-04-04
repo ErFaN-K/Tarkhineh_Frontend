@@ -3,13 +3,9 @@ import { reactive, ref } from "vue";
 
 export const usePublicStore = defineStore("public", () => {
   const isShowHamburgerMenu = ref(false);
-  const isShowOverlay = ref(true);
-  const branchData = reactive(null)
+  const isShowOverlay = ref(false);
+  const branchData = reactive(null);
 
-  
-  
-  
-  
   // Funcs -------
 
   // Show Hamburger Menu
@@ -26,11 +22,11 @@ export const usePublicStore = defineStore("public", () => {
 
   // Set Branch Data
   const setBranchData = (branchData) => {
-    branchData.value = branchData
-  }
+    branchData.value = branchData;
+  };
 
   // Get Branch Data
-  const getBranchData = () => branchData.value
+  const getBranchData = () => branchData.value;
 
   return {
     isShowHamburgerMenu,
@@ -38,6 +34,6 @@ export const usePublicStore = defineStore("public", () => {
     showHamburgerMenu,
     closeHamburgerMenu,
     setBranchData,
-    getBranchData
+    getBranchData,
   };
 });
