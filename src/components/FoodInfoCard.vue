@@ -21,7 +21,7 @@ const setThumbsSwiper = (swiper) => {
 
 <template>
   <div
-    class="food-info__card--hidden shadow-xl fixed inset-0 m-auto md:max-w-202 max-w-80 h-max w-full bg-white text-gray-800 rounded-lg z-101"
+    class="food-info__card--hidden transition-all shadow-xl fixed inset-0 m-auto md:max-w-202 max-w-80 h-max w-full bg-white text-gray-800 rounded-lg z-101"
   >
     <!-- Card Header -->
     <div class="h-11.25 md:h-22 flex items-center justify-center relative">
