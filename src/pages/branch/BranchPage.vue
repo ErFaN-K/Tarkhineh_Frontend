@@ -1,19 +1,23 @@
 <script setup>
 // Components
-import Header from "@/components/layout/Header.vue";
+import Header from "@/components/layout/SiteHeader.vue";
 import HeroSection from "@/components/shared/HeroSectionWithSlider.vue";
 import SpecialOfferSection from "./components/SpecialOfferSection.vue";
 import PopularFoodSection from "./components/PopularFoodSection.vue";
 import NotIranianFoodSection from "./components/NotIranianFoodSection.vue";
 import AboutBranchSection from "./components/AboutBranchSection.vue";
-import UserCommentsSection from "./components/UserCommentsSection.vue";
-import Footer from "@/components/layout/Footer.vue";
-import HamburgerMenu from "@/components/shared/HamburgerMenu.vue"
+import UserCommentSection from "./components/UserCommentSection.vue";
+import Footer from "@/components/layout/SiteFooter.vue";
+import MobileMenu from "@/components/shared/MobileMenu.vue"
+import LoginForm from '@/components/shared/OtpLogin.vue'
+import FoodDetailsModal from '@/components/shared/FoodDetailsModal.vue'
 import Overlay from "@/components/shared/Overlay.vue"
 </script>
 
 <template>
   <!-- Branch Page -->
+  <!----------------------->
+  <!-- Branch | Header -->
   <Header />
 
   <!-- Branch | Main -->
@@ -28,16 +32,21 @@ import Overlay from "@/components/shared/Overlay.vue"
     <NotIranianFoodSection />
     <!-- Branch | About Branch Section -->
     <AboutBranchSection />
-    <!-- Branch | User Commnets Section -->
-    <UserCommentsSection />
+    <!-- Branch | User Comment Section -->
+    <UserCommentSection />
   </main>
+
+  <!-- Branch | Footer -->
+  <Footer />
 
   <!----------------------->
 
-  <!-- Footer -->
-  <Footer />
   <!-- Hamburger Menu -->
-  <HamburgerMenu />
+  <MobileMenu />
+  <!-- Login Form -->
+  <LoginForm />
+  <!-- Food Details Modal -->
+  <FoodDetailsModal />
   <!-- Overlay -->
   <Overlay />
 </template>

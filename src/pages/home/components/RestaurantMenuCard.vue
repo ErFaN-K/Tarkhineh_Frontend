@@ -16,9 +16,9 @@ defineProps({
 </script>
 
 <template>
-  <!-- Menu Box -->
+  <!-- Food Category -->
   <div class="flex flex-col items-center h-20 rounded-sm md:h-40 bg-Primary">
-    <!-- Menu Image -->
+    <!-- Category Image -->
     <img
       :src="imageSrc"
       alt="Menu Image"

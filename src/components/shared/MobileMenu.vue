@@ -12,15 +12,15 @@ const toggleSection = (sectionName) => {
 
 <template>
   <div
-    class="fixed top-0 bottom-0 z-101 h-svh bg-white max-w-64 w-full transition-all"
+    class="mobile-menu fixed top-0 bottom-0 z-101 h-svh bg-white max-w-64 w-full transition-all"
     :class="{
-      'hamburger-menu--show': publicStore.isShowHamburgerMenu,
-      'hamburger-menu--close': !publicStore.isShowHamburgerMenu,
+      'is-open': publicStore.isShowHamburgerMenu,
+      'is-closed': !publicStore.isShowHamburgerMenu,
     }"
   >
     <!-- Top Frame -->
     <div
-      class="bg-burger hamburger-menu__img px-4 py-8 mb-2 relative text-white"
+      class="background-config mobile-menu__top-frame--img px-4 py-8 mb-2 relative text-white"
     >
       <!-- Logo Type -->
       <span>

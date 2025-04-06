@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 
-// Component
+// Components
 import FoodCard from "./VerticalFoodCard.vue";
 </script>
 

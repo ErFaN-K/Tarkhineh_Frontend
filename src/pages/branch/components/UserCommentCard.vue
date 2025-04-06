@@ -1,4 +1,5 @@
 <template>
+  <!-- User Comment -->
   <div
     class="relative flex items-center gap-x-2 md:gap-x-3 py-5 px-4 md:py-6 md:px-8 bg-white border border-gray-400 rounded-sm"
   >

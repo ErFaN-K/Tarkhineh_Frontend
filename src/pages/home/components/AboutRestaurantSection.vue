@@ -1,21 +1,20 @@
 <script setup>
-import AboutBox from "./AboutBox.vue";
+import RestaurantAttributeBox from "./RestaurantAttributeBox.vue";
 </script>
 
 <template>
-  <section class="mb-4 md:mb-12 about-section">
-    <div class="py-4 bg-feature md:py-12">
+  <section class="mb-4 md:mb-12 about-restaurant-section">
+    <div class="py-4 background-config about-restaurant__background md:py-12">
       <div class="container">
         <div
           class="flex flex-wrap items-center justify-between max-xl:justify-center gap-y-6"
         >
-          <!-- Content -->
           <div class="text-white">
             <!-- Section Title -->
             <h2 class="mb-2 text-base md:mb-6 font-Morabba-Bold md:text-2xl">
               رستوران‌های زنجیره‌ای ترخینه
             </h2>
-            <!-- Paragraph -->
+            <!-- Description -->
             <p
               class="max-w-full mb-2 text-sm text-justify md:text-xl font-Dana xl:max-w-150 md:mb-4"
             >
@@ -39,14 +38,14 @@ import AboutBox from "./AboutBox.vue";
               </a>
             </div>
           </div>
-          <!-- Box Icons -->
+          <!-- Restaurant Attributes -->
           <div
             class="grid grid-cols-2 gap-x-12 gap-y-4 md:gap-x-6 md:gap-y-2 max-xl:place-items-center max-xl:w-full"
           >
-            <AboutBox iconName="user" content="پرسنلی مجرب و حرفه‌ای" />
-            <AboutBox iconName="chart" content="کیفیت بالای غذاها" />
-            <AboutBox iconName="home" content="محیطی دلنشین و آرام" />
-            <AboutBox iconName="calender" content="منوی متنوع" />
+            <RestaurantAttributeBox iconName="user" content="پرسنلی مجرب و حرفه‌ای" />
+            <RestaurantAttributeBox iconName="chart" content="کیفیت بالای غذاها" />
+            <RestaurantAttributeBox iconName="home" content="محیطی دلنشین و آرام" />
+            <RestaurantAttributeBox iconName="calender" content="منوی متنوع" />
           </div>
         </div>
       </div>

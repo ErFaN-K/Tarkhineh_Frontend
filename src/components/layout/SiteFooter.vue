@@ -2,7 +2,7 @@
 
 <template>
   <footer>
-    <div class="bg-footer bg-footer--image">
+    <div class="background-config footer__background">
       <div class="container">
         <div
           class="pt-4 md:py-8 pb-5.5 flex items-start gap-x-31.75 max-xl:gap-x-16 max-md:gap-x-20"
@@ -21,7 +21,7 @@
               <a href="#">پرسش‌های متداول</a>
               <a href="#">قوانین ترخینه</a>
               <a href="#">حریم خصوصی</a>
-              <!-- Social Media Icons -->
+              <!-- Restaurant Social Media -->
               <div class="flex items-center gap-x-4 max-md:gap-x-2">
                 <a href="#">
                   <svg class="size-4 md:size-6">

@@ -1,6 +1,6 @@
 <script setup>
 defineProps({
-  categoryName: {
+  menuName: {
     type: String,
     required: true,
   },
@@ -12,10 +12,11 @@ defineProps({
 </script>
 
 <template>
+  <!-- Restaurant Menu -->
   <a
     class="text-sm md:text-xl font-Morabba-Medium text-gray-700 h-full flex items-center"
     :href="link"
   >
-    {{ categoryName }}
+    {{ menuName }}
   </a>
 </template>

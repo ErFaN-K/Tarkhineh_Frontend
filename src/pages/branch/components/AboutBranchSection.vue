@@ -8,16 +8,15 @@ import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-// Component
-import BranchImageBanner from "./BranchImageBanner.vue";
-import BranchInformationCard from "./BranchInformationCard.vue";
+// Components
+import BranchDetailsBox from "./BranchDetailsBox.vue";
 </script>
 
 <template>
   <section class="mb-6 md:mb-12 about-branch-section">
     <!-- Section Title -->
     <h2 class="section__title text-center mb-3 md:mb-4.5">شعبه اکباتان</h2>
-    <!-- Branch Image ( Banner ) -->
+    <!-- Branch Images ( Slider ) -->
     <div class="h-44 sm:h-84">
       <!-- Swiper -->
       <Swiper
@@ -35,16 +34,16 @@ import BranchInformationCard from "./BranchInformationCard.vue";
       >
         <!-- Swiper Slide -->
         <SwiperSlide>
-          <BranchImageBanner />
+          <img src="../../../assets/images/Branch-Image-2.png" alt="Branch Image" class="size-full object-cover">
         </SwiperSlide>
         <SwiperSlide>
-          <BranchImageBanner />
+          <img src="../../../assets/images/Branch-Image-2.png" alt="Branch Image" class="size-full object-cover">
         </SwiperSlide>
         <SwiperSlide>
-          <BranchImageBanner />
+          <img src="../../../assets/images/Branch-Image-2.png" alt="Branch Image" class="size-full object-cover">
         </SwiperSlide>
         <SwiperSlide>
-          <BranchImageBanner />
+          <img src="../../../assets/images/Branch-Image-2.png" alt="Branch Image" class="size-full object-cover">
         </SwiperSlide>
         <!-- Slider Pagination -->
         <div
@@ -71,9 +70,9 @@ import BranchInformationCard from "./BranchInformationCard.vue";
         </div>
       </Swiper>
     </div>
-    <!-- Branch Information -->
+    <!-- Branch Details -->
     <div class="container">
-      <BranchInformationCard />
+      <BranchDetailsBox />
     </div>
   </section>
 </template>

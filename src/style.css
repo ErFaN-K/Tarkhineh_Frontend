@@ -57,12 +57,28 @@
   }
 }
 
-@layer utilities {
-  .nav__active--link {
+@layer component {
+  .mobile-menu.is-open {
+    @apply right-0;
+  }
+  
+  .mobile-menu.is-closed {
+    @apply -right-64;
+  }
+
+  .is-show {
+    @apply opacity-100 visible;
+  }
+
+  .is-hidden {
+    @apply opacity-0 invisible;
+  }
+  
+  .nav__link--active {
     @apply relative text-Primary font-Dana-SemiBold;
   }
 
-  .nav__active--link::before {
+  .nav__link--active::before {
     content: "";
     width: 100%;
     height: 1px;
@@ -72,64 +88,57 @@
     background-color: #417f56;
   }
 
-  .bg-hero,
-  .bg-footer,
-  .bg-hamburger,
-  .bg-branch {
+  .background-config {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .hero__background--one {
+    background-image: var(--hero-bg-gradient), url(./assets/images/Hero-Background-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .hero__background--two {
+    background-image: var(--hero-bg-gradient), url(./assets/images/Hero-Background-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .hero__background--three {
+    background-image: var(--hero-bg-gradient), url(./assets/images/Hero-Background-3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .hero__background--four {
+    background-image: var(--hero-bg-gradient), url(./assets/images/Hero-Background-4.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
 
-  .bg-hero--1 {
+  .about-restaurant__background {
     background-image:
-      linear-gradient(to right, rgba(0, 0, 0, 0.568) 50%, transparent 100%),
-      url(./assets/images/Hero-Background-1.png);
-  }
-
-  .bg-hero--2 {
-    background-image:
-      linear-gradient(to right, rgba(0, 0, 0, 0.568) 50%, transparent 100%),
-      url(./assets/images/Hero-Background-2.png);
-  }
-
-  .bg-hero--3 {
-    background-image:
-      linear-gradient(to right, rgba(0, 0, 0, 0.568) 50%, transparent 100%),
-      url(./assets/images/Hero-Background-3.png);
-  }
-
-  .bg-hero--4 {
-    background-image:
-      linear-gradient(to right, rgba(0, 0, 0, 0.568) 50%, transparent 100%),
-      url(./assets/images/Hero-Background-4.png);
-  }
-
-  .bg-feature {
-    background-image:
-      linear-gradient(to right, rgba(0, 0, 0, 0.734) 50%, transparent 100%),
-      url(./assets/images/Features-Background.png);
+      var(--hero-bg-gradient),
+      url(./assets/images/About-Restaurant-Section.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
 
-  .bg-footer--image {
+  .footer__background {
     background-image:
-      linear-gradient(to right, rgba(0, 0, 0, 0.734) 50%, transparent 100%),
+    var(--hero-bg-gradient),
       url(./assets/images/Footer.png);
-  }
+  } 
 
-  .bg-branch-test {
-    background-image: url(./assets/images/Branch-Image-2.png);
-  }
-
-  .hamburger-menu__img {
+  .mobile-menu__top-frame--img {
     background-image: url(./assets/images/Top-Frame-Mobile.png);
-  }
-
-  .swiper-pagination-bullet-active {
-    @apply md:!size-3 !size-2 !bg-Primary !m-0 !scale-110 !border !border-white;
   }
 
   .section__title {
@@ -154,11 +163,11 @@
     display: none;
   }
 
-  .old-price__offer {
+  .old-price--decoration {
     @apply text-gray-500 text-custom font-Dana relative;
   }
 
-  .old-price__offer::before {
+  .old-price--decoration::before {
     content: "";
     position: absolute;
     display: block;
@@ -170,12 +179,12 @@
     bottom: 0;
   }
 
-  .category__link--active {
+  .restaurant-menu__link--active {
     position: relative;
     color: #417f56;
   }
 
-  .category__link--active::before {
+  .restaurant-menu__link--active::before {
     content: "";
     position: absolute;
     display: block;
@@ -191,38 +200,14 @@
   }
 }
 
-@layer component {
-  .hamburger-menu--show {
-    @apply !right-0;
+@layer utilities {
+  .swiper-pagination-bullet-active {
+    @apply md:!size-3 !size-2 !bg-Primary !m-0 !scale-110 !border !border-white;
   }
+}
 
-  .hamburger-menu--close {
-    @apply !-right-64;
-  }
-
-  .overlay--show {
-    @apply opacity-100 visible;
-  }
-
-  .overlay--close {
-    @apply opacity-0 invisible;
-  }
-
-  .food-info__card--hidden {
-    @apply opacity-0 invisible;
-  }
-
-  .food-info__card--show {
-    @apply opacity-100 visible;
-  }
-
-  .login-otp--hidden  { 
-    @apply opacity-0 invisible
-  }
-
-  .login-otp--show {
-    @apply opacity-100 visible
-  } 
+@utility container {
+  @apply mx-auto px-5 lg:px-7;
 }
 
 @theme {
@@ -292,8 +277,7 @@
 
   /* Font Size */
   --text-custom: 0.625rem;
-}
 
-@utility container {
-  @apply mx-auto px-5 lg:px-7;
+  /* Others */
+  --hero-bg-gradient: linear-gradient(to right, rgba(0, 0, 0, 0.568) 50%, transparent 100%);
 }

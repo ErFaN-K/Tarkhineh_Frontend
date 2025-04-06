@@ -32,7 +32,7 @@
         <!-- Offer ( If Have It ) ( Mobile ) -->
         <div class="max-md:flex hidden items-center gap-x-2">
           <!-- Old Price -->
-          <span class="old-price__offer">210,000</span>
+          <span class="old-price--decoration">210,000</span>
           <!-- Offer % -->
           <span
             class="flex items-center h-4 px-1.5 rounded-lg bg-Error-EXLight text-Error font-Dana text-custom"
@@ -55,7 +55,7 @@
           <!-- Offer ( If Have It ) -->
           <div class="max-md:hidden flex items-center gap-x-2">
             <!-- Old Price -->
-            <span class="old-price__offer !text-base">210,000</span>
+            <span class="old-price--decoration !text-base">210,000</span>
             <!-- Offer % -->
             <span
               class="flex items-center h-5 px-1.5 rounded-lg bg-Error-EXLight text-Error font-Dana text-xs"

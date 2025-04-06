@@ -55,7 +55,7 @@
           <!-- Offer ( If Have It ) -->
           <div class="flex items-center md:gap-x-2 gap-x-1">
             <!-- Old Price -->
-            <span class="old-price__offer">210,000</span>
+            <span class="old-price--decoration">210,000</span>
             <!-- Offer % -->
             <span
               class="flex items-center h-4 md:px-2 px-1.5 rounded-lg bg-Error-EXLight text-Error font-Dana text-custom"

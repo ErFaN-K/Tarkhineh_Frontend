@@ -1,6 +1,6 @@
 <script setup>
 import FoodCard from "./HorizontalFoodCard.vue";
-import FoodCardSkeletonLoader from "./HorizontalFoodCardSkeletonLoader.vue";
+import FoodCardLoader from "./HorizontalFoodCardLoader.vue";
 
 defineProps({
   sectionTitle: {
@@ -11,7 +11,7 @@ defineProps({
 </script>
 
 <template>
-  <section class="mb-6 md:mb-12 food-category-section">
+  <section class="mb-6 md:mb-12 restaurant-menu-preview-section">
     <div class="container">
       <!-- Section Title -->
       <h2 class="section__title">{{ sectionTitle }}</h2>
@@ -22,8 +22,8 @@ defineProps({
           <FoodCard />
           <FoodCard />
           <FoodCard />
-          <FoodCardSkeletonLoader />
-          <FoodCardSkeletonLoader />
+          <FoodCardLoader />
+          <FoodCardLoader />
         </div>
       </div>
     </div>

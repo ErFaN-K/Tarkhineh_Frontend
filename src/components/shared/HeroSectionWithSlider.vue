@@ -9,7 +9,7 @@ import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 
 // Component
-import HeroSectionBanner from "./HeroSectionWithSliderBanner.vue";
+import HeroBannerSlider from "./HeroBannerSlider.vue";
 </script>
 
 <template>
@@ -24,23 +24,23 @@ import HeroSectionBanner from "./HeroSectionWithSliderBanner.vue";
     >
       <!-- Swiper Slide -->
       <SwiperSlide>
-        <HeroSectionBanner
-          bgNumber="1"
+        <HeroBannerSlider
+          bgName="one"
           content="تجربه غذای سالم و گیاهی به سبک ترخینه"
         />
       </SwiperSlide>
       <SwiperSlide>
-        <HeroSectionBanner bgNumber="2" content="تجربه فست فود های گیاهی" />
+        <HeroBannerSlider bgName="two" content="تجربه فست فود های گیاهی" />
       </SwiperSlide>
       <SwiperSlide>
-        <HeroSectionBanner
-          bgNumber="3"
+        <HeroBannerSlider
+          bgName="three"
           content="تجربه غذای گیاهی به سبک ترخینه"
         />
       </SwiperSlide>
       <SwiperSlide>
-        <HeroSectionBanner
-          bgNumber="4"
+        <HeroBannerSlider
+          bgName="four"
           content="نوشیدنی های گرم و سرد به سبک ترخینه"
         />
       </SwiperSlide>

@@ -12,7 +12,7 @@ defineProps({
 </script>
 
 <template>
-  <!-- About Box -->
+  <!-- Restaurant Attribute -->
   <div
     class="md:w-46 md:h-34 w-34 h-12.5 flex flex-col items-center justify-center md:gap-y-4 gap-y-1 text-white"
   >

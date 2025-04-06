@@ -4,7 +4,7 @@ const publicStore = usePublicStore();
 </script>
 
 <template>
-  <header class="header">
+  <header>
     <div class="bg-white shadow-sm">
       <div class="container">
         <div class="flex items-center justify-between py-4 md:py-9">
@@ -14,7 +14,7 @@ const publicStore = usePublicStore();
               <use href="#bars-3"></use>
             </svg>
           </div>
-          <!-- Logo -->
+          <!-- Trakhineh Logo -->
           <span>
             <svg class="w-25.5 md:w-38.75 h-8 md:h-12.75 text-Primary">
               <use href="#logo-type"></use>
@@ -25,7 +25,7 @@ const publicStore = usePublicStore();
             <ul
               class="flex *:flex items-center *:items-center gap-x-3 lg:gap-x-6 *:h-8 *:font-Dana *:text-gray-700 text-base lg:*:text-xl"
             >
-              <li class="nav__active--link">
+              <li class="nav__link--active">
                 <a href="#">صفحه اصلی</a>
               </li>
               <li class="relative cursor-pointer group gap-x-1">

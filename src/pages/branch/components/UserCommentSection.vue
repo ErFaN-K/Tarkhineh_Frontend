@@ -7,16 +7,16 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 
-// Component
-import UserComment from "./UserComment.vue";
+// Components
+import UserCommentCard from "./UserCommentCard.vue";
 </script>
 
 <template>
-  <section class="mb-4 md:mb-12 user-comments-section">
+  <section class="mb-4 md:mb-12 user-comment-section">
     <div class="container">
       <!-- Section Title -->
       <h2 class="section__title text-center">نظرات کاربران</h2>
-      <!-- User Comments Container -->
+      <!-- User Comment Card Container -->
       <div class="section__body">
         <Swiper
           :modules="[Autoplay, Pagination]"
@@ -29,16 +29,16 @@ import UserComment from "./UserComment.vue";
           :breakpoints="{ '1024': { slidesPerView: 2, spaceBetween: 24 } }"
         >
           <SwiperSlide>
-            <UserComment />
+            <UserCommentCard />
           </SwiperSlide>
           <SwiperSlide>
-            <UserComment />
+            <UserCommentCard />
           </SwiperSlide>
           <SwiperSlide>
-            <UserComment />
+            <UserCommentCard />
           </SwiperSlide>
           <SwiperSlide>
-            <UserComment />
+            <UserCommentCard />
           </SwiperSlide>
         </Swiper>
       </div>

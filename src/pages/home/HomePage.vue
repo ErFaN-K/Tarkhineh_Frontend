@@ -1,16 +1,21 @@
 <script setup>
-import Header from "@/components/layout/Header.vue";
+// Components
+import Header from "@/components/layout/SiteHeader.vue";
 import HeroSection from "@/components/shared/HeroSectionWithSlider.vue";
-import MenuSection from "./components/MenuSection.vue";
-import AboutSection from "./components/AboutSection.vue";
+import MenuSection from "./components/RestaurantMenuSection.vue";
+import AboutRestaurantSection from "./components/AboutRestaurantSection.vue";
 import BranchSection from "./components/BranchSection.vue";
-import Footer from "@/components/layout/Footer.vue";
-import HamburgerMenu from "@/components/shared/HamburgerMenu.vue"
+import Footer from "@/components/layout/SiteFooter.vue";
+import MobileMenu from "@/components/shared/MobileMenu.vue"
+import LoginForm from '@/components/shared/OtpLogin.vue'
+import FoodDetailsModal from "@/components/shared/FoodDetailsModal.vue";
 import Overlay from "@/components/shared/Overlay.vue"
 </script>
 
 <template>
   <!-- Home Page -->
+  <!----------------------->
+  <!-- Home | Header -->
   <Header />
 
   <!-- Home | Main -->
@@ -19,18 +24,23 @@ import Overlay from "@/components/shared/Overlay.vue"
     <HeroSection />
     <!-- Home | Menu Section -->
     <MenuSection />
-    <!-- Home | About Section -->
-    <AboutSection />
+    <!-- Home | About Restaurant Section -->
+    <AboutRestaurantSection />
     <!-- Home | Branch Section -->
     <BranchSection />
   </main>
+  
+  <!-- Home | Footer -->
+  <Footer />
 
   <!----------------------->
 
-  <!-- Footer -->
-  <Footer />
   <!-- Hamburger Menu -->
-  <HamburgerMenu />
+  <MobileMenu />
+  <!-- Login Form -->
+  <LoginForm />
+  <!-- Food Details Modal -->
+  <FoodDetailsModal />
   <!-- Overlay -->
   <Overlay />
 </template>

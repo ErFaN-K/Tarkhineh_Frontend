@@ -7,7 +7,7 @@ import BranchCard from "./BranchCard.vue";
     <div class="container">
       <!-- Section Title -->
       <h1 class="section__title text-center text-gray-800">ترخینه گردی</h1>
-      <!-- Branch Box Container -->
+      <!-- Branch Card Container -->
       <div
         class="section__body grid grid-cols-1 gap-y-3 gap-x-6 max-xl:gap-x-4 md:grid-cols-2 lg:grid-cols-4 place-items-center"
       >
