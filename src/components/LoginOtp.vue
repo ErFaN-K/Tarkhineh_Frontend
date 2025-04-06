@@ -1,5 +1,5 @@
 <template>
-    <div class="max-md:flex max-md:flex-col max-md:justify-center shadow-xl fixed inset-0 m-auto bg-white md:rounded-lg md:border md:border-gray-400 md:max-w-98 w-full max-md:h-svh h-max md:p-6 p-5 z-102">
+    <div class="login-otp--hidden max-md:flex max-md:flex-col max-md:justify-center shadow-xl fixed inset-0 m-auto bg-white md:rounded-lg md:border md:border-gray-400 md:max-w-98 w-full max-md:h-svh h-max md:p-6 p-5 z-102">
         <!-- Tarkhineh Logo -->
         <div class="flex items-center justify-center md:mb-4 mb-20">
             <svg class="text-Primary md:h-8 md:w-25.5 w-37 h-17.75">

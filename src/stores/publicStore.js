@@ -3,7 +3,7 @@ import { reactive, ref, TrackOpTypes } from "vue";
 
 export const usePublicStore = defineStore("public", () => {
   const isShowHamburgerMenu = ref(false);
-  const isShowOverlay = ref(true);
+  const isShowOverlay = ref(false);
   const branchData = reactive(null);
 
   // Funcs -------

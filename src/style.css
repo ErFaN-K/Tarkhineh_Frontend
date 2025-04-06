@@ -215,6 +215,14 @@
   .food-info__card--show {
     @apply opacity-100 visible;
   }
+
+  .login-otp--hidden  { 
+    @apply opacity-0 invisible
+  }
+
+  .login-otp--show {
+    @apply opacity-100 visible
+  } 
 }
 
 @theme {
