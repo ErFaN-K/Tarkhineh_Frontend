@@ -21,10 +21,10 @@ defineProps({
 
 <template>
   <div
-    class="flex flex-row w-full delay-100 border border-gray-400 rounded-lg md:flex-col hover:border-Primary transition-all"
+    class="flex flex-row border border-gray-400 rounded-lg md:flex-col hover:border-Primary transition-all overflow-hidden"
   >
     <a :href="branchPageLink">
-      <img :src="branchImage" class="max-md:min-w-36 max-md:max-h-20 max-lg:w-full" />
+      <img :src="branchImage" class="max-md:w-36 max-md:h-20 h-57.5 size-full" />
     </a>
     <div
       class="flex flex-col items-center max-md:justify-between w-full p-2 text-center md:px-2 md:py-4 gap-y-1"
