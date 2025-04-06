@@ -24,12 +24,12 @@ defineProps({
     class="flex flex-row w-full delay-100 border border-gray-400 rounded-lg md:flex-col hover:border-Primary transition-all"
   >
     <a :href="branchPageLink">
-      <img :src="branchImage" class="max-md:min-w-36 max-md:max-h-20" />
+      <img :src="branchImage" class="max-md:min-w-36 max-md:max-h-20 max-lg:w-full" />
     </a>
     <div
       class="flex flex-col items-center max-md:justify-between w-full p-2 text-center md:px-2 md:py-4 gap-y-1"
     >
-      <h3 class="text-sm text-gray-800 md:text-xl font-Morabba-Bold">
+      <h3 class="text-sm text-gray-800 md:text-xl font-Morabba-Bold line-clamp-1">
         {{ branchName }}
       </h3>
       <p
