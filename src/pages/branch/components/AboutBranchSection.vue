@@ -34,16 +34,32 @@ import BranchDetailsBox from "./BranchDetailsBox.vue";
       >
         <!-- Swiper Slide -->
         <SwiperSlide>
-          <img src="../../../assets/images/Branch-Image-2.png" alt="Branch Image" class="size-full object-cover">
+          <img
+            src="../../../assets/images/Branch-Image-2.png"
+            alt="Branch Image"
+            class="size-full object-cover"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="../../../assets/images/Branch-Image-2.png" alt="Branch Image" class="size-full object-cover">
+          <img
+            src="../../../assets/images/Branch-Image-2.png"
+            alt="Branch Image"
+            class="size-full object-cover"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="../../../assets/images/Branch-Image-2.png" alt="Branch Image" class="size-full object-cover">
+          <img
+            src="../../../assets/images/Branch-Image-2.png"
+            alt="Branch Image"
+            class="size-full object-cover"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="../../../assets/images/Branch-Image-2.png" alt="Branch Image" class="size-full object-cover">
+          <img
+            src="../../../assets/images/Branch-Image-2.png"
+            alt="Branch Image"
+            class="size-full object-cover"
+          />
         </SwiperSlide>
         <!-- Slider Pagination -->
         <div

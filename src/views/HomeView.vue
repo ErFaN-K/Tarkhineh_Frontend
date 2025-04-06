@@ -1,7 +1,7 @@
 <script setup>
-import HomePage from '@/pages/home/HomePage.vue'
+import HomePage from "@/pages/home/HomePage.vue";
 </script>
-    
+
 <template>
-    <HomePage />
+  <HomePage />
 </template>

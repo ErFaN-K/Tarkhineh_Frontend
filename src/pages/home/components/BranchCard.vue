@@ -21,15 +21,20 @@ defineProps({
 
 <template>
   <div
-    class="flex flex-row border border-gray-400 rounded-lg md:flex-col hover:border-Primary transition-all overflow-hidden"
+    class="flex flex-row border border-gray-400 rounded-lg md:flex-col hover:border-Primary hover:shadow-xl transition-all overflow-hidden"
   >
     <a :href="branchPageLink">
-      <img :src="branchImage" class="max-md:w-36 max-md:h-20 h-57.5 size-full" />
+      <img
+        :src="branchImage"
+        class="max-md:w-36 max-md:h-20 h-57.5 size-full"
+      />
     </a>
     <div
       class="flex flex-col items-center max-md:justify-between w-full p-2 text-center md:px-2 md:py-4 gap-y-1"
     >
-      <h3 class="text-sm text-gray-800 md:text-xl font-Morabba-Bold line-clamp-1">
+      <h3
+        class="text-sm text-gray-800 md:text-xl font-Morabba-Bold line-clamp-1"
+      >
         {{ branchName }}
       </h3>
       <p

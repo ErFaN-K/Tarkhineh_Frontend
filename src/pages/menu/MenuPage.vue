@@ -5,10 +5,10 @@ import RestaurantMenuSection from "./components/RestaurantMenuSection.vue";
 import FoodFilterSection from "./components/FoodFilterSection.vue";
 import RestaurantMenuPreviewSection from "./components/RestaurantMenuPreviewSection.vue";
 import Footer from "@/components/layout/SiteFooter.vue";
-import MobileMenu from "@/components/shared/MobileMenu.vue"
+import MobileMenu from "@/components/shared/MobileMenu.vue";
 import LoginForm from "@/components/shared/OtpLogin.vue";
 import FoodDetailsModal from "@/components/shared/FoodDetailsModal.vue";
-import Overlay from "@/components/shared/Overlay.vue"
+import Overlay from "@/components/shared/Overlay.vue";
 </script>
 
 <template>
@@ -30,12 +30,12 @@ import Overlay from "@/components/shared/Overlay.vue"
     <!-- Menu | Restaurant Menu Preview Section -->
     <RestaurantMenuPreviewSection sectionTitle="غذاهای غیر ایرانی" />
   </main>
-  
+
   <!-- Footer -->
   <Footer />
 
   <!----------------------->
-  
+
   <!-- Hamburger Menu -->
   <MobileMenu />
   <!-- Login Form -->

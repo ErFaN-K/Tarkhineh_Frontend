@@ -42,9 +42,18 @@ import RestaurantAttributeBox from "./RestaurantAttributeBox.vue";
           <div
             class="grid grid-cols-2 gap-x-12 gap-y-4 md:gap-x-6 md:gap-y-2 max-xl:place-items-center max-xl:w-full"
           >
-            <RestaurantAttributeBox iconName="user" content="پرسنلی مجرب و حرفه‌ای" />
-            <RestaurantAttributeBox iconName="chart" content="کیفیت بالای غذاها" />
-            <RestaurantAttributeBox iconName="home" content="محیطی دلنشین و آرام" />
+            <RestaurantAttributeBox
+              iconName="user"
+              content="پرسنلی مجرب و حرفه‌ای"
+            />
+            <RestaurantAttributeBox
+              iconName="chart"
+              content="کیفیت بالای غذاها"
+            />
+            <RestaurantAttributeBox
+              iconName="home"
+              content="محیطی دلنشین و آرام"
+            />
             <RestaurantAttributeBox iconName="calender" content="منوی متنوع" />
           </div>
         </div>
