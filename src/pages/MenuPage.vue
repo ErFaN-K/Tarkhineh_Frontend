@@ -5,6 +5,7 @@ import MenuCategorySection from "../components/PagesComponent/MenuPage/MenuCateg
 import FoodFilterSection from "../components/PagesComponent/MenuPage/FoodFilterSection.vue";
 import FoodCategorySection from "../components/PagesComponent/MenuPage/FoodCategorySection.vue";
 import Footer from "../components/Footer.vue";
+import Login from "../components/LoginOtp.vue";
 import HamburgerMenu from "../components/HamburgerMenu.vue";
 import Overlay from "../components/Overlay.vue";
 import FoodInfoCard from "../components/FoodInfoCard.vue";
@@ -32,6 +33,8 @@ import FoodInfoCard from "../components/FoodInfoCard.vue";
 
   <!-- Footer -->
   <Footer />
+  <!-- Login -->
+  <Login />
   <!-- Hamburger Menu -->
   <HamburgerMenu />
   <!-- Food Information Card -->
