@@ -1,1 +1,1 @@
-<img src="https://i.pinimg.com/originals/d4/00/dc/d400dccb59f213080d4717aef2d339d1.gif" align="center">
+<img src="https://entekhabehshoma.com/wp-content/uploads/2023/12/attach2019063522661300422805.gif" align="center">
