@@ -1,5 +1,5 @@
 <script setup>
-import BranchBox from "./BranchCard.vue";
+import BranchCard from "./BranchCard.vue";
 </script>
 
 <template>
@@ -11,25 +11,25 @@ import BranchBox from "./BranchCard.vue";
       <div
         class="section__body grid grid-cols-1 gap-y-3 gap-x-6 max-xl:gap-x-4 md:grid-cols-2 lg:grid-cols-4 place-items-center"
       >
-        <BranchBox
+        <BranchCard
           branchImage="src/assets/images/branch/Branch-Image.png"
           branchName="شعبه تستی برای نمایش"
           branchAddress="آدرس تستی جهت نمایش برای هر شعبه آدرس تستی جهت نمایش برای هر شعبه"
           branchPageLink="#"
         />
-        <BranchBox
+        <BranchCard
           branchImage="src/assets/images/branch/Branch-Image.png"
           branchName="شعبه تستی برای نمایش"
           branchAddress="آدرس تستی جهت نمایش برای هر شعبه آدرس تستی جهت نمایش برای هر شعبه"
           branchPageLink="#"
         />
-        <BranchBox
+        <BranchCard
           branchImage="src/assets/images/branch/Branch-Image.png"
           branchName="شعبه تستی برای نمایش"
           branchAddress="آدرس تستی جهت نمایش برای هر شعبه آدرس تستی جهت نمایش برای هر شعبه"
           branchPageLink="#"
         />
-        <BranchBox
+        <BranchCard
           branchImage="src/assets/images/branch/Branch-Image.png"
           branchName="شعبه تستی برای نمایش"
           branchAddress="آدرس تستی جهت نمایش برای هر شعبه آدرس تستی جهت نمایش برای هر شعبه"

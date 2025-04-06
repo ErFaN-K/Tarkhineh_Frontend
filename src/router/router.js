@@ -1,31 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
+import routes from "@/constants/routes";
 
-const baseTitle = "ترخینه 🥦";
-
-const routes = [
-  {
-    path: "/",
-    name: "HomePage",
-    component: () => import("../pages/HomePage.vue"),
-    meta: { title: `${baseTitle} | صفحه اصلی` },
-  },
-  {
-    path: "/branch/:branchName",
-    name: "BranchPage",
-    component: () => import("../pages/BranchPage.vue"),
-    meta: {
-      title: (route) => `${baseTitle} | صفحه شعبه ${route.params.branchName}`,
-    },
-  },
-  {
-    path: "/menu/:branchName",
-    name: "MenuPage",
-    component: () => import("../pages/MenuPage.vue"),
-    meta: {
-      title: (route) => `${baseTitle} | منو شعبه ${route.params.branchName}`,
-    },
-  },
-];
+const baseTitle = "";
 
 const router = createRouter({
   history: createWebHistory(),

@@ -1,14 +1,14 @@
 <script setup>
-import Header from "../components/Header.vue";
-import HeroSection from "../components/HeroSectionWithSlider.vue";
-import MenuCategorySection from "../components/PagesComponent/MenuPage/MenuCategorySection.vue";
-import FoodFilterSection from "../components/PagesComponent/MenuPage/FoodFilterSection.vue";
-import FoodCategorySection from "../components/PagesComponent/MenuPage/FoodCategorySection.vue";
-import Footer from "../components/Footer.vue";
-import Login from "../components/LoginOtp.vue";
-import HamburgerMenu from "../components/HamburgerMenu.vue";
-import Overlay from "../components/Overlay.vue";
-import FoodInfoCard from "../components/FoodInfoCard.vue";
+import Header from "@/components/layout/Header.vue";
+import HeroSection from "@/components/shared/HeroSectionWithSlider.vue";
+import MenuCategorySection from "./components/MenuCategorySection.vue";
+import FoodFilterSection from "./components/FoodFilterSection.vue";
+import FoodCategorySection from "./components/FoodCategorySection.vue";
+import Footer from "@/components/layout/Footer.vue";
+import Login from "@/components/shared/LoginOtp.vue";
+import HamburgerMenu from "@/components/shared/HamburgerMenu.vue"
+import FoodInfoCard from "@/components/shared/FoodInfoCard.vue";
+import Overlay from "@/components/shared/Overlay.vue"
 </script>
 
 <template>

@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from "vue";
-import { usePublicStore } from "../stores/publicStore";
+import { usePublicStore } from "@/stores/publicStore.js";
 
 const publicStore = usePublicStore();
 const activeSection = ref(null);

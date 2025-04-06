@@ -1,5 +1,5 @@
 <script setup>
-import SearchBox from "../../SearchBox.vue";
+import SearchBox from "../../../components/shared/SearchBox.vue";
 import FoodFilterBox from "./FoodFilterBox.vue";
 </script>
 

@@ -1,0 +1,24 @@
+export default [
+    {
+      path: "/",
+      name: "HomePage",
+      component: () => import("../views/HomeView.vue"),
+      meta: { title: `ترخینه 🥦 | صفحه اصلی` },
+    },
+    {
+      path: "/branch/:branchName",
+      name: "BranchPage",
+      component: () => import("../views/BranchView.vue"),
+      meta: {
+        title: (route) => `ترخینه 🥦 | صفحه شعبه ${route.params.branchName}`,
+      },
+    },
+    {
+      path: "/menu/:branchName",
+      name: "MenuPage",
+      component: () => import("../views/MenuView.vue"),
+      meta: {
+        title: (route) => `ترخینه 🥦 | منو شعبه ${route.params.branchName}`,
+      },
+    },
+];

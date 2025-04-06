@@ -1,6 +1,6 @@
 <script setup>
-import SearchBox from "../../SearchBox.vue";
-import MenuBox from "./MenuCard.vue";
+import SearchBox from "@/components/shared/SearchBox.vue";
+import MenuCard from "./MenuCard.vue";
 </script>
 
 <template>
@@ -18,22 +18,22 @@ import MenuBox from "./MenuCard.vue";
       <div
         class="grid grid-cols-2 mt-18 md:mt-38 gap-y-26.5 md:gap-y-40 gap-x-4 lg:grid-cols-4"
       >
-        <MenuBox
+        <MenuCard
           link="#"
           linkTitle="غذای اصلی"
           imageSrc="src/assets/images/menu/Menu-Main-Food.png"
         />
-        <MenuBox
+        <MenuCard
           link="#"
           linkTitle="پیش غذا"
           imageSrc="src/assets/images/menu/Menu-Appetizer.png"
         />
-        <MenuBox
+        <MenuCard
           link="#"
           linkTitle="دسر"
           imageSrc="src/assets/images/menu/Menu-Dessert.png"
         />
-        <MenuBox
+        <MenuCard
           link="#"
           linkTitle="نوشیدنی"
           imageSrc="src/assets/images/menu/Menu-Drink.png"
