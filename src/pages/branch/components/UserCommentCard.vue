@@ -36,7 +36,7 @@
     </p>
     <!-- User Rate -->
     <div
-      class="absolute bottom-2 left-4 md:bottom-4 md:left-8 flex items-center gap-x-1 text-gray-700 font-Dana text-base"
+      class="absolute bottom-2 left-4 md:bottom-4 md:left-8 flex items-center gap-x-1 text-gray-700 font-Dana text-xs md:text-base"
     >
       <svg class="size-3 md:size-4 text-Warning-Light">
         <use href="#star"></use>
