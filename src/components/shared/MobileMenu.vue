@@ -29,8 +29,8 @@ const toggleSection = (sectionName) => {
         </svg>
       </span>
       <!-- Close Icon -->
-      <span @click="publicStore.closeHamburgerMenu()">
-        <svg class="size-6 absolute top-4 left-4">
+      <span class="absolute top-4 left-4" @click="publicStore.closeHamburgerMenu()">
+        <svg class="size-6">
           <use href="#x-mark"></use>
         </svg>
       </span>

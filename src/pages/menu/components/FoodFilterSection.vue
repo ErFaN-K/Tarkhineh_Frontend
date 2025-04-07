@@ -1,5 +1,5 @@
 <script setup>
-import SearchBox from "@/components/shared/SearchBox.vue";
+import SearchInput from "@/components/shared/SearchInput.vue";
 import SortFoodBox from "./SortFoodBox.vue";
 </script>
 
@@ -22,7 +22,7 @@ import SortFoodBox from "./SortFoodBox.vue";
         <div
           class="col-span-4 md:col-span-5 h-8 md:h-10 px-4 flex items-center justify-between border border-gray-400 md:rounded-lg rounded-sm"
         >
-          <SearchBox />
+          <SearchInput />
         </div>
       </div>
     </div>

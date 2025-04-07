@@ -127,16 +127,16 @@
       <a href="#" class="text-Primary">قوانین و مقررات</a> است.</span
     >
     <!-- Arrows -->
-    <span class="cursor-pointer">
+    <span class="cursor-pointer absolute md:top-6 md:left-6 top-5 left-5">
       <svg
-        class="text-gray-700 absolute md:top-6 md:left-6 top-5 left-5 size-6"
+        class="text-gray-700 size-6"
       >
         <use href="#x-mark"></use>
       </svg>
     </span>
-    <span class="cursor-pointer" v-if="true">
+    <span class="cursor-pointer absolute md:top-6 md:right-6 top-5 right-5" v-if="true">
       <svg
-        class="text-gray-700 absolute md:top-6 md:right-6 top-5 right-5 size-6 rotate-180"
+        class="text-gray-700 size-6 rotate-180"
       >
         <use href="#chevron-left-mini"></use>
       </svg>

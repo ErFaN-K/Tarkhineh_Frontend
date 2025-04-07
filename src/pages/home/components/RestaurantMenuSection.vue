@@ -1,5 +1,5 @@
 <script setup>
-import SearchBox from "@/components/shared/SearchBox.vue";
+import SearchInput from "@/components/shared/SearchInput.vue";
 import RestaurantMenuCard from "./RestaurantMenuCard.vue";
 </script>
 
@@ -10,7 +10,7 @@ import RestaurantMenuCard from "./RestaurantMenuCard.vue";
       <div
         class="items-center justify-between hidden h-8 px-4 mb-6 text-gray-800 border border-gray-400 rounded-sm max-lg:flex"
       >
-        <SearchBox />
+        <SearchInput />
       </div>
       <!-- Section Title -->
       <h2 class="section__title text-center text-gray-800">منوی رستوران</h2>
