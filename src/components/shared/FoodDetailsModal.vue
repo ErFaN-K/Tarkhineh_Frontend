@@ -20,8 +20,9 @@ const setThumbsSwiper = (swiper) => {
 </script>
 
 <template>
-  <div
-    class="is-hidden transition-all shadow-xl fixed inset-0 m-auto md:max-w-202 max-w-80 h-max w-full bg-white text-gray-800 rounded-lg z-101"
+  <div class="is-hidden transition-all fixed inset-0 m-auto z-101 px-5 flex items-center justify-center">
+    <div
+    class="shadow-xl md:max-w-202 max-w-80 h-max w-full bg-white text-gray-800 rounded-lg"
   >
     <!-- Card Header -->
     <div class="h-11.25 md:h-22 flex items-center justify-center relative">
@@ -246,5 +247,6 @@ const setThumbsSwiper = (swiper) => {
         <span class="shrink-0 font-Dana text-gray-700">(۶۲ نظر)</span>
       </div>
     </div>
+  </div>
   </div>
 </template>
