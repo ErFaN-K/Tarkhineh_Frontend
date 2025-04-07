@@ -281,7 +281,7 @@
 
   /* Others */
   --bg-gradient: linear-gradient(
-    to right,
+    to left,
     rgba(0, 0, 0, 0.568) 50%,
     transparent 100%
   );
