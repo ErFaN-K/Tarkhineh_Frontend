@@ -32,7 +32,7 @@ import Overlay from "@/components/shared/Overlay.vue";
     <RestaurantMenuPreviewSection sectionTitle="غذاهای غیر ایرانی" />
   </main>
 
-  <!-- Footer -->
+  <!-- Menu | Footer -->
   <Footer />
 
   <!----------------------->

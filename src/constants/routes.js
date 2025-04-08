@@ -21,4 +21,12 @@ export default [
       title: (route) => `ترخینه 🥦 | منو شعبه ${route.params.branchName}`,
     },
   },
+  {
+    path: "/search",
+    name: "SearchPage",
+    component: () => import("../views/SearchView.vue"),
+    meta: {
+      title: (route) => `ترخینه 🥦 | جست و جو برای  ${route.query.q}`,
+    }
+  }
 ];
