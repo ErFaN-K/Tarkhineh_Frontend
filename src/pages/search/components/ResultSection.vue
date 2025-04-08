@@ -1,13 +1,14 @@
 <script setup>
 import SearchInput from '@/components/shared/SearchInput.vue'
 import FoodCard from '@/components/shared/VerticalFoodCard.vue'
+import NotFound from '@/components/shared/404Error.vue'
 </script>
 
 <template>
     <section class="result-section md:mt-12 mt-8 md:mb-18 mb-10">
         <div class="container">
             <!-- if Food is Found -->
-            <div v-if="true" class="flex flex-col md:gap-y-12 gap-y-5 text-gray-800">
+            <div v-if="false" class="flex flex-col md:gap-y-12 gap-y-5 text-gray-800">
                 <!-- Title & Search Input -->
                 <div class="flex flex-col items-center md:gap-y-6 gap-y-4">
                     <!-- Title -->
@@ -44,13 +45,7 @@ import FoodCard from '@/components/shared/VerticalFoodCard.vue'
                         <SearchInput /> 
                     </div>
                 </div>  
-                <!-- 404 Not Found -->
-                <div class="flex flex-col md:gap-y-4 gap-y-2">
-                    <svg class="md:h-100 h-50">
-                        <use href="#not-found"></use>
-                    </svg>
-                    <span class="text-Primary md:text-3xl text-2xl font-Dana-SemiBold text-center">404 | چیزی که دنبالش بودی، اینجا نیست.</span>
-                </div>
+                <NotFound />
             </div>
         </div>
     </section>

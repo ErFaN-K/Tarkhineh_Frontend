@@ -1,5 +1,5 @@
 <script setup>
-import { usePublicStore } from "@/stores/publicStore.js";
+import { usePublicStore } from "@/store/publicStore.js";
 const publicStore = usePublicStore();
 </script>
 

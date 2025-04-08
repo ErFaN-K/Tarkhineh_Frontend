@@ -28,5 +28,13 @@ export default [
     meta: {
       title: (route) => `ترخینه 🥦 | جست و جو برای  ${route.query.q}`,
     }
+  },
+  {
+    path: '/:pathMatch(.*)*', 
+    name: 'NotFound',
+    component: () => import("../views/NotFoundView.vue"),
+    meta: {
+      title: "ترخینه 🥦 | صفحه مورد نظر یافت نشد",
+    }
   }
 ];
