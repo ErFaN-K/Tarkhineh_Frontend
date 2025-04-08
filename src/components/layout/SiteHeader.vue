@@ -1,5 +1,6 @@
 <script setup>
 import { usePublicStore } from "@/stores/publicStore.js";
+import NavigationMenu from "./NavigationMenu.vue";
 const publicStore = usePublicStore();
 </script>
 
@@ -31,13 +32,13 @@ const publicStore = usePublicStore();
               <li class="relative cursor-pointer group gap-x-1">
                 <span>شعبه</span>
                 <svg
-                  class="size-4 transition-all delay-100 group-hover:rotate-180"
+                  class="size-4 delay-100 group-hover:rotate-180"
                 >
                   <use href="#chevron-down-mini"></use>
                 </svg>
                 <!-- Drop Down -->
                 <div
-                  class="group-hover:visible invisible top-[calc(100%+10px)] left-0 z-10 absolute *:flex *:items-center bg-white opacity-0 group-hover:opacity-100 shadow-drop-down px-2 rounded-sm divide-y divide-gray-300 w-36 *:w-full *:h-10 *:text-gray-800 *:text-custom lg:*:text-sm transition-all delay-100"
+                  class="group-hover:visible invisible top-[calc(100%+10px)] left-0 z-10 absolute *:flex *:items-center bg-white opacity-0 group-hover:opacity-100 shadow-drop-down px-2 rounded-sm divide-y divide-gray-300 w-36 *:w-full *:h-10 *:text-gray-800 *:text-custom lg:*:text-sm delay-100"
                 >
                   <a href="#">اکباتان</a>
                   <a href="#">چالوس</a>
@@ -47,12 +48,12 @@ const publicStore = usePublicStore();
               </li>
               <li class="relative cursor-pointer delay-100 group gap-x-1">
                 <span>منو</span>
-                <svg class="size-4 transition-all group-hover:rotate-180">
+                <svg class="size-4 group-hover:rotate-180">
                   <use href="#chevron-down-mini"></use>
                 </svg>
                 <!-- Drop Down -->
                 <div
-                  class="group-hover:visible invisible top-[calc(100%+10px)] right-0 z-10 absolute *:flex *:items-center bg-white opacity-0 group-hover:opacity-100 shadow-drop-down px-2 rounded-sm divide-y divide-gray-300 w-36 *:w-full *:h-10 *:text-gray-800 *:text-custom lg:*:text-sm transition-all delay-100"
+                  class="group-hover:visible invisible top-[calc(100%+10px)] right-0 z-10 absolute *:flex *:items-center bg-white opacity-0 group-hover:opacity-100 shadow-drop-down px-2 rounded-sm divide-y divide-gray-300 w-36 *:w-full *:h-10 *:text-gray-800 *:text-custom lg:*:text-sm delay-100"
                 >
                   <a href="#">غذای اصلی</a>
                   <a href="#">پیش غذا</a>
@@ -73,7 +74,7 @@ const publicStore = usePublicStore();
           </nav>
           <!-- Buttons -->
           <div class="flex items-center gap-x-1 md:gap-x-2">
-            <!-- Profile -->
+            <!-- Search -->
             <button
               class="flex items-center justify-center rounded-sm cursor-pointer max-lg:hidden bg-Tint-1 size-10 text-Primary"
             >
@@ -81,13 +82,15 @@ const publicStore = usePublicStore();
                 <use href="#magnifying-glass"></use>
               </svg>
             </button>
-            <button
-              class="flex items-center justify-center rounded-sm cursor-pointer lg:order-last bg-Tint-1 size-6 md:size-8 lg:size-10 text-Primary"
-            >
+            <!-- Profile -->
+            <button v-if="false" class="flex items-center justify-center rounded-sm cursor-pointer lg:order-last bg-Tint-1 size-6 md:size-8 lg:size-10 text-Primary">
               <svg class="size-4 md:size-5 lg:size-6">
                 <use href="#user"></use>
               </svg>
             </button>
+            <!-- LOGIN -->
+            <NavigationMenu v-else/>
+            <!-- Cart -->
             <button
               class="flex items-center justify-center rounded-sm cursor-pointer max-lg:order-first bg-Tint-1 size-6 md:size-8 lg:size-10 text-Primary"
             >

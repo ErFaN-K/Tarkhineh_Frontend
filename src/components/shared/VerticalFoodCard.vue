@@ -70,7 +70,7 @@
       </div>
       <!-- Button -->
       <button
-        class="w-full flex items-center justify-center md:h-10 h-8 bg-Primary font-Dana text-custom md:text-base text-white rounded-sm hover:bg-Primary/90 transition-all cursor-pointer"
+        class="w-full flex items-center justify-center md:h-10 h-8 bg-Primary font-Dana text-custom md:text-base text-white rounded-sm hover:bg-Primary/90 cursor-pointer"
       >
         افزودن به سبد خرید
       </button>

@@ -4,7 +4,7 @@ import SearchInput from '@/components/shared/SearchInput.vue'
 </script>
 
 <template>
-    <div class="is-hidden transition-all fixed inset-0 m-auto z-103 px-5 flex items-center justify-center">
+    <div class="is-hidden fixed inset-0 m-auto z-103 px-5 flex items-center justify-center">
         <div class="h-max max-w-150 w-full bg-white rounded-lg overflow-hidden shadow-xl text-gray-800">
         <!-- Card Header -->
         <div class="relative flex items-center justify-center py-6 bg-gray-300">

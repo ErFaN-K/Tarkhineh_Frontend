@@ -21,7 +21,7 @@ defineProps({
 
 <template>
   <!-- Branch Card ( This Component Is Only For Branch Section ) -->
-  <div class="flex md:flex-col items-center transition-all border border-gray-400 hover:border-Primary rounded-lg md:rounded-sm overflow-hidden">
+  <div class="flex md:flex-col items-center border border-gray-400 hover:border-Primary rounded-lg md:rounded-sm overflow-hidden">
     <!-- Branch Card Image -->
     <a :href="branchPageLink" class="shrink-0 max-md:w-36 h-20 w-full md:h-57.5">
       <img src="/src/assets/images/branch/Branch-Image.png" alt="Branch Image" class="size-full object-cover">

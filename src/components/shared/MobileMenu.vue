@@ -3,32 +3,28 @@ import { ref } from "vue";
 import { usePublicStore } from "@/stores/publicStore.js";
 
 const publicStore = usePublicStore();
-const activeSection = ref(null);
-const toggleSection = (sectionName) => {
-  activeSection.value =
-    activeSection.value === sectionName ? null : sectionName;
+
+const activeDropDown = ref(null);
+const toggleSection = (dropDownName) => {
+  activeDropDown.value = activeDropDown.value === dropDownName ? null : dropDownName;
 };
 </script>
 
 <template>
   <div
-    class="mobile-menu fixed top-0 bottom-0 z-101 h-svh bg-white max-w-64 w-full transition-all"
+    class="mobile-menu fixed top-0 bottom-0 z-101 h-svh bg-white max-w-64 w-full"
     :class="{
       'is-open': publicStore.isShowHamburgerMenu,
       'is-closed': !publicStore.isShowHamburgerMenu,
     }"
   >
     <!-- Top Frame -->
-    <div
-      class="background-config mobile-menu__top-frame--img px-4 py-8 mb-2 relative text-white"
-    >
-      <!-- Logo Type -->
+    <div class="background-config mobile-menu__top-frame--img px-4 py-8 mb-2 relative text-white">
       <span>
         <svg class="w-16.75 h-7.5">
           <use href="#logo-type"></use>
         </svg>
       </span>
-      <!-- Close Icon -->
       <span class="absolute top-4 left-4" @click="publicStore.closeHamburgerMenu()">
         <svg class="size-6">
           <use href="#x-mark"></use>
@@ -45,6 +41,9 @@ const toggleSection = (sectionName) => {
       </div>
       <div class="flex flex-col gap-y-2">
         <div
+          :class="{
+            'mobile-menu__link--active': activeDropDown === 'menu',
+          }"
           class="flex items-center justify-between"
           @click="toggleSection('menu')"
         >
@@ -62,7 +61,7 @@ const toggleSection = (sectionName) => {
         </div>
         <!-- DropDown -->
         <div
-          v-show="activeSection === 'menu'"
+          v-show="activeDropDown === 'menu'"
           class="pr-4 w-full *:text-gray-800 *:text-custom *:font-Dana *:block space-y-2"
         >
           <a href="#">منوی تستی</a>
@@ -73,6 +72,9 @@ const toggleSection = (sectionName) => {
       </div>
       <div class="flex flex-col gap-y-2">
         <div
+          :class="{
+            'mobile-menu__link--active': activeDropDown === 'branch',
+          }"
           class="flex items-center justify-between"
           @click="toggleSection('branch')"
         >
@@ -90,7 +92,7 @@ const toggleSection = (sectionName) => {
         </div>
         <!-- DropDown -->
         <div
-          v-show="activeSection === 'branch'"
+          v-show="activeDropDown === 'branch'"
           class="pr-4 w-full *:text-gray-800 *:text-custom *:font-Dana *:block space-y-2"
         >
           <a href="#">شعبه اکباتان</a>

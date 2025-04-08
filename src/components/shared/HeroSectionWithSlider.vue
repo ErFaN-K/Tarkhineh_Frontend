@@ -47,7 +47,7 @@ import HeroBannerSlider from "./HeroBannerSlider.vue";
 
       <!-- Slider Pagination -->
       <div
-        class="pagination-button--swiper !bottom-1.25 !translate-x-1/2 !left-1/2 !right-1/2 md:bottom-2.5 absolute flex items-center justify-center z-50 gap-x-1 *:!bg-gray-500 *:!rounded-full md:*:!size-2 *:!size-1 *:!transition-all *:!m-0"
+        class="pagination-button--swiper !bottom-1.25 !translate-x-1/2 !left-1/2 !right-1/2 md:!bottom-2.5 absolute flex items-center justify-center z-50 gap-x-1 *:bg-gray-500 *:!rounded-full md:*:!size-2 *:!size-1 *:!transition-none *:!m-0"
       ></div>
 
       <!-- Rect Angle Desktop -->

@@ -1,5 +1,5 @@
 <template>
-  <div class="is-hidden transition-all fixed inset-0 m-auto z-102 px-5 flex items-center justify-center">
+  <div class="is-hidden fixed inset-0 m-auto z-102 px-5 flex items-center justify-center">
     <div
     class="max-md:flex max-md:flex-col max-md:justify-center shadow-xl bg-white md:rounded-lg md:border md:border-gray-400 md:max-w-98 w-full max-md:h-svh h-max md:p-6 p-5"
   >
@@ -33,13 +33,13 @@
         <!-- Label -->
         <label
           for="phoneNumber"
-          class="peer-focus:text-Primary peer-focus:-top-2 peer-placeholder-shown:top-3 peer-placeholder-shown:right-4 absolute -top-2 right-4 px-1 bg-white text-gray-800 font-Dana text-xs transition-all"
+          class="peer-focus:text-Primary peer-focus:-top-2 peer-placeholder-shown:top-3 peer-placeholder-shown:right-4 absolute -top-2 right-4 px-1 bg-white text-gray-800 font-Dana text-xs"
           >شماره همراه</label
         >
       </div>
       <!-- Error Alert -->
       <div
-        class="opacity-0 invisible transition-all flex items-center gap-x-1 my-1 text-Error"
+        class="opacity-0 invisible flex items-center gap-x-1 my-1 text-Error"
       >
         <!-- Error Icon -->
         <svg class="size-4">
@@ -50,7 +50,7 @@
       </div>
       <!-- Submit Button -->
       <button
-        class="w-full h-10 transition-all hover:bg-Primary/90 rounded-sm flex items-center justify-center disabled:bg-gray-300 disabled:text-gray-400 bg-Primary text-white font-Dana text-base"
+        class="w-full h-10 hover:bg-Primary/90 rounded-sm flex items-center justify-center disabled:bg-gray-300 disabled:text-gray-400 bg-Primary text-white font-Dana text-base"
       >
         ادامه
       </button>
@@ -71,27 +71,27 @@
           <input
             type="text"
             maxlength="1"
-            class="size-full border border-gray-700 outline-none focus:border-Primary transition-all rounded-sm text-center text-gray-800 font-Dana text-xs"
+            class="size-full border border-gray-700 outline-none focus:border-Primary rounded-sm text-center text-gray-800 font-Dana text-xs"
           />
           <input
             type="text"
             maxlength="1"
-            class="size-full border border-gray-700 outline-none focus:border-Primary transition-all rounded-sm text-center text-gray-800 font-Dana text-xs"
+            class="size-full border border-gray-700 outline-none focus:border-Primary rounded-sm text-center text-gray-800 font-Dana text-xs"
           />
           <input
             type="text"
             maxlength="1"
-            class="size-full border border-gray-700 outline-none focus:border-Primary transition-all rounded-sm text-center text-gray-800 font-Dana text-xs"
+            class="size-full border border-gray-700 outline-none focus:border-Primary rounded-sm text-center text-gray-800 font-Dana text-xs"
           />
           <input
             type="text"
             maxlength="1"
-            class="size-full border border-gray-700 outline-none focus:border-Primary transition-all rounded-sm text-center text-gray-800 font-Dana text-xs"
+            class="size-full border border-gray-700 outline-none focus:border-Primary rounded-sm text-center text-gray-800 font-Dana text-xs"
           />
           <input
             type="text"
             maxlength="1"
-            class="size-full border border-gray-700 outline-none focus:border-Primary transition-all rounded-sm text-center text-gray-800 font-Dana text-xs"
+            class="size-full border border-gray-700 outline-none focus:border-Primary rounded-sm text-center text-gray-800 font-Dana text-xs"
           />
         </div>
         <!-- Code Resend & Edit Phone Number -->
@@ -115,7 +115,7 @@
         </div>
       </div>
       <button
-        class="w-full h-10 transition-all hover:bg-Primary/90 rounded-sm flex items-center justify-center disabled:bg-gray-300 disabled:text-gray-400 bg-Primary text-white font-Dana text-base"
+        class="w-full h-10 hover:bg-Primary/90 rounded-sm flex items-center justify-center disabled:bg-gray-300 disabled:text-gray-400 bg-Primary text-white font-Dana text-base"
       >
         ادامه
       </button>

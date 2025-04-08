@@ -199,11 +199,19 @@
       height: 2px;
     }
   }
+
+  .mobile-menu__link--active {
+    @apply text-Primary
+  }
+
+  .mobile-menu__link--active span svg { 
+    @apply rotate-180
+  }
 }
 
 @layer utilities {
   .swiper-pagination-bullet-active {
-    @apply md:!size-3 !size-2 !bg-Primary !m-0 !scale-110 !border !border-white;
+    @apply md:!scale-150 !scale-200 !bg-Primary !m-0;
   }
 }
 

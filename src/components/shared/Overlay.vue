@@ -5,7 +5,7 @@ const publicStore = usePublicStore();
 
 <template>
   <div
-    class="fixed inset-0 z-100 size-full backdrop-blur-sm transition-all"
+    class="fixed inset-0 z-100 size-full backdrop-blur-sm"
     :class="{
       'is-show': publicStore.isShowOverlay,
       'is-hidden': !publicStore.isShowOverlay,

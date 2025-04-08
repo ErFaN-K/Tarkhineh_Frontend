@@ -1,7 +1,7 @@
 <template>
   <!-- Food Card -->
   <div
-    class="rounded-sm md:rounded-lg border border-gray-400 transition-all group hover:shadow-xl flex overflow-hidden text-gray-800 bg-white"
+    class="rounded-sm md:rounded-lg border border-gray-400 group hover:shadow-xl flex overflow-hidden text-gray-800 bg-white"
   >
     <!-- Food Image -->
     <div class="w-23 md:w-42.25 shrink-0">
@@ -23,7 +23,7 @@
         </h4>
         <!-- Add To Fav Button ( Desktop ) -->
         <span
-          class="max-md:hidden cursor-pointer transition-all opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+          class="max-md:hidden cursor-pointer opacity-0 invisible group-hover:opacity-100 group-hover:visible"
         >
           <svg class="size-6 text-gray-700">
             <use href="#heart"></use>
@@ -99,7 +99,7 @@
         </div>
         <!-- Order Button -->
         <button
-          class="max-w-25 md:max-w-61 w-full md:h-10 h-8 flex items-center justify-center text-white text-custom md:text-base font-Dana bg-Primary rounded-sm hover:bg-Primary/90 transition-all"
+          class="max-w-25 md:max-w-61 w-full md:h-10 h-8 flex items-center justify-center text-white text-custom md:text-base font-Dana bg-Primary rounded-sm hover:bg-Primary/90"
         >
           افزودن به سبد خرید
         </button>
