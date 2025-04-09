@@ -44,17 +44,17 @@ import RestaurantAttributeBox from "./RestaurantAttributeBox.vue";
           >
             <RestaurantAttributeBox
               iconName="user"
-              content="پرسنلی مجرب و حرفه‌ای"
+              attribute="پرسنلی مجرب و حرفه‌ای"
             />
             <RestaurantAttributeBox
               iconName="chart"
-              content="کیفیت بالای غذاها"
+              attribute="کیفیت بالای غذاها"
             />
             <RestaurantAttributeBox
               iconName="home"
-              content="محیطی دلنشین و آرام"
+              attribute="محیطی دلنشین و آرام"
             />
-            <RestaurantAttributeBox iconName="calender" content="منوی متنوع" />
+            <RestaurantAttributeBox iconName="calender" attribute="منوی متنوع" />
           </div>
         </div>
       </div>

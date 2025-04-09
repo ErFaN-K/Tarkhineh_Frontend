@@ -13,7 +13,7 @@ defineProps({
 
 <template>
   <div
-    :class="`background-config hero__background--${bgName} relative flex items-center justify-center bg-green-800 h-44 sm:h-84`"
+    :class="`background-config hero__background--${bgName} relative flex items-center justify-center h-44 sm:h-84`"
   >
     <div class="flex flex-col items-center gap-y-4 md:gap-y-10 pt-5.25 md:pt-7">
       <h1

@@ -6,7 +6,7 @@
     <!-- Food Image -->
     <div class="w-full md:h-64 h-27.25">
       <img
-        src="/src/assets/images/Food-Image.png"
+        src="/src/assets/images/food/Food-Image.png"
         alt="Food image"
         class="size-full object-cover"
       />

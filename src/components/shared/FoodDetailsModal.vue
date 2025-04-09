@@ -50,7 +50,7 @@ const setThumbsSwiper = (swiper) => {
         <SwiperSlide>
           <img
             class="size-full object-cover"
-            src="/src/assets/images/Food-Image-2.png"
+            src="/src/assets/images/food/Food-Image-2.png"
             alt="Food Image"
           />
         </SwiperSlide>
@@ -58,7 +58,7 @@ const setThumbsSwiper = (swiper) => {
         <SwiperSlide>
           <img
             class="size-full object-cover"
-            src="/src/assets/images/Food-Image-2.png"
+            src="/src/assets/images/food/Food-Image-2.png"
             alt="Food Image"
           />
         </SwiperSlide>
@@ -66,7 +66,7 @@ const setThumbsSwiper = (swiper) => {
         <SwiperSlide>
           <img
             class="size-full object-cover"
-            src="/src/assets/images/Food-Image-2.png"
+            src="/src/assets/images/food/Food-Image-2.png"
             alt="Food Image"
           />
         </SwiperSlide>
@@ -74,7 +74,7 @@ const setThumbsSwiper = (swiper) => {
         <SwiperSlide>
           <img
             class="size-full object-cover"
-            src="/src/assets/images/Food-Image-2.png"
+            src="/src/assets/images/food/Food-Image-2.png"
             alt="Food Image"
           />
         </SwiperSlide>
@@ -82,7 +82,7 @@ const setThumbsSwiper = (swiper) => {
         <SwiperSlide>
           <img
             class="size-full object-cover"
-            src="/src/assets/images/Food-Image-2.png"
+            src="/src/assets/images/food/Food-Image-2.png"
             alt="Food Image"
           />
         </SwiperSlide>
@@ -90,7 +90,7 @@ const setThumbsSwiper = (swiper) => {
         <SwiperSlide>
           <img
             class="size-full object-cover"
-            src="/src/assets/images/Food-Image-2.png"
+            src="/src/assets/images/food/Food-Image-2.png"
             alt="Food Image"
           />
         </SwiperSlide>
@@ -98,7 +98,7 @@ const setThumbsSwiper = (swiper) => {
         <SwiperSlide>
           <img
             class="size-full object-cover"
-            src="/src/assets/images/Food-Image-2.png"
+            src="/src/assets/images/food/Food-Image-2.png"
             alt="Food Image"
           />
         </SwiperSlide>
@@ -106,7 +106,7 @@ const setThumbsSwiper = (swiper) => {
         <SwiperSlide>
           <img
             class="size-full object-cover"
-            src="/src/assets/images/Food-Image-2.png"
+            src="/src/assets/images/food/Food-Image-2.png"
             alt="Food Image"
           />
         </SwiperSlide>
@@ -129,7 +129,7 @@ const setThumbsSwiper = (swiper) => {
             class="transition-all border-2 border-white/30 rounded-sm overflow-hidden"
           >
             <img
-              src="/src/assets/images/Food-Image-2.png"
+              src="/src/assets/images/food/Food-Image-2.png"
               class="size-full object-cover"
               alt="Thumbnail Image"
             />
@@ -139,7 +139,7 @@ const setThumbsSwiper = (swiper) => {
             class="transition-all border-2 border-white/30 rounded-sm overflow-hidden"
           >
             <img
-              src="/src/assets/images/Food-Image-2.png"
+              src="/src/assets/images/food/Food-Image-2.png"
               class="size-full object-cover"
               alt="Thumbnail Image"
             />
@@ -149,7 +149,7 @@ const setThumbsSwiper = (swiper) => {
             class="transition-all border-2 border-white/30 rounded-sm overflow-hidden"
           >
             <img
-              src="/src/assets/images/Food-Image-2.png"
+              src="/src/assets/images/food/Food-Image-2.png"
               class="size-full object-cover"
               alt="Thumbnail Image"
             />
@@ -159,7 +159,7 @@ const setThumbsSwiper = (swiper) => {
             class="transition-all border-2 border-white/30 rounded-sm overflow-hidden"
           >
             <img
-              src="/src/assets/images/Food-Image-2.png"
+              src="/src/assets/images/food/Food-Image-2.png"
               class="size-full object-cover"
               alt="Thumbnail Image"
             />
@@ -169,7 +169,7 @@ const setThumbsSwiper = (swiper) => {
             class="transition-all border-2 border-white/30 rounded-sm overflow-hidden"
           >
             <img
-              src="/src/assets/images/Food-Image-2.png"
+              src="/src/assets/images/food/Food-Image-2.png"
               class="size-full object-cover"
               alt="Thumbnail Image"
             />
@@ -179,7 +179,7 @@ const setThumbsSwiper = (swiper) => {
             class="transition-all border-2 border-white/30 rounded-sm overflow-hidden"
           >
             <img
-              src="/src/assets/images/Food-Image-2.png"
+              src="/src/assets/images/food/Food-Image-2.png"
               class="size-full object-cover"
               alt="Thumbnail Image"
             />
@@ -189,7 +189,7 @@ const setThumbsSwiper = (swiper) => {
             class="transition-all border-2 border-white/30 rounded-sm overflow-hidden"
           >
             <img
-              src="/src/assets/images/Food-Image-2.png"
+              src="/src/assets/images/food/Food-Image-2.png"
               class="size-full object-cover"
               alt="Thumbnail Image"
             />
@@ -199,7 +199,7 @@ const setThumbsSwiper = (swiper) => {
             class="transition-all border-2 border-white/30 rounded-sm overflow-hidden"
           >
             <img
-              src="/src/assets/images/Food-Image-2.png"
+              src="/src/assets/images/food/Food-Image-2.png"
               class="size-full object-cover"
               alt="Thumbnail Image"
             />

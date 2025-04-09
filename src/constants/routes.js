@@ -30,8 +30,16 @@ export default [
     }
   },
   {
+    path: "/about-us",
+    name: "AboutUsPage",
+    component: () => import("../views/AboutUsView.vue"),
+    meta: {
+      title: "ترخینه 🥦 | درباره ما",
+    }
+  },
+  {
     path: '/:pathMatch(.*)*', 
-    name: 'NotFound',
+    name: 'NotFoundPage',
     component: () => import("../views/NotFoundView.vue"),
     meta: {
       title: "ترخینه 🥦 | صفحه مورد نظر یافت نشد",

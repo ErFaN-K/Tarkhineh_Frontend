@@ -4,7 +4,7 @@ defineProps({
     type: String,
     required: true,
   },
-  content: {
+  attribute: {
     type: String,
     required: true,
   },
@@ -12,13 +12,13 @@ defineProps({
 </script>
 
 <template>
-  <!-- Restaurant Attribute -->
+  <!-- Restaurant Attribute ( For Home Page ) Different Design -->
   <div
     class="md:w-46 md:h-34 w-34 h-12.5 flex flex-col items-center justify-center md:gap-y-4 gap-y-1 text-white"
   >
     <svg class="size-6 md:size-12">
       <use :href="'#' + iconName"></use>
     </svg>
-    <span class="text-xs font-Dana md:text-lg">{{ content }}</span>
+    <span class="text-xs font-Dana md:text-lg">{{ attribute }}</span>
   </div>
 </template>

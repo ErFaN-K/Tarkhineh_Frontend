@@ -96,42 +96,31 @@
 
   .hero__background--one {
     background-image:
-      var(--bg-gradient), url(./assets/images/Hero-Background-1.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+      var(--bg-gradient), url(./assets/images/hero-section/Hero-Background-1.png);
   }
 
   .hero__background--two {
     background-image:
-      var(--bg-gradient), url(./assets/images/Hero-Background-2.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+      var(--bg-gradient), url(./assets/images/hero-section/Hero-Background-2.png);
   }
 
   .hero__background--three {
     background-image:
-      var(--bg-gradient), url(./assets/images/Hero-Background-3.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+      var(--bg-gradient), url(./assets/images/hero-section/Hero-Background-3.png);
   }
 
   .hero__background--four {
     background-image:
-      var(--bg-gradient), url(./assets/images/Hero-Background-4.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+      var(--bg-gradient), url(./assets/images/hero-section/Hero-Background-4.png);
   }
 
   .about-restaurant__background {
     background-image:
       var(--bg-gradient), url(./assets/images/About-Restaurant-Section.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  }
+
+  .hero__background--about-us {
+    background-image: var(--bg-gradient), url(./assets/images/hero-section/Hero-About-Us.png);
   }
 
   .footer__background {
@@ -143,7 +132,7 @@
   }
 
   .section__title {
-    @apply text-base font-Dana-SemiBold md:text-2xl;
+    @apply text-gray-800 text-base font-Dana-SemiBold md:text-2xl;
   }
 
   .section__body {
