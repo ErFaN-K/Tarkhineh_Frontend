@@ -17,7 +17,7 @@ import FoodCard from "@/components/shared/VerticalFoodCard.vue";
       <div class="container">
         <div class="md:pt-6 pt-3 md:pb-10 pb-6">
           <!-- Section Title -->
-          <h2 class="section__title relative z-99 text-white">غذاهای محبوب</h2>
+          <h2 class="section__title relative z-99 !text-white">غذاهای محبوب</h2>
           <!-- Food Card Container -->
           <div class="section__body">
             <!-- Swiper -->
