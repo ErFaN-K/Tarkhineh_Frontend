@@ -5,8 +5,8 @@ import { usePublicStore } from "@/store/modules/publicStore.js";
 const publicStore = usePublicStore();
 
 const activeDropDown = ref(null);
-const toggleSection = (dropDownName) => {
-  activeDropDown.value = activeDropDown.value === dropDownName ? null : dropDownName;
+const toggleSection = (dropDownElementName) => {
+  activeDropDown.value = activeDropDown.value === dropDownElementName ? null : dropDownElementName;
 };
 </script>
 

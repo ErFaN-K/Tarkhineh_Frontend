@@ -6,7 +6,7 @@ export default [
     meta: { title: `ترخینه 🥦 | صفحه اصلی` },
   },
   {
-    path: "/branch/:branchName",
+    path: "/branch",
     name: "BranchPage",
     component: () => import("@/pages/branch/BranchPage.vue"),
     meta: {
@@ -17,7 +17,7 @@ export default [
     }
   },
   {
-    path: "/menu/:branchName",
+    path: "/menu",
     name: "MenuPage",
     component: () => import("@/pages/menu/MenuPage.vue"),
     meta: {
@@ -42,6 +42,42 @@ export default [
     meta: {
       title: "ترخینه 🥦 | درباره ما",
     }
+  },
+  {
+    path: "/faq",
+    name: "FaqPage",
+    component: () => import("@/pages/faq/FaqPage.vue"),
+    children: [
+      {
+        // If the user enters the /faq Route, they will be redirected to the faq/questions Route.
+        path: "",
+        redirect: "faq/questions"
+      },
+      {
+        path: "questions",
+        name: "Faq|Questions",
+        component: () => import("@/pages/faq/components/Questions.vue"),
+        meta: {
+          title: "ترخینه 🥦 | سوالات متداول",
+        }
+      },
+      {
+        path: "rules",
+        name: "Faq|Rules",
+        component: () => import("@/pages/faq/components/Rules.vue"),
+        meta: {
+          title: "ترخینه 🥦 | قوانین",
+        }
+      },
+      {
+        path: "privacy",
+        name: "Faq|Privacy",
+        component: () => import("@/pages/faq/components/Privacy.vue"),
+        meta: {
+          title: "ترخینه 🥦 | حریم خصوصی",
+        }
+      }
+    ]
   },
   {
     path: "/successfull-pay",

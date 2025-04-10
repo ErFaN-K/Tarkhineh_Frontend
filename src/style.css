@@ -123,6 +123,18 @@
     background-image: var(--bg-gradient), url(./assets/images/hero-section/Hero-About-Us.png);
   }
 
+  .hero__background--questions { 
+    background-image: var(--bg-gradient), url(./assets/images/hero-section/Hero-Questions.png);
+  }
+
+  .hero__background--rules { 
+    background-image: var(--bg-gradient), url(./assets/images/hero-section/Hero-Rules.png);
+  }
+
+  .hero__background--privacy { 
+    background-image: var(--bg-gradient), url(./assets/images/hero-section/Hero-Privacy.png);
+  }
+  
   .footer__background {
     background-image: var(--bg-gradient), url(./assets/images/backgrounds/Footer.png);
   }
@@ -169,12 +181,13 @@
     bottom: 0;
   }
 
-  .restaurant-menu__link--active {
+  .menu__item--active {
     position: relative;
     color: #417f56;
+    font-family: var(--font-Dana-SemiBold);
   }
 
-  .restaurant-menu__link--active::before {
+  .menu__item--active::before {
     content: "";
     position: absolute;
     display: block;
@@ -195,6 +208,14 @@
 
   .mobile-menu__link--active span svg { 
     @apply rotate-180
+  }
+
+  .accordion--active {
+    @apply text-Primary
+  }
+
+  .accordion--active svg { 
+    @apply rotate-90
   }
 }
 

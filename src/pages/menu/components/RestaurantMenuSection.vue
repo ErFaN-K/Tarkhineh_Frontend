@@ -1,5 +1,5 @@
 <script setup>
-import RestaurantMenuItem from "./RestaurantMenuItem.vue";
+import RestaurantMenuItem from "@/components/shared/MenuItem.vue";
 </script>
 
 <template>
@@ -11,12 +11,12 @@ import RestaurantMenuItem from "./RestaurantMenuItem.vue";
         >
           <RestaurantMenuItem
             menuName="غذای اصلی"
-            link="#"
-            class="restaurant-menu__link--active"
+            link="MenuPage"
+            class="menu__item--active"
           />
-          <RestaurantMenuItem menuName="پیش غذا" link="#" />
-          <RestaurantMenuItem menuName="دسر" link="#" />
-          <RestaurantMenuItem menuName="نوشیدنی" link="#" />
+          <RestaurantMenuItem menuName="پیش غذا" link="MenuPage" />
+          <RestaurantMenuItem menuName="دسر" link="MenuPage" />
+          <RestaurantMenuItem menuName="نوشیدنی" link="MenuPage" />
         </div>
       </div>
     </div>
