@@ -3,9 +3,9 @@
 import Header from '@/components/layout/SiteHeader.vue'
 import UnsuccessSection from './components/UnsuccessSection.vue'
 import Footer from "@/components/layout/SiteFooter.vue";
-import MobileMenu from "@/components/shared/MobileMenu.vue";
+import MobileMenu from "@/components/ui/MobileMenu.vue";
 import LoginForm from "@/components/shared/OtpLogin.vue";
-import Overlay from "@/components/shared/Overlay.vue";
+import Overlay from "@/components/ui/Overlay.vue";
 </script>
 
 <template>

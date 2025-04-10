@@ -21,22 +21,22 @@ import RestaurantMenuCard from "./RestaurantMenuCard.vue";
         <RestaurantMenuCard
           link="#"
           linkTitle="غذای اصلی"
-          imageSrc="src/assets/images/menu/Menu-Main-Food.png"
+          imageSrc="src/assets/images/restaurant-menu/Menu-Main-Food.png"
         />
         <RestaurantMenuCard
           link="#"
           linkTitle="پیش غذا"
-          imageSrc="src/assets/images/menu/Menu-Appetizer.png"
+          imageSrc="src/assets/images/restaurant-menu/Menu-Appetizer.png"
         />
         <RestaurantMenuCard
           link="#"
           linkTitle="دسر"
-          imageSrc="src/assets/images/menu/Menu-Dessert.png"
+          imageSrc="src/assets/images/restaurant-menu/Menu-Dessert.png"
         />
         <RestaurantMenuCard
           link="#"
           linkTitle="نوشیدنی"
-          imageSrc="src/assets/images/menu/Menu-Drink.png"
+          imageSrc="src/assets/images/restaurant-menu/Menu-Drink.png"
         />
       </div>
     </div>

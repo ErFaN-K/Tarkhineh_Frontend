@@ -1,5 +1,5 @@
 import { defineStore } from "pinia";
-import { reactive, ref, TrackOpTypes } from "vue";
+import { reactive, ref } from "vue";
 
 export const usePublicStore = defineStore("public", () => {
   const isShowHamburgerMenu = ref(false);

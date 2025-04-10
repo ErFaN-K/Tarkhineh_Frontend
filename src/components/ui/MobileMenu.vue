@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from "vue";
-import { usePublicStore } from "@/store/publicStore.js";
+import { usePublicStore } from "@/store/modules/publicStore.js";
 
 const publicStore = usePublicStore();
 

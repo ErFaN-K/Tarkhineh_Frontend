@@ -8,7 +8,7 @@
       <!-- User Profile -->
       <div class="size-14 md:size-24 rounded-full overflow-hidden">
         <img
-          src="/src/assets/images/User-Profile.png"
+          src="/src/assets/images/avatars/User-Profile.png"
           alt="User Profile"
           class="size-full object-cover"
         />

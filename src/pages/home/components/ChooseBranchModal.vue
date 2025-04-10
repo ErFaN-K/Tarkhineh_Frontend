@@ -3,8 +3,8 @@ import BranchCard from './ChooseBranchCard.vue'
 </script>
 
 <template>
-    <div class="is-hidden fixed inset-0 m-auto px-5 flex items-center justify-center z-102 text-gray-800">
-        <div class="md:max-w-202 max-w-80 w-full rounded-lg overflow-hidden bg-white shadow-xl"> 
+    <div class="is-hidden fixed inset-0 m-auto z-100 px-5 flex items-center justify-center">
+        <div class="md:max-w-202 max-w-80 w-full rounded-lg overflow-hidden bg-white shadow-xl text-gray-800"> 
             <!-- Card Header -->
             <div class="relative flex items-center justify-center md:py-6 py-4 max-md:bg-gray-300 mb-6">
                 <!-- Close Icon -->

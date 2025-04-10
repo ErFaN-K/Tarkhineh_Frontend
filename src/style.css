@@ -116,7 +116,7 @@
 
   .about-restaurant__background {
     background-image:
-      var(--bg-gradient), url(./assets/images/About-Restaurant-Section.png);
+      var(--bg-gradient), url(./assets/images/backgrounds/About-Restaurant-Section.png);
   }
 
   .hero__background--about-us {
@@ -124,11 +124,11 @@
   }
 
   .footer__background {
-    background-image: var(--bg-gradient), url(./assets/images/Footer.png);
+    background-image: var(--bg-gradient), url(./assets/images/backgrounds/Footer.png);
   }
 
   .mobile-menu__top-frame--img {
-    background-image: url(./assets/images/Top-Frame-Mobile.png);
+    background-image: url(./assets/images/backgrounds/Top-Frame-Mobile.png);
   }
 
   .section__title {

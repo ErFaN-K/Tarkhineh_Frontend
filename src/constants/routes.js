@@ -2,13 +2,13 @@ export default [
   {
     path: "/",
     name: "HomePage",
-    component: () => import("../views/HomeView.vue"),
+    component: () => import("@/pages/home/HomePage.vue"),
     meta: { title: `ترخینه 🥦 | صفحه اصلی` },
   },
   {
     path: "/branch/:branchName",
     name: "BranchPage",
-    component: () => import("../views/BranchView.vue"),
+    component: () => import("@/pages/branch/BranchPage.vue"),
     meta: {
       title: (route) => `ترخینه 🥦 | صفحه شعبه ${route.params.branchName}`,
     },
@@ -19,7 +19,7 @@ export default [
   {
     path: "/menu/:branchName",
     name: "MenuPage",
-    component: () => import("../views/MenuView.vue"),
+    component: () => import("@/pages/menu/MenuPage.vue"),
     meta: {
       title: (route) => `ترخینه 🥦 | منو شعبه ${route.params.branchName}`,
     },
@@ -30,7 +30,7 @@ export default [
   {
     path: "/search",
     name: "SearchPage",
-    component: () => import("../views/SearchView.vue"),
+    component: () => import("@/pages/search/SearchPage.vue"),
     meta: {
       title: (route) => `ترخینه 🥦 | جست و جو برای  ${route.query.q}`,
     }
@@ -38,7 +38,7 @@ export default [
   {
     path: "/about-us",
     name: "AboutUsPage",
-    component: () => import("../views/AboutUsView.vue"),
+    component: () => import("@/pages/about-us/AboutUsPage.vue"),
     meta: {
       title: "ترخینه 🥦 | درباره ما",
     }
@@ -46,7 +46,7 @@ export default [
   {
     path: "/successfull-pay",
     name: "SuccessfullPayPage",
-    component: () => import("../views/SuccessfullPayView.vue"),
+    component: () => import("@/pages/successfull-pay/SuccessfullPayPage.vue"),
     meta: {
       title: "ترخینه 🥦 | پرداخت موفق",
     },
@@ -57,7 +57,7 @@ export default [
   {
     path: "/unsuccessfull-pay",
     name: "UnsuccessfullPayPage",
-    component: () => import("../views/UnsuccessfullPayView.vue"),
+    component: () => import("@/pages/unsuccessfull-pay/UnsuccessfullPayPage.vue"),
     meta: {
       title: "ترخینه 🥦 | پرداخت ناموفق",
     },
@@ -68,7 +68,7 @@ export default [
   {
     path: '/:pathMatch(.*)*', 
     name: 'NotFoundPage',
-    component: () => import("../views/NotFoundView.vue"),
+    component: () => import("@/pages/not-found/NotFoundPage.vue"),
     meta: {
       title: "ترخینه 🥦 | صفحه مورد نظر یافت نشد",
     }
