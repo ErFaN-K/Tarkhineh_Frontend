@@ -12,6 +12,9 @@ export default [
     meta: {
       title: (route) => `ترخینه 🥦 | صفحه شعبه ${route.params.branchName}`,
     },
+    beforeEnter: () => {
+      // Check Branch selected or not
+    }
   },
   {
     path: "/menu/:branchName",
@@ -20,6 +23,9 @@ export default [
     meta: {
       title: (route) => `ترخینه 🥦 | منو شعبه ${route.params.branchName}`,
     },
+    beforeEnter: () => {
+      // Check Branch selected or not
+    }
   },
   {
     path: "/search",
@@ -38,11 +44,25 @@ export default [
     }
   },
   {
-    path: "/success-pay",
-    name: "SuccessPayPage",
-    component: () => import("../views/SuccessPayView.vue"),
+    path: "/successfull-pay",
+    name: "SuccessfullPayPage",
+    component: () => import("../views/SuccessfullPayView.vue"),
     meta: {
       title: "ترخینه 🥦 | پرداخت موفق",
+    },
+    beforeEnter: () => {
+      // Check Payment Is Success Or No & Check Payment made or not
+    }
+  },
+  {
+    path: "/unsuccessfull-pay",
+    name: "UnsuccessfullPayPage",
+    component: () => import("../views/UnsuccessfullPayView.vue"),
+    meta: {
+      title: "ترخینه 🥦 | پرداخت ناموفق",
+    },
+    beforeEnter: () => {
+      // Check Payment Is Un Success Or No & Check Payment made or not
     }
   },
   {
