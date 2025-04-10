@@ -51,6 +51,7 @@ export default [
       {
         // If the user enters the /faq Route, they will be redirected to the faq/questions Route.
         path: "",
+        name: "FaqDefault",
         redirect: "faq/questions"
       },
       {
