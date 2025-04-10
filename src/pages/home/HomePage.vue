@@ -12,7 +12,6 @@ import FoodDetailsModal from "@/components/shared/FoodDetailsModal.vue";
 import SearchBoxModal from "@/components/shared/SearchBoxModal.vue";
 import ChooseBranchModal from './components/ChooseBranchModal.vue'
 import Overlay from "@/components/ui/Overlay.vue";
-console.log(import.meta.env.API)
 </script>
 
 <template>
