@@ -38,6 +38,14 @@ export default [
     }
   },
   {
+    path: "/success-pay",
+    name: "SuccessPayPage",
+    component: () => import("../views/SuccessPayView.vue"),
+    meta: {
+      title: "ترخینه 🥦 | پرداخت موفق",
+    }
+  },
+  {
     path: '/:pathMatch(.*)*', 
     name: 'NotFoundPage',
     component: () => import("../views/NotFoundView.vue"),

@@ -7,9 +7,9 @@ import NotFound from '@/components/shared/404Error.vue'
   <div class="min-h-screen w-full flex flex-col items-center justify-center md:gap-y-10 gap-y-5 p-5">
     <NotFound/>
     <!-- Redirect Buttons -->
-    <div class="flex max-md:flex-col w-full md:gap-x-4 max-md:gap-y-2 justify-center">
-        <a href="#" class="md:h-10 h-8 flex items-center justify-center md:max-w-45 w-full rounded-sm md:rounded-lg font-Dana text-xs text-Primary md:text-base bg-white border border-Primary hover:bg-Primary/10">بازگشت</a>
-        <a href="#" class="md:h-10 h-8 flex items-center justify-center md:max-w-45 w-full rounded-sm md:rounded-lg font-Dana text-white text-xs md:text-base bg-Primary hover:bg-Primary/90">صفحه اصلی</a>
+    <div class="flex w-full md:gap-x-6 gap-x-4 justify-center">
+        <a href="#" class="md:w-46 w-full h-8 md:h-10 flex items-center justify-center font-Dana md:font-Dana-Medium text-xs md:text-base text-Primary border border-Primary rounded-sm hover:bg-Primary/10">بازگشت</a>
+        <a href="#" class="md:w-46 w-full h-8 md:h-10 flex items-center justify-center font-Dana md:font-Dana-Medium text-xs md:text-base text-white bg-Primary rounded-sm hover:bg-Primary/90">صفحه اصلی</a>
     </div>
   </div>
 </template>

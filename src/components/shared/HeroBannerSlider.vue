@@ -17,7 +17,7 @@ defineProps({
   >
     <div class="flex flex-col items-center gap-y-4 md:gap-y-10 pt-5.25 md:pt-7">
       <h1
-        class="font-Morabba-Bold text-Tint-1 lg:text-[40px] text-base sm:text-2xl"
+        class="font-Morabba-Bold text-Tint-1 lg:text-4.5xl text-base sm:text-2xl"
       >
         {{ content }}
       </h1>

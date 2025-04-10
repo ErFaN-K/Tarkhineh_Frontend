@@ -275,7 +275,7 @@
 
   /* Font Size */
   --text-custom: 0.625rem;
-
+  --text-4.5xl: 2.5rem;
   /* Others */
   --bg-gradient: linear-gradient(
     to left,
