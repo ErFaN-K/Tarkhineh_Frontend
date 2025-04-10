@@ -14,7 +14,7 @@
                 </div>
                 <!-- Image -->
                 <div class="xl:col-span-6 max-xl:hidden rounded-lg overflow-hidden">
-                    <img src="/src/assets/images/Restaurant-Picture.png" alt="Restaurant Picture" class="size-full object-cover">
+                    <img src="/src/assets/images/backgrounds/Restaurant-Picture.png" alt="Restaurant Picture" class="size-full object-cover">
                 </div>
                 <!----------------------->
                 <!-- Mobile Design -->
@@ -26,7 +26,7 @@
                 </div>
                 <!-- Image -->
                 <div class="hidden max-sm:block col-span-2 h-30 rounded-sm overflow-hidden">
-                    <img src="/src/assets/images/Restaurant-Picture.png" alt="Restaurant Picture" class="size-full object-cover">
+                    <img src="/src/assets/images/backgrounds/Restaurant-Picture.png" alt="Restaurant Picture" class="size-full object-cover">
                 </div>
                 <!-- Content Part 2 -->
                 <div class="hidden max-sm:block col-span-4 text-justify">

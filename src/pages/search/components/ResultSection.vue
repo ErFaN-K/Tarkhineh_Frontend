@@ -1,7 +1,7 @@
 <script setup>
 import SearchInput from '@/components/shared/SearchInput.vue'
 import FoodCard from '@/components/shared/VerticalFoodCard.vue'
-import NotFound from '@/components/shared/404Error.vue'
+import NotFound from '@/components/ui/404Error.vue'
 </script>
 
 <template>

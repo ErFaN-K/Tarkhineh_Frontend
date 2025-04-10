@@ -1,5 +1,5 @@
 <template>
-  <div class="is-hidden fixed inset-0 m-auto z-102 px-5 flex items-center justify-center">
+  <div class="is-hidden fixed inset-0 m-auto z-100 px-5 flex items-center justify-center">
     <div
     class="max-md:flex max-md:flex-col max-md:justify-center shadow-xl bg-white md:rounded-lg md:border md:border-gray-400 md:max-w-98 w-full max-md:h-svh h-max md:p-6 p-5"
   >

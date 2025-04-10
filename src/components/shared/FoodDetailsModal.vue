@@ -20,7 +20,7 @@ const setThumbsSwiper = (swiper) => {
 </script>
 
 <template>
-  <div class="is-hidden fixed inset-0 m-auto z-101 px-5 flex items-center justify-center">
+  <div class="is-hidden fixed inset-0 m-auto z-100 px-5 flex items-center justify-center">
     <div
     class="shadow-xl md:max-w-202 max-w-80 h-max w-full bg-white text-gray-800 rounded-lg"
   >

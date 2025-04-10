@@ -1,7 +1,6 @@
 <script setup>
-// Components 
+// Components
 import Header from '@/components/layout/SiteHeader.vue'
-import UnsuccessSection from './components/UnsuccessSection.vue'
 import Footer from "@/components/layout/SiteFooter.vue";
 import MobileMenu from "@/components/ui/MobileMenu.vue";
 import LoginForm from "@/components/shared/OtpLogin.vue";
@@ -9,19 +8,18 @@ import Overlay from "@/components/ui/Overlay.vue";
 </script>
 
 <template>
-  <!-- Unuccess Pay Page -->
+  <!-- Faq Page Page -->
   <!----------------------->
-  <!-- Unuccess Pay | Header -->
+  <!-- Faq Page | Header -->
   <Header />
 
-  <!-- Unuccess Pay | Main -->
+  <!-- Faq Page | Main -->
   <main>
-    <!-- ✅ Unuccess Section -->
-    <UnsuccessSection />
+    <router-view></router-view>
   </main>
 
-  <!-- Unuccess Pay | Footer ( md : Show )-->
-  <Footer class="max-md:hidden"/>
+  <!-- Faq Page | Footer -->
+  <Footer />
 
   <!----------------------->
   

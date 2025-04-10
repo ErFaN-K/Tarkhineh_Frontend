@@ -1,6 +1,6 @@
 <script setup>
 import FoodCard from "@/components/shared/HorizontalFoodCard.vue";
-import FoodCardLoader from "@/components/shared/HorizontalFoodCardLoader.vue";
+import FoodCardLoader from "@/components/ui/HorizontalFoodCardLoader.vue";
 
 defineProps({
   sectionTitle: {
