@@ -134,6 +134,10 @@
   .hero__background--privacy { 
     background-image: var(--bg-gradient), url(./assets/images/hero-section/Hero-Privacy.png);
   }
+
+  .hero__background--contact-us {
+    background-image: var(--bg-gradient), url(./assets/images/hero-section/Hero-Contact-Us.png);
+  }
   
   .footer__background {
     background-image: var(--bg-gradient), url(./assets/images/backgrounds/Footer.png);
