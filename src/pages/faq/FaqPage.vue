@@ -27,6 +27,8 @@ import Overlay from "@/components/ui/Overlay.vue";
   <MobileMenu />
   <!-- Login Form -->
   <LoginForm />
+  <!-- Choose Branch Modal -->
+  <ChooseBranchModal />
   <!-- Overlay -->
   <Overlay />
 </template>

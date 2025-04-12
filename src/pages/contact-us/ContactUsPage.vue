@@ -6,6 +6,7 @@ import Footer from '@/components/layout/SiteFooter.vue'
 import MobileMenu from "@/components/ui/MobileMenu.vue";
 import LoginForm from "@/components/shared/OtpLogin.vue";
 import SearchBoxModal from "@/components/shared/SearchBoxModal.vue";
+import ChooseBranchModal from '@/components/shared/ChooseBranchModal.vue'
 import Overlay from "@/components/ui/Overlay.vue";
 </script>
 
@@ -34,6 +35,8 @@ import Overlay from "@/components/ui/Overlay.vue";
     <LoginForm />
     <!-- Search Box Modal ( For Desktop ) -->
     <SearchBoxModal />
+    <!-- Choose Branch Modal -->
+    <ChooseBranchModal />
     <!-- Overlay -->
     <Overlay />
 </template>

@@ -25,25 +25,25 @@ import BranchCard from './ChooseBranchCard.vue'
                 <!-- Branch Card Container -->
                 <div class="grid grid-cols-1 md:grid-cols-4 md:gap-x-5 max-md:gap-y-2">
                     <BranchCard
-                      branchImage="src/assets/images/About-Restaurant-Section.png"
+                      branchImage="src/assets/images/backgrounds/About-Restaurant-Section.png"
                       branchName="شعبه تستی برای نمایش شعبه شعبه شعبه "
                       branchAddress="آدرس تسبرای هر شعب شعبه آدرس تسبرای هر شعبه عشقم من عرفان"
                       branchPageLink="#"
                     />
                     <BranchCard
-                      branchImage="src/assets/images/About-Restaurant-Section.png"
+                      branchImage="src/assets/images/backgrounds/About-Restaurant-Section.png"
                       branchName="شعبه تستی برای نمایش شعبه شعبه شعبه "
                       branchAddress="آدرس تسبرای هر شعب شعبه آدرس تسبرای هر شعبه عشقم من عرفان"
                       branchPageLink="#"
                     />
                     <BranchCard
-                      branchImage="src/assets/images/About-Restaurant-Section.png"
+                      branchImage="src/assets/images/backgrounds/About-Restaurant-Section.png"
                       branchName="شعبه تستی برای نمایش شعبه شعبه شعبه "
                       branchAddress="آدرس تسبرای هر شعب شعبه آدرس تسبرای هر شعبه عشقم من عرفان"
                       branchPageLink="#"
                     />
                     <BranchCard
-                      branchImage="src/assets/images/About-Restaurant-Section.png"
+                      branchImage="src/assets/images/backgrounds/About-Restaurant-Section.png"
                       branchName="شعبه تستی برای نمایش شعبه شعبه شعبه "
                       branchAddress="آدرس تسبرای هر شعب شعبه آدرس تسبرای هر شعبه عشقم من عرفان"
                       branchPageLink="#"

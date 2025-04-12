@@ -6,6 +6,7 @@ import Footer from "@/components/layout/SiteFooter.vue";
 import MobileMenu from "@/components/ui/MobileMenu.vue";
 import LoginForm from "@/components/shared/OtpLogin.vue";
 import FoodDetailsModal from "@/components/shared/FoodDetailsModal.vue";
+import ChooseBranchModal from '@/components/shared/ChooseBranchModal.vue'
 import Overlay from "@/components/ui/Overlay.vue";
 </script>
 
@@ -32,6 +33,8 @@ import Overlay from "@/components/ui/Overlay.vue";
   <LoginForm />
   <!-- Food Details Modal -->
   <FoodDetailsModal />
+  <!-- Choose Branch Modal -->
+  <ChooseBranchModal />
   <!-- Overlay -->
   <Overlay />
 </template>

@@ -10,7 +10,7 @@ import MobileMenu from "@/components/ui/MobileMenu.vue";
 import LoginForm from "@/components/shared/OtpLogin.vue";
 import FoodDetailsModal from "@/components/shared/FoodDetailsModal.vue";
 import SearchBoxModal from "@/components/shared/SearchBoxModal.vue";
-import ChooseBranchModal from './components/ChooseBranchModal.vue'
+import ChooseBranchModal from '@/components/shared/ChooseBranchModal.vue'
 import Overlay from "@/components/ui/Overlay.vue";
 </script>
 
