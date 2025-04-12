@@ -44,6 +44,14 @@ export default [
     }
   },
   {
+    path: "/contact-us",
+    name: "ContactUsPage",
+    component: () => import("@/pages/contact-us/ContactUsPage.vue"),
+    meta: {
+      title: "ترخینه 🥦 | تماس باما",
+    }
+  },
+  {
     path: "/faq",
     name: "FaqPage",
     component: () => import("@/pages/faq/FaqPage.vue"),
