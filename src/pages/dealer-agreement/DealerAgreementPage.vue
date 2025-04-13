@@ -8,6 +8,7 @@ import LoginForm from "@/components/shared/OtpLogin.vue";
 import SearchBoxModal from "@/components/shared/SearchBoxModal.vue";
 import ChooseBranchModal from '@/components/shared/ChooseBranchModal.vue'
 import Overlay from "@/components/ui/Overlay.vue";
+import DistributorBenefitsSection from './components/DistributorBenefitsSection.vue';
 </script>
 
 <template>
@@ -22,6 +23,8 @@ import Overlay from "@/components/ui/Overlay.vue";
         <HeroSection sectionTitle="همین الان به خانواده بزرگ ترخینه بپیوندید!" backgroundName="hero__background--dealer-agreement"/>
         <!-- Dealer Agreement | Restaurant Attributes Section -->
         <RestaurantAttributeSection />
+        <!-- Dealer Agreement | Distributor Benefits Section -->
+        <DistributorBenefitsSection />
     </main>
 
     <!-- Dealer Agreement | FOoter -->
