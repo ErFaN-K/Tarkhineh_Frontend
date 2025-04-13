@@ -1,0 +1,42 @@
+<script setup>
+import Header from '@/components/layout/SiteHeader.vue'
+import HeroSection from '@/components/ui/HeroSectionWithoutSlider.vue'
+import RestaurantAttributeSection from './components/RestaurantAttributeSection.vue'
+import Footer from '@/components/layout/SiteFooter.vue'
+import MobileMenu from "@/components/ui/MobileMenu.vue";
+import LoginForm from "@/components/shared/OtpLogin.vue";
+import SearchBoxModal from "@/components/shared/SearchBoxModal.vue";
+import ChooseBranchModal from '@/components/shared/ChooseBranchModal.vue'
+import Overlay from "@/components/ui/Overlay.vue";
+</script>
+
+<template>
+    <!-- Dealer Agreement Page -->
+    <!----------------------->
+    <!-- Dealer Agreement | Header -->
+    <Header />
+
+    <!-- Dealer Agreement | Main -->
+    <main>
+        <!-- Dealer Agreement | Hero Section -->
+        <HeroSection sectionTitle="همین الان به خانواده بزرگ ترخینه بپیوندید!" backgroundName="hero__background--dealer-agreement"/>
+        <!-- Dealer Agreement | Restaurant Attributes Section -->
+        <RestaurantAttributeSection />
+    </main>
+
+    <!-- Dealer Agreement | FOoter -->
+    <Footer />
+
+        <!----------------------->
+
+    <!-- Hamburger Menu -->
+    <MobileMenu />
+    <!-- Login Form -->
+    <LoginForm />
+    <!-- Search Box Modal ( For Desktop ) -->
+    <SearchBoxModal />
+    <!-- Choose Branch Modal -->
+    <ChooseBranchModal />
+    <!-- Overlay -->
+    <Overlay />
+</template>
