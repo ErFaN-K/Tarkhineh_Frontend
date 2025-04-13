@@ -139,6 +139,10 @@
     background-image: var(--bg-gradient), url(./assets/images/hero-section/Hero-Contact-Us.png);
   }
   
+  .hero__background--dealer-agreement { 
+    background-image: var(--bg-gradient), url(./assets/images/hero-section/Hero-Dealer-Agreement.png);
+  }
+
   .footer__background {
     background-image: var(--bg-gradient), url(./assets/images/backgrounds/Footer.png);
   }

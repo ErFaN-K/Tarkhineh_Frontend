@@ -89,6 +89,14 @@ export default [
     ]
   },
   {
+    path: "/dealer-agreement",
+    name: "DealerAgreement",
+    component: () => import("@/pages/dealer-agreement/DealerAgreementPage.vue"),
+    meta: {
+      title: "ترخینه 🥦 | اعطای نمایندگی",
+    }
+  },
+  {
     path: "/successfull-pay",
     name: "SuccessfullPayPage",
     component: () => import("@/pages/successfull-pay/SuccessfullPayPage.vue"),
