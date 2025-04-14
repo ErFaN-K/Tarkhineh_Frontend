@@ -2,6 +2,7 @@
 import Header from '@/components/layout/SiteHeader.vue'
 import HeroSection from '@/components/ui/HeroSectionWithoutSlider.vue'
 import RestaurantAttributeSection from './components/RestaurantAttributeSection.vue'
+import ConsultationRequestSection from './components/ConsultationRequestSection.vue';
 import Footer from '@/components/layout/SiteFooter.vue'
 import MobileMenu from "@/components/ui/MobileMenu.vue";
 import LoginForm from "@/components/shared/OtpLogin.vue";
@@ -25,6 +26,8 @@ import DistributorBenefitsSection from './components/DistributorBenefitsSection.
         <RestaurantAttributeSection />
         <!-- Dealer Agreement | Distributor Benefits Section -->
         <DistributorBenefitsSection />
+        <!-- Dealer Agreement | Consulation Request Section -->
+        <ConsultationRequestSection />
     </main>
 
     <!-- Dealer Agreement | FOoter -->
