@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.17",
+    "jalaali-js": "^1.2.8",
     "pinia": "^3.0.1",
     "sweetalert2": "^11.17.2",
     "swiper": "^11.2.6",

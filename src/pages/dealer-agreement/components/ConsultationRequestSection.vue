@@ -1,11 +1,23 @@
 <script setup>
+import { ref } from 'vue';
 import DatePicker from './DatePicker.vue';
+
+const dateNumber = ref(null)
+const getDateFromCustomDatePicker = (date) => {
+    dateNumber.value = date.jalaaliDateFormated.value
+}
+const isOpenCustomDatePicker = ref(false)
+// Open & Close Custom Date Picker 
+const showCustomDatePicker = () => {
+    if(!isOpenCustomDatePicker.value) isOpenCustomDatePicker.value = true
+    else isOpenCustomDatePicker.value = false
+}
 </script>
 
 <template>
     <section class="mb-6 md:mb-12 consulation-request-section">
         <div class="container">
-            <div class="py-6 md:py-12 border-b border-gray-400">
+            <div class="pb-6 md:pb-12 border-b border-gray-400">
                 <!-- Section Title -->
                 <h2 class="section__title text-center">دریافت مشاوره</h2>
                 <!-- Section Content -->
@@ -22,8 +34,8 @@ import DatePicker from './DatePicker.vue';
                         </div>
                         <!-- Date Input -->
                         <div class="relative w-full">
-                            <input type="text" placeholder="زمان ایده‌آل" readonly class="w-full md:h-10 h-8 md:px-4 px-2 border outline-none border-gray-400 placeholder:text-gray-700 text-gray-800 font-Dana md:text-sm text-xs rounded-sm">
-                            <DatePicker />
+                            <input @click="showCustomDatePicker" v-model="dateNumber" type="text" placeholder="زمان ایده‌آل" readonly class="w-full md:h-10 h-8 md:px-4 px-2 border outline-none border-gray-400 placeholder:text-gray-700 text-gray-800 font-Dana md:text-sm text-xs rounded-sm">
+                            <DatePicker @getDate="getDateFromCustomDatePicker" :class="!isOpenCustomDatePicker ? 'is-hidden' : 'is-show'"/>
                         </div>
                     </div>
                     <!-- Submit Button -->

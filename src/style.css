@@ -161,7 +161,8 @@
 
   .custom-scroll::-webkit-scrollbar {
     background-color: transparent;
-    width: 2px;
+    width: 3px;
+    height: 2px;
   }
 
   .custom-scroll::-webkit-scrollbar-thumb {
@@ -224,6 +225,10 @@
 
   .accordion--active svg { 
     @apply rotate-90
+  }
+
+  .date--active {
+    @apply bg-gray-200
   }
 }
 

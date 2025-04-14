@@ -1,176 +1,94 @@
 <script setup>
-import { reactive, ref } from 'vue'
+import { ref, computed } from 'vue'
+import jalaali from 'jalaali-js'
 
-const currentDate = ref(new Date())
-const currentJalaaliDate = ref(new Intl.DateTimeFormat('fa-IR').format(currentDate.value))
+const emit = defineEmits(['getDate'])
+const jalaaliCurrentDate = jalaali.toJalaali(new Date())
+const selectedDate = ref(jalaaliCurrentDate)
 
-const nextDay = () => {
-    currentDate.value.setDate(currentDate.value.getDate() + 1)
-    updateDateToJalaai(currentDate.value)
+let dayNumber = []
+let yearNumber = []
+let monthNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+
+const getMonthLength = (year, month) => {
+    dayNumber = [] // Reset dayNumber
+    const monthLength = jalaali.jalaaliMonthLength(year, month)
+    for(let i = 1; i <= monthLength; i++) {
+        dayNumber.push(i)
+    }
 }
 
-const prevDay = () => {
-    currentDate.value.setDate(currentDate.value.getDate() - 1)
-    updateDateToJalaai(currentDate.value)
+const calculateMinYear = (minYear) => {
+    yearNumber = [] // Reset yearNumber
+    for(let i = minYear; i <= selectedDate.value.jy; i++) { 
+        yearNumber.push(i)
+    }
 }
 
-
-const updateDateToJalaai = (date) => {
-    currentJalaaliDate.value = new Intl.DateTimeFormat('fa-IR').format(date)
-    console.log(currentJalaaliDate.value)
+// Set Jalaali Date & Refresh Month Lengh
+const setDate = (year, month, day) => {
+    selectedDate.value = {
+        jy: year || selectedDate.value.jy,
+        jm: month || selectedDate.value.jm,
+        jd: day || selectedDate.value.jd
+    };
+    getMonthLength(selectedDate.value.jy, selectedDate.value.jm) 
 }
 
+// Send Gregorian Date To Parent
+const sendDate = () => {
+    const gregorianDate = jalaali.toGregorian(selectedDate.value.jy, selectedDate.value.jm, selectedDate.value.jd)
+    emit('getDate', { gregorianDate, jalaaliDateFormated })
+}
 
+calculateMinYear(1340)
+getMonthLength(selectedDate.value.jy, selectedDate.value.jm)
+
+// Format Gregorian Date To Jalaali
+const jalaaliDateFormated = computed(() => {
+    return `${selectedDate.value.jd} / ${selectedDate.value.jm} / ${selectedDate.value.jy}`
+})
 
 </script>
 
 <template>
-    <!-- Custom Date Picker -->
+    <!-- Date Picker -->
     <div class="absolute max-w-83.25 md:p-4 p-3 rounded-lg left-0 right-0 top-[calc(100%+8px)] mx-auto bg-white shadow-lg overflow-hidden">
-        <!-- Header -->
-        <div class="flex items-center justify-between">
-            <!-- Next Button -->
-            <button @click="nextDay" class="hover:bg-Primary/10 cursor-pointer size-6 flex items-center justify-center rounded-full border border-Primary text-Primary">
-                <svg class="size-4 rotate-180">
-                    <use href="#chevron-left-mini"></use>
-                </svg>
-            </button>
-            <!-- Show Date --> 
-            <span class="font-Dana-SemiBold text-base text-gray-800">{{ currentJalaaliDate }}</span>
-            <!-- Previous Button -->
-            <button @click="prevDay" class="hover:bg-Primary/10 cursor-pointer size-6 flex items-center justify-center rounded-full border border-Primary text-Primary">
-                <svg class="size-4">
-                    <use href="#chevron-left-mini"></use>
-                </svg>
-            </button>
-        </div>
-        <!-- Week Days -->
-        <div class="mt-4 grid grid-cols-7">
-            <div class="flex flex-col gap-y-3 items-center">
-                <span class="text-gray-700 text-sm font-Dana">ش</span>
-                <div class="flex flex-col gap-y-2 items-center text-gray-800 font-Dana">
-                    <span class="size-8 flex items-center justify-center hover:bg-Primary hover:text-white rounded-full cursor-pointer">6</span>
-                    <span class="size-8 flex items-center justify-center hover:bg-Primary hover:text-white rounded-full cursor-pointer">6</span>
-                    <span class="size-8 flex items-center justify-center hover:bg-Primary hover:text-white rounded-full cursor-pointer">6</span>
-                    <span class="size-8 flex items-center justify-center hover:bg-Primary hover:text-white rounded-full cursor-pointer">6</span>
-                    <span class="size-8 flex items-center justify-center hover:bg-Primary hover:text-white rounded-full cursor-pointer">6</span>
-                </div>
-            </div>
-            <div class="flex flex-col gap-y-3 items-center">
-                <span class="text-gray-700 text-sm font-Dana">ش</span>
-                <div class="flex flex-col gap-y-2 items-center text-gray-800 font-Dana">
-                    <span class="size-8 flex items-center justify-center hover:bg-Primary hover:text-white rounded-full cursor-pointer">6</span>
-                    <span class="size-8 flex items-center justify-center hover:bg-Primary hover:text-white rounded-full cursor-pointer">6</span>
-                    <span class="size-8 flex items-center justify-center hover:bg-Primary hover:text-white rounded-full cursor-pointer">6</span>
-                    <span class="size-8 flex items-center justify-center hover:bg-Primary hover:text-white rounded-full cursor-pointer">6</span>
-                    <span class="size-8 flex items-center justify-center hover:bg-Primary hover:text-white rounded-full cursor-pointer">6</span>
-                </div>
-            </div>
-            <div class="flex flex-col gap-y-3 items-center">
-                <span class="text-gray-700 text-sm font-Dana">ش</span>
-                <div class="flex flex-col gap-y-2 items-center text-gray-800 font-Dana">
-                    <span class="size-8 flex items-center justify-center hover:bg-Primary hover:text-white rounded-full cursor-pointer">6</span>
-                    <span class="size-8 flex items-center justify-center hover:bg-Primary hover:text-white rounded-full cursor-pointer">6</span>
-                    <span class="size-8 flex items-center justify-center hover:bg-Primary hover:text-white rounded-full cursor-pointer">6</span>
-                    <span class="size-8 flex items-center justify-center hover:bg-Primary hover:text-white rounded-full cursor-pointer">6</span>
-                    <span class="size-8 flex items-center justify-center hover:bg-Primary hover:text-white rounded-full cursor-pointer">6</span>
-                </div>
-            </div>
-            <div class="flex flex-col gap-y-3 items-center">
-                <span class="text-gray-700 text-sm font-Dana">ش</span>
-                <div class="flex flex-col gap-y-2 items-center text-gray-800 font-Dana">
-                    <span class="size-8 flex items-center justify-center hover:bg-Primary hover:text-white rounded-full cursor-pointer">6</span>
-                    <span class="size-8 flex items-center justify-center hover:bg-Primary hover:text-white rounded-full cursor-pointer">6</span>
-                    <span class="size-8 flex items-center justify-center hover:bg-Primary hover:text-white rounded-full cursor-pointer">6</span>
-                    <span class="size-8 flex items-center justify-center hover:bg-Primary hover:text-white rounded-full cursor-pointer">6</span>
-                    <span class="size-8 flex items-center justify-center hover:bg-Primary hover:text-white rounded-full cursor-pointer">6</span>
-                </div>
-            </div>
-            <div class="flex flex-col gap-y-3 items-center">
-                <span class="text-gray-700 text-sm font-Dana">ش</span>
-                <div class="flex flex-col gap-y-2 items-center text-gray-800 font-Dana">
-                    <span class="size-8 flex items-center justify-center hover:bg-Primary hover:text-white rounded-full cursor-pointer">6</span>
-                    <span class="size-8 flex items-center justify-center hover:bg-Primary hover:text-white rounded-full cursor-pointer">6</span>
-                    <span class="size-8 flex items-center justify-center hover:bg-Primary hover:text-white rounded-full cursor-pointer">6</span>
-                    <span class="size-8 flex items-center justify-center hover:bg-Primary hover:text-white rounded-full cursor-pointer">6</span>
-                    <span class="size-8 flex items-center justify-center hover:bg-Primary hover:text-white rounded-full cursor-pointer">6</span>
-                </div>
-            </div>
-            <div class="flex flex-col gap-y-3 items-center">
-                <span class="text-gray-700 text-sm font-Dana">ش</span>
-                <div class="flex flex-col gap-y-2 items-center text-gray-800 font-Dana">
-                    <span class="size-8 flex items-center justify-center hover:bg-Primary hover:text-white rounded-full cursor-pointer">6</span>
-                    <span class="size-8 flex items-center justify-center hover:bg-Primary hover:text-white rounded-full cursor-pointer">6</span>
-                    <span class="size-8 flex items-center justify-center hover:bg-Primary hover:text-white rounded-full cursor-pointer">6</span>
-                    <span class="size-8 flex items-center justify-center hover:bg-Primary hover:text-white rounded-full cursor-pointer">6</span>
-                    <span class="size-8 flex items-center justify-center hover:bg-Primary hover:text-white rounded-full cursor-pointer">6</span>
-                </div>
-            </div>
-            <div class="flex flex-col gap-y-3 items-center">
-                <span class="text-gray-700 text-sm font-Dana">ش</span>
-                <div class="flex flex-col gap-y-2 items-center text-gray-800 font-Dana">
-                    <span class="size-8 flex items-center justify-center hover:bg-Primary hover:text-white rounded-full cursor-pointer">6</span>
-                    <span class="size-8 flex items-center justify-center hover:bg-Primary hover:text-white rounded-full cursor-pointer">6</span>
-                    <span class="size-8 flex items-center justify-center hover:bg-Primary hover:text-white rounded-full cursor-pointer">6</span>
-                    <span class="size-8 flex items-center justify-center hover:bg-Primary hover:text-white rounded-full cursor-pointer">6</span>
-                    <span class="size-8 flex items-center justify-center hover:bg-Primary hover:text-white rounded-full cursor-pointer">6</span>
-                </div>
-            </div>
-        </div>
-        <!-- Select Custom Date -->
-        <div class="absolute inset-0 flex flex-col justify-between size-full z-10 bg-white md:p-4 p-3">
-            <!-- Close Icon -->
-            <span class="mr-auto size-6 flex items-center justify-center rounded-full border border-Primary text-Primary hover:bg-Primary/10 cursor-pointer">
-                <svg class="size-4">
-                    <use href="#x-mark"></use>
-                </svg>
-            </span>
-            <div class="mt-6 flex items-center justify-center flex-col md:gap-y-4 gap-y-2">
-                <div class="flex items-center justify-center gap-x-4 gap-x-6">
+        <div class="flex flex-col justify-between">
+            <div class="mt-6 flex items-center justify-center flex-col gap-y-4">
+                <div class="flex items-center justify-center gap-x-4">
+                    <!-- Day -->
                     <div class="w-20 flex flex-col md:gap-y-2 gap-y-1">
                         <!-- Title -->
                         <span class="text-sm text-center text-gray-800 font-Dana">روز</span>
                         <!-- Numbers -->
                         <div class="h-24.5 px-1 overflow-auto custom-scroll flex flex-col divide-y divide-gray-300">
-                            <span class="text-xs text-center text-gray-700 py-1 font-Dana hover:bg-gray-100 cursor-pointer">1</span>
-                            <span class="text-xs text-center text-gray-700 py-1 font-Dana hover:bg-gray-100 cursor-pointer">1</span>
-                            <span class="text-xs text-center text-gray-700 py-1 font-Dana hover:bg-gray-100 cursor-pointer">1</span>
-                            <span class="text-xs text-center text-gray-700 py-1 font-Dana hover:bg-gray-100 cursor-pointer">1</span>
-                            <span class="text-xs text-center text-gray-700 py-1 font-Dana hover:bg-gray-100 cursor-pointer">1</span>
-                            <span class="text-xs text-center text-gray-700 py-1 font-Dana hover:bg-gray-100 cursor-pointer">1</span>     
+                            <span :class="selectedDate.jd === day ? 'date--active' : ''" @click="setDate(selectedDate.jy, selectedDate.jm, day)" v-for="day in dayNumber" :key="day" class="text-xs text-center text-gray-700 py-1 font-Dana hover:bg-gray-100 cursor-pointer">{{ day }}</span>     
                         </div>
                     </div>
+                    <!-- Month -->
                     <div class="w-20 flex flex-col md:gap-y-2 gap-y-1">
                         <!-- Title -->
-                        <span class="text-sm text-center text-gray-800 font-Dana">روز</span>
+                        <span class="text-sm text-center text-gray-800 font-Dana">ماه</span>
                         <!-- Numbers -->
                         <div class="h-24.5 px-1 overflow-auto custom-scroll flex flex-col divide-y divide-gray-300">
-                            <span class="text-xs text-center text-gray-700 py-1 font-Dana hover:bg-gray-100 cursor-pointer">1</span>
-                            <span class="text-xs text-center text-gray-700 py-1 font-Dana hover:bg-gray-100 cursor-pointer">1</span>
-                            <span class="text-xs text-center text-gray-700 py-1 font-Dana hover:bg-gray-100 cursor-pointer">1</span>
-                            <span class="text-xs text-center text-gray-700 py-1 font-Dana hover:bg-gray-100 cursor-pointer">1</span>
-                            <span class="text-xs text-center text-gray-700 py-1 font-Dana hover:bg-gray-100 cursor-pointer">1</span>
-                            <span class="text-xs text-center text-gray-700 py-1 font-Dana hover:bg-gray-100 cursor-pointer">1</span>     
+                            <span :class="selectedDate.jm === month ? 'date--active' : ''" @click="setDate(selectedDate.jy, month, selectedDate.jd)" v-for="month in monthNumber" :key="month" class="text-xs text-center text-gray-700 py-1 font-Dana hover:bg-gray-100 cursor-pointer">{{ month }}</span>     
                         </div>
                     </div>
+                    <!-- Year -->
                     <div class="w-20 flex flex-col md:gap-y-2 gap-y-1">
                         <!-- Title -->
-                        <span class="text-sm text-center text-gray-800 font-Dana">روز</span>
+                        <span class="text-sm text-center text-gray-800 font-Dana">سال</span>
                         <!-- Numbers -->
                         <div class="h-24.5 px-1 overflow-auto custom-scroll flex flex-col divide-y divide-gray-300">
-                            <span class="text-xs text-center text-gray-700 py-1 font-Dana hover:bg-gray-100 cursor-pointer">1</span>
-                            <span class="text-xs text-center text-gray-700 py-1 font-Dana hover:bg-gray-100 cursor-pointer">1</span>
-                            <span class="text-xs text-center text-gray-700 py-1 font-Dana hover:bg-gray-100 cursor-pointer">1</span>
-                            <span class="text-xs text-center text-gray-700 py-1 font-Dana hover:bg-gray-100 cursor-pointer">1</span>
-                            <span class="text-xs text-center text-gray-700 py-1 font-Dana hover:bg-gray-100 cursor-pointer">1</span>
-                            <span class="text-xs text-center text-gray-700 py-1 font-Dana hover:bg-gray-100 cursor-pointer">1</span>     
+                            <span :class="selectedDate.jy === year ? 'date--active' : ''" @click="setDate(year, selectedDate.jm, selectedDate.jd)" v-for="year in yearNumber" :key="year" class="text-xs text-center text-gray-700 py-1 font-Dana hover:bg-gray-100 cursor-pointer" >{{ year }}</span>
                         </div>
                     </div>
                 </div>
                 <!-- Show Custom Date -->
-                <span class="text-center text-xs text-gray-800 font-Dana">تاریخ انتخاب شده : 1403/12/5</span>
+                <span class="text-center text-base font-Dana text-Primary">{{ jalaaliDateFormated }}</span>
                 <!-- Submit Date Button -->
-                <button class="w-full h-10 bg-Primary hover:bg-Primary/90 text-sm cursor-pointer font-Dana-Medium text-white rounded-sm">ثبت تاریخ</button>
+                <button @click="sendDate" class="w-full h-10 bg-Primary hover:bg-Primary/90 text-sm cursor-pointer font-Dana-Medium text-white rounded-sm">ثبت تاریخ</button>
             </div>
         </div>
     </div>

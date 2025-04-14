@@ -8,7 +8,7 @@ import NotFound from '@/components/ui/404Error.vue'
     <section class="result-section md:mt-12 mt-8 md:mb-18 mb-10">
         <div class="container">
             <!-- if Food is Found -->
-            <div v-if="false" class="flex flex-col md:gap-y-12 gap-y-5 text-gray-800">
+            <div v-if="true" class="flex flex-col md:gap-y-12 gap-y-5 text-gray-800">
                 <!-- Title & Search Input -->
                 <div class="flex flex-col items-center md:gap-y-6 gap-y-4">
                     <!-- Title -->

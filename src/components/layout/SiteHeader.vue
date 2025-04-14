@@ -83,7 +83,7 @@ const publicStore = usePublicStore();
               </svg>
             </button>
             <!-- Profile -->
-            <button v-if="true" class="flex items-center justify-center rounded-sm cursor-pointer lg:order-last bg-Tint-1 size-6 md:size-8 lg:size-10 text-Primary">
+            <button v-if="false" class="flex items-center justify-center rounded-sm cursor-pointer lg:order-last bg-Tint-1 size-6 md:size-8 lg:size-10 text-Primary">
               <svg class="size-4 md:size-5 lg:size-6">
                 <use href="#user"></use>
               </svg>
