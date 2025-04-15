@@ -2,7 +2,7 @@
 import { ref, computed } from 'vue'
 import jalaali from 'jalaali-js'
 
-const emit = defineEmits(['getDate'])
+const emit = defineEmits(['getDate', 'closeDatePicker'])
 const jalaaliCurrentDate = jalaali.toJalaali(new Date())
 const selectedDate = ref(jalaaliCurrentDate)
 
@@ -39,6 +39,7 @@ const setDate = (year, month, day) => {
 const sendDate = () => {
     const gregorianDate = jalaali.toGregorian(selectedDate.value.jy, selectedDate.value.jm, selectedDate.value.jd)
     emit('getDate', { gregorianDate, jalaaliDateFormated })
+    emit('closeDatePicker', false)
 }
 
 calculateMinYear(1340)
