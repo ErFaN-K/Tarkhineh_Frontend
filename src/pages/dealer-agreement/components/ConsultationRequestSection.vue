@@ -11,10 +11,10 @@ const getDateFromCustomDatePicker = (date) => {
 // Open & Close Custom Date Picker 
 const isOpenCustomDatePicker = ref(false)
 const showCustomDatePicker = () => {
-    isOpenCustomDatePicker.value = true
+    isOpenCustomDatePicker.value ? isOpenCustomDatePicker.value = false : isOpenCustomDatePicker.value = true
 }
-const hideCustomDatePicker = (date) => {
-    isOpenCustomDatePicker.value = date 
+const hideCustomDatePicker = (isShow) => {
+    isOpenCustomDatePicker.value = isShow 
 }
 </script>
 
@@ -28,7 +28,7 @@ const hideCustomDatePicker = (date) => {
                 <div class="section__body flex items-center flex-col md:gap-y-6 gap-y-4">
                     <!-- Input Container -->
                     <div class="w-full flex items-center max-lg:flex-col md:gap-x-6 max-lg:gap-y-3">
-                        <!-- Lastname Input -->
+                        <!-- First & Last name Input -->
                         <div class="w-full">
                             <input type="text" placeholder="نام و نام‌خانوادگی" class="w-full md:h-10 h-8 md:px-4 px-2 border outline-none border-gray-400 placeholder:text-gray-700 text-gray-800 font-Dana md:text-sm text-xs rounded-sm">
                         </div>
