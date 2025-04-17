@@ -3,9 +3,9 @@ import { useDealerAgreementStore } from '@/store/modules/DealerAgreementStore.js
 import { computed, ref } from 'vue'
 const dealerAgreementStore = useDealerAgreementStore()
 
-const emit = defineEmits(['countySelect'])
 const selectedCountyList = computed(() => dealerAgreementStore.selectedCountyList)
 
+const emit = defineEmits(['countySelect'])
 const changeCounty = (countyName) => emit('countySelect', countyName)
 </script>
 
