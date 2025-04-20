@@ -1,14 +1,14 @@
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, reactive } from 'vue'
 import jalaali from 'jalaali-js'
 
 const emit = defineEmits(['getDate', 'closeDatePicker'])
 const jalaaliCurrentDate = jalaali.toJalaali(new Date())
 const selectedDate = ref(jalaaliCurrentDate)
 
-let dayNumber = []
-let yearNumber = []
-let monthNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+let dayNumber = reactive([])
+let yearNumber = reactive([])
+let monthNumber = reactive([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
 
 const getMonthLength = (year, month) => {
     dayNumber = [] // Reset dayNumber

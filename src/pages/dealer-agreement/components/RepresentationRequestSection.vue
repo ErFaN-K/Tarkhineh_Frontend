@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import { reactive, ref } from 'vue'
 import CountiesDropDown from './CountiesDropDown.vue'
 import ProvincesDropDown from './ProvincesDropDown.vue'
 
@@ -17,6 +17,21 @@ const changeProvinceValue = (provinceName) => {
 const changeCountyValue = (countyName) => {
     countyInputValue.value = countyName
     isOpenCountyList.value = false
+}
+
+// File Input Handlers
+const fileInput = ref(null)
+const files = reactive([])
+
+// Open File Menu
+const openFileInput = () => fileInput.value.click()
+
+// Add File 
+const addFile = (event) => {
+    Array.from(event.target.files).forEach(file => {
+        files.push(file);
+        console.log(file.name)
+    })
 }
 </script>
 
@@ -133,15 +148,26 @@ const changeCountyValue = (countyName) => {
                             </div>
                             <div class="w-full flex flex-col gap-y-1">
                                 <span class="text-gray-700 font-Dana md:text-base text-sm">تصاویر ملک</span>
-                                <input type="file" hidden id="propertyImages">
-                                <label for="propertyImages" class="flex items-center justify-center border border-gray-400 rounded-sm md:h-48 h-40">
+                                <input type="file" @change="addFile($event)" hidden multiple ref="fileInput">
+                                <div @click="openFileInput" v-if="files.length <= 0" class="cursor-pointer group flex items-center justify-center border border-gray-400 rounded-sm md:h-48 h-40">
                                     <div class="flex flex-col items-center gap-y-2 text-gray-700 font-Dana-Medium">
-                                        <svg class="md:size-16 size-12">
+                                        <svg class="md:size-16 size-12 group-hover:text-Primary">
                                             <use href="#folder-pluse"></use>
                                         </svg>
-                                        <span class="md:text-sm text-xs">تصاویری از ملک را بارگذاری کنید...</span>
+                                        <span class="md:text-sm text-xs group-hover:text-gray-800">تصاویری از ملک را بارگذاری کنید...</span>
                                     </div>
-                                </label>
+                                </div>
+                                <div v-else class="flex items-center justify-center md:gap-x-4 gap-x-3 border border-gray-400 rounded-sm md:h-48 h-40">
+                                    <button @click="openFileInput" class="outline-none h-8 md:h-10 flex items-center justify-center border border-Primary text-Primary rounded-sm md:px-6.5 px-4">
+                                        <svg class="md:size-6 size-4">
+                                            <use href="#folder-pluse"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="md:max-w-64.5 max-w-40 flex items-center justify-center rounded-sm overflow-auto whitespace-nowrap space-x-2 px-1 md:px-1 hidden-scroll w-full md:h-10 h-8 bg-gray-100 border border-gray-400">
+                                        <!-- File Name Selected -->
+                                        <span v-for="file in files" :key="file.name" class="md:text-sm text-xs text-gray-700"> {{ file.name }} </span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
