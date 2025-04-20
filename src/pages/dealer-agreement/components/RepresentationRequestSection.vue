@@ -86,7 +86,7 @@ const addFile = (event) => {
                                     <CountiesDropDown @countySelect="changeCountyValue" :class="isOpenCountyList ? 'is-show' : 'is-hidden'"/>
                                 </div>
                                 <div class="size-full">
-                                    <textarea placeholder="آدرس دقیق" class="w-full resize-none lg:h-full h-20 md:px-4 px-2 py-2 border outline-none border-gray-400 placeholder:text-gray-700 text-gray-800 font-Dana md:text-sm text-xs rounded-sm"></textarea>
+                                    <textarea placeholder="آدرس دقیق" class="w-full resize-none lg:h-full h-20 md:px-4 p-2 border outline-none border-gray-400 placeholder:text-gray-700 text-gray-800 font-Dana md:text-sm text-xs rounded-sm"></textarea>
                                 </div> 
                             </div>
                             <div class="w-full h-40 bg-Primary/10 rounded-sm flex items-center justify-center text-sm md:text-xl font-Dana-SemiBold text-Primary">
