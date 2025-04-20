@@ -139,6 +139,10 @@
     background-image: var(--bg-gradient), url(./assets/images/hero-section/Hero-Contact-Us.png);
   }
   
+  .hero__background--dealer-agreement { 
+    background-image: var(--bg-gradient), url(./assets/images/hero-section/Hero-Dealer-Agreement.png);
+  }
+
   .footer__background {
     background-image: var(--bg-gradient), url(./assets/images/backgrounds/Footer.png);
   }
@@ -157,12 +161,13 @@
 
   .custom-scroll::-webkit-scrollbar {
     background-color: transparent;
-    height: 4px;
-    width: 4px;
+    width: 3px;
+    height: 2px;
   }
 
   .custom-scroll::-webkit-scrollbar-thumb {
-    background-color: #adadad;
+    background-color: #e1e1e1;
+    border-radius: 8px;
   }
 
   .hidden-scroll::-webkit-scrollbar {
@@ -220,6 +225,10 @@
 
   .accordion--active svg { 
     @apply rotate-90
+  }
+
+  .date--active {
+    @apply bg-gray-200
   }
 }
 
