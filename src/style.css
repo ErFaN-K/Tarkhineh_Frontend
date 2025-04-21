@@ -55,6 +55,11 @@
       url(./assets/fonts/Morabba/woff2/Morabba-Bold.woff2), format("woff2");
     font-display: swap;
   }
+
+  button { 
+    border: none;
+    outline: none;
+  }
 }
 
 @layer component {
@@ -229,6 +234,20 @@
 
   .date--active {
     @apply bg-gray-200
+  }
+
+  .profile-panel__link--active { 
+    @apply text-Primary relative
+  }
+
+  .profile-panel__link--active::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 2px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    background-color: var(--color-Primary);
   }
 }
 

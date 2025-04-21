@@ -1,0 +1,39 @@
+<script setup>
+// Components
+import Header from '@/components/layout/SiteHeader.vue'
+import ProfilePanel from './components/ProfilePanel.vue'
+import Footer from "@/components/layout/SiteFooter.vue";
+import MobileMenu from "@/components/ui/MobileMenu.vue";
+import Overlay from "@/components/ui/Overlay.vue";
+</script>
+
+<template>
+  <!-- Dashboard Page Page -->
+  <!----------------------->
+  <!-- Dashboard Page | Header -->
+  <Header />
+
+  <!-- Dashboard Page | Main -->
+  <main>
+    <section class="md:my-12 mt-4 main-section">
+        <div class="container">
+            <div class="grid xl:grid-cols-12 lg:grid-cols-9 grid-cols-4 md:gap-x-6 max-lg:gap-y-6 items-start">
+                <!-- Profile Panel -->
+                <ProfilePanel class="col-span-4 lg:col-span-3 xl:col-span-3"/>
+                <!-- Page Content -->
+                <router-view class="xl:col-span-9 lg:col-span-6 col-span-4"></router-view>
+            </div>
+        </div>
+    </section>
+  </main>
+
+  <!-- Dashboard Page | Footer ( md : Show )-->
+  <Footer class="max-md:hidden"/>
+
+  <!----------------------->
+  
+  <!-- Hamburger Menu -->
+  <MobileMenu />
+  <!-- Overlay -->
+  <Overlay />
+</template>

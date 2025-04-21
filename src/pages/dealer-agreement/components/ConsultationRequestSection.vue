@@ -1,21 +1,9 @@
 <script setup>
 import { ref } from 'vue';
-import DatePicker from './DatePicker.vue';
+import DatePicker from '@/components/shared/DatePicker.vue';
+import { datePicker } from '@/composables/useDatePicker'
 
-// Get Date From Custom Date Picker
-const dateNumber = ref(null)
-const getDateFromCustomDatePicker = (date) => {
-    dateNumber.value = date.jalaaliDateFormated.value
-}
-
-// Open & Close Custom Date Picker 
-const isOpenCustomDatePicker = ref(false)
-const showCustomDatePicker = () => {
-    isOpenCustomDatePicker.value ? isOpenCustomDatePicker.value = false : isOpenCustomDatePicker.value = true
-}
-const hideCustomDatePicker = (isShow) => {
-    isOpenCustomDatePicker.value = isShow 
-}
+const { dateNumber, getDateFromCustomDatePicker, isOpenCustomDatePicker, showCustomDatePicker, hideCustomDatePicker } = datePicker()
 </script>
 
 <template>

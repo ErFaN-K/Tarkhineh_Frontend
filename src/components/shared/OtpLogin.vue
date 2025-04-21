@@ -37,17 +37,6 @@
           >شماره همراه</label
         >
       </div>
-      <!-- Error Alert -->
-      <div
-        class="opacity-0 invisible flex items-center gap-x-1 my-1 text-Error"
-      >
-        <!-- Error Icon -->
-        <svg class="size-4">
-          <use href="#warning"></use>
-        </svg>
-        <!-- Error Message -->
-        <span class="text-custom font-Dana">پر کردن این فیلد الزامی است!</span>
-      </div>
       <!-- Submit Button -->
       <button
         class="w-full h-10 hover:bg-Primary/90 rounded-sm flex items-center justify-center disabled:bg-gray-300 disabled:text-gray-400 bg-Primary text-white font-Dana text-base"

@@ -6,7 +6,28 @@ export default [
     meta: { title: `ترخینه 🥦 | صفحه اصلی` },
   },
   {
-    path: "/branch",
+    path: "/dashboard",
+    name: "DashboardPage",
+    component: () => import("@/pages/dashboard/DashboardPage.vue"),
+    children: [
+      {
+        // If the user enters the /dashboard Route, they will be redirected to the dashboard/profile Route.
+        path: "",
+        name: "DashboardDefault",
+        redirect: "dashboard/profile"
+      },
+      {
+        path: "profile",
+        name: "Dashboard|Profile",
+        component: () => import("@/pages/dashboard/profile/ProfilePage.vue"),
+        meta: {
+          title: "ترخینه 🥦 | پروفایل من ",
+        }
+      },
+    ]
+  },
+  {
+    path: "/branch/:branchName",
     name: "BranchPage",
     component: () => import("@/pages/branch/BranchPage.vue"),
     meta: {
@@ -17,7 +38,7 @@ export default [
     }
   },
   {
-    path: "/menu",
+    path: "/menu/:branchName",
     name: "MenuPage",
     component: () => import("@/pages/menu/MenuPage.vue"),
     meta: {
