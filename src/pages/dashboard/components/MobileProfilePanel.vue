@@ -1,9 +1,9 @@
 <template>
     <div class="w-full fixed bottom-4 left-0 right-0 flex justify-center">
         <div class="container">
-            <div class="h-16 bg-white px-4 w-full flex justify-between items-center gap-x-2     shadow-md rounded-sm text-Primary">
+            <div class="h-16 bg-Primary px-4 w-full flex justify-between items-center gap-x-2 rounded-lg text-white/60">
                 <!-- Routes Link -->
-                <a href="#">
+                <a href="#" class="mobile-profile-panel__link--active">
                     <svg class="size-6">
                         <use href="#user"></use>
                     </svg>

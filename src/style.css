@@ -236,11 +236,11 @@
     @apply bg-gray-200
   }
 
-  .profile-panel__link--active { 
+  .desktop-profile-panel__link--active { 
     @apply text-Primary relative
   }
 
-  .profile-panel__link--active::before {
+  .desktop-profile-panel__link--active::before {
     content: '';
     display: block;
     height: 100%;
@@ -248,6 +248,10 @@
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
     background-color: var(--color-Primary);
+  }
+
+  .mobile-profile-panel__link--active {
+    @apply text-white
   }
 }
 

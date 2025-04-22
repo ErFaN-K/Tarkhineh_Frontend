@@ -5,6 +5,7 @@ import DesktopProfilePanel from './components/DesktopProfilePanel.vue';
 import MobileProfilePanel from './components/MobileProfilePanel.vue'
 import Footer from "@/components/layout/SiteFooter.vue";
 import MobileMenu from "@/components/ui/MobileMenu.vue";
+import CloseModal from '@/components/shared/closeModal.vue';
 import Overlay from "@/components/ui/Overlay.vue";
 </script>
 
@@ -16,7 +17,7 @@ import Overlay from "@/components/ui/Overlay.vue";
 
   <!-- Dashboard Page | Main -->
   <main>
-    <section class="md:my-12 mt-4 main-section">
+    <section class="md:my-12 mt-6 main-section">
         <div class="container">
             <div class="grid xl:grid-cols-12 lg:grid-cols-9 grid-cols-4 md:gap-x-6 max-lg:gap-y-6 items-start">
                 <!-- Profile Panel ( Desktop )-->
@@ -37,6 +38,8 @@ import Overlay from "@/components/ui/Overlay.vue";
   
   <!-- Hamburger Menu -->
   <MobileMenu />
+  <!-- Close Modal -->
+  <CloseModal />
   <!-- Overlay -->
   <Overlay />
 </template>

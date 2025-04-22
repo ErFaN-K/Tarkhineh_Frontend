@@ -8,9 +8,9 @@ const { dateNumber, getDateFromCustomDatePicker, isOpenCustomDatePicker, showCus
 </script>
 
 <template>
-    <div class="md:min-h-[calc(100vh-367px)] md:rounded-lg rounded-sm border border-gray-400 md:p-6 p-4">
+    <div class="md:h-[calc(100vh-367px)] md:rounded-lg md:border md:border-gray-400 md:p-6">
       <!-- Title -->
-      <div class="pb-2 border-b border-b-gray-400">
+      <div class="md:pb-2 md:border-b md:border-b-gray-400">
         <h4 class="text-gray-800 font-Dana-SemiBold md:text-xl text-base max-md:text-center"> {{ isDisabled ? 'پروفایل من' : 'ویرایش اطلاعات شخصی' }} </h4>
       </div>
       <!-- User Information -->
@@ -143,20 +143,20 @@ const { dateNumber, getDateFromCustomDatePicker, isOpenCustomDatePicker, showCus
             </div>
           </div>
         </div>
-      </div>
-      <!-- Edit Information Button -->
-      <button @click="isDisabled = false" v-if="isDisabled" class="mx-auto mt-6 md:h-10 h-8 flex items-center justify-center gap-x-1 md:gap-x-2 px-2 md:px-11 rounded-sm border border-Primary text-Primary hover:bg-Primary/10 cursor-pointer">
-        <svg class="size-4 md:size-6">
-            <use href="#pencil-square"></use>
-        </svg>
-        <span class="text-xs md:text-base md:font-Dana-Medium font-Dana">ویرایش اطلاعات شخصی</span>
-      </button>
-      <!-- Save Information Data -->
-      <div v-else class="md:pl-24.25 mt-6 flex w-full gap-x-4 justify-end">
-        <!-- Cancele Button -->
-        <button @click="isDisabled = true; isOpenCustomDatePicker = false" class="cursor-pointer md:w-32.5 w-full h-8 md:h-10 flex items-center justify-center font-Dana md:font-Dana-Medium text-xs md:text-base text-Primary border border-Primary rounded-sm hover:bg-Primary/10">انصراف</button>
-        <!-- Save Button -->
-        <button class="cursor-pointer md:w-32.5 w-full h-8 md:h-10 flex items-center justify-center font-Dana md:font-Dana-Medium text-xs md:text-base text-white bg-Primary rounded-sm hover:bg-Primary/90">ذخیره اطلاعات</button>
+        <!-- Edit Information Button -->
+        <button @click="isDisabled = false" v-if="isDisabled" class="max-md:mt-3 mx-auto md:h-10 h-8 flex items-center justify-center gap-x-1 md:gap-x-2 px-2 md:px-11 rounded-sm border border-Primary text-Primary hover:bg-Primary/10 cursor-pointer">
+          <svg class="size-4 md:size-6">
+              <use href="#pencil-square"></use>
+          </svg>
+          <span class="text-xs md:text-base md:font-Dana-Medium font-Dana">ویرایش اطلاعات شخصی</span>
+        </button>
+        <!-- Save Information Data -->
+        <div v-else class="max-md:mt-3 flex w-full gap-x-4 justify-end">
+          <!-- Cancele Button -->
+          <button @click="isDisabled = true; isOpenCustomDatePicker = false" class="cursor-pointer md:w-32.5 w-full h-8 md:h-10 flex items-center justify-center font-Dana md:font-Dana-Medium text-xs md:text-base text-Primary border border-Primary rounded-sm hover:bg-Primary/10">انصراف</button>
+          <!-- Save Button -->
+          <button class="cursor-pointer md:w-32.5 w-full h-8 md:h-10 flex items-center justify-center font-Dana md:font-Dana-Medium text-xs md:text-base text-white bg-Primary rounded-sm hover:bg-Primary/90">ذخیره اطلاعات</button>
+        </div>
       </div>
     </div>
   </template>
