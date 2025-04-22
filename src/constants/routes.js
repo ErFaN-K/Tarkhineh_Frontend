@@ -19,9 +19,17 @@ export default [
       {
         path: "profile",
         name: "Dashboard|Profile",
-        component: () => import("@/pages/dashboard/profile/ProfilePage.vue"),
+        component: () => import("@/pages/dashboard/my-profile/ProfilePage.vue"),
         meta: {
           title: "ترخینه 🥦 | پروفایل من ",
+        }
+      },
+      {
+        path: "address",
+        name: "Dashboard|Address",
+        component: () => import("@/pages/dashboard/my-address/AddressPage.vue"),
+        meta: {
+          title: "ترخینه 🥦 | آدرس های من ",
         }
       },
     ]
