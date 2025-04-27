@@ -17,7 +17,7 @@
         <!-- Dashboard Routes -->
         <div class="pt-2 border-t border-t-gray-700 flex flex-col md:gap-y-1">
             <!-- Route -->
-            <a href="#" class="profile-panel__link--active h-10 md:h-9.5 flex items-center gap-x-1 px-2 text-gray-800 font-Dana">
+            <a href="#" class="desktop-profile-panel__link--active h-10 md:h-9.5 flex items-center gap-x-1 px-2 text-gray-800 font-Dana">
                 <svg class="size-4 md:size-5">
                     <use href="#user"></use>
                 </svg>

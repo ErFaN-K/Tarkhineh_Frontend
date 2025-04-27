@@ -19,7 +19,7 @@ const { dateNumber, getDateFromCustomDatePicker, isOpenCustomDatePicker, showCus
         <div class="flex items-center md:gap-x-4 max-md:gap-y-3 max-md:flex-col">
           <!-- First Name -->
           <div class="w-full">
-            <div class="relative font-Dana">
+            <div class="relative">
               <input
                 autocomplete="off"
                 id="firstName"
@@ -32,14 +32,14 @@ const { dateNumber, getDateFromCustomDatePicker, isOpenCustomDatePicker, showCus
               <label
                 for="firstName"
                 :class="isDisabled ? '!text-gray-400' : ''"
-                class="peer-focus:text-Primary peer-focus:-top-2 peer-placeholder-shown:top-2.5 md:peer-placeholder-shown:top-3 peer-placeholder-shown:right-4 absolute -top-2 right-4 px-1 bg-white text-gray-800 font-Dana md:text-sm text-custom"
+                class="peer-focus:text-Primary peer-focus:!-top-2 peer-placeholder-shown:top-2.5 md:peer-placeholder-shown:top-3 peer-placeholder-shown:right-4 absolute -top-2 right-4 px-1 bg-white text-gray-800 font-Dana md:text-sm text-custom"
               >نام</label>
             </div>
           </div>
   
           <!-- Last Name -->
           <div class="w-full">
-            <div class="relative font-Dana">
+            <div class="relative">
               <input
                 autocomplete="off"
                 id="lastName"
@@ -52,7 +52,7 @@ const { dateNumber, getDateFromCustomDatePicker, isOpenCustomDatePicker, showCus
               <label
                 for="lastName"
                 :class="isDisabled ? '!text-gray-400' : ''"
-                class="peer-focus:text-Primary peer-focus:-top-2 peer-placeholder-shown:top-2.5 md:peer-placeholder-shown:top-3 peer-placeholder-shown:right-4 absolute -top-2 right-4 px-1 bg-white text-gray-800 font-Dana md:text-sm text-custom"
+                class="peer-focus:text-Primary peer-focus:!-top-2 peer-placeholder-shown:top-2.5 md:peer-placeholder-shown:top-3 peer-placeholder-shown:right-4 absolute -top-2 right-4 px-1 bg-white text-gray-800 font-Dana md:text-sm text-custom"
               >نام خانوادگی</label>
             </div>
           </div>
@@ -61,7 +61,7 @@ const { dateNumber, getDateFromCustomDatePicker, isOpenCustomDatePicker, showCus
         <div class="flex items-center md:gap-x-4 max-md:gap-y-3 max-md:flex-col">
           <!-- Email -->
           <div class="w-full">
-            <div class="relative font-Dana">
+            <div class="relative">
               <input
                 autocomplete="off"
                 id="emailAddress"
@@ -74,14 +74,14 @@ const { dateNumber, getDateFromCustomDatePicker, isOpenCustomDatePicker, showCus
               <label
                 for="emailAddress"
                 :class="isDisabled ? '!text-gray-400' : ''"
-                class="peer-focus:text-Primary peer-focus:-top-2 peer-placeholder-shown:top-2.5 md:peer-placeholder-shown:top-3 peer-placeholder-shown:right-4 absolute -top-2 right-4 px-1 bg-white text-gray-800 font-Dana md:text-sm text-custom"
+                class="peer-focus:text-Primary peer-focus:!-top-2 peer-placeholder-shown:top-2.5 md:peer-placeholder-shown:top-3 peer-placeholder-shown:right-4 absolute -top-2 right-4 px-1 bg-white text-gray-800 font-Dana md:text-sm text-custom"
               >آدرس ایمیل</label>
             </div>
           </div>
   
           <!-- Phone Number -->
           <div class="w-full">
-            <div class="relative font-Dana">
+            <div class="relative">
               <input
                 autocomplete="off"
                 id="userPhoneNumber"
@@ -94,7 +94,7 @@ const { dateNumber, getDateFromCustomDatePicker, isOpenCustomDatePicker, showCus
               <label
                 for="userPhoneNumber"
                 :class="isDisabled ? '!text-gray-400' : ''"
-                class="peer-focus:text-Primary peer-focus:-top-2 peer-placeholder-shown:top-2.5 md:peer-placeholder-shown:top-3 peer-placeholder-shown:right-4 absolute -top-2 right-4 px-1 bg-white text-gray-800 font-Dana md:text-sm text-custom"
+                class="peer-focus:text-Primary peer-focus:!-top-2 peer-placeholder-shown:top-2.5 md:peer-placeholder-shown:top-3 peer-placeholder-shown:right-4 absolute -top-2 right-4 px-1 bg-white text-gray-800 font-Dana md:text-sm text-custom"
               >شماره همراه</label>
             </div>
           </div>
@@ -103,7 +103,7 @@ const { dateNumber, getDateFromCustomDatePicker, isOpenCustomDatePicker, showCus
         <div class="flex items-center md:gap-x-4 max-md:gap-y-3 max-md:flex-col">
           <!-- Birthday -->
           <div class="w-full">
-            <div class="relative font-Dana">
+            <div class="relative">
               <input
                 autocomplete="off"
                 id="userBirthday"
@@ -117,7 +117,7 @@ const { dateNumber, getDateFromCustomDatePicker, isOpenCustomDatePicker, showCus
               <label
                 for="userBirthday"
                 :class="isDisabled ? '!text-gray-400' : ''"
-                class="peer-focus:text-Primary peer-focus:-top-2 peer-placeholder-shown:top-2.5 md:peer-placeholder-shown:top-3 peer-placeholder-shown:right-4 absolute -top-2 right-4 px-1 bg-white text-gray-800 font-Dana md:text-sm text-custom"
+                class="peer-focus:text-Primary peer-focus:!-top-2 peer-placeholder-shown:top-2.5 md:peer-placeholder-shown:top-3 peer-placeholder-shown:right-4 absolute -top-2 right-4 px-1 bg-white text-gray-800 font-Dana md:text-sm text-custom"
               >تاریخ تولد <span class="text-custom"> (اختیاری)</span></label>
               <DatePicker @closeDatePicker="hideCustomDatePicker" @getDate="getDateFromCustomDatePicker" :class="!isOpenCustomDatePicker ? 'is-hidden' : 'is-show'"/>
             </div>
@@ -125,7 +125,7 @@ const { dateNumber, getDateFromCustomDatePicker, isOpenCustomDatePicker, showCus
   
           <!-- Username -->
           <div class="w-full">
-            <div class="relative font-Dana">
+            <div class="relative">
               <input
                 autocomplete="off"
                 id="userName"
@@ -138,7 +138,7 @@ const { dateNumber, getDateFromCustomDatePicker, isOpenCustomDatePicker, showCus
               <label
                 for="userName"
                 :class="isDisabled ? '!text-gray-400' : ''"
-                class="peer-focus:text-Primary peer-focus:-top-2 peer-placeholder-shown:top-2.5 md:peer-placeholder-shown:top-3 peer-placeholder-shown:right-4 absolute -top-2 right-4 px-1 bg-white text-gray-800 font-Dana md:text-sm text-custom"
+                class="peer-focus:text-Primary peer-focus:!-top-2 peer-placeholder-shown:top-2.5 md:peer-placeholder-shown:top-3 peer-placeholder-shown:right-4 absolute -top-2 right-4 px-1 bg-white text-gray-800 font-Dana md:text-sm text-custom"
               >نام نمایشی</label>
             </div>
           </div>

@@ -19,8 +19,6 @@ import AddressDetails from '@/components/shared/AddressDetails.vue';
       <div v-if="true" class="mt-6 md:mt-4 grid md:grid-cols-2 grid-cols-1 md:gap-x-4 gap-y-3">
         <AddressDetails />
         <AddressDetails />
-        <AddressDetails />
-        <AddressDetails />
         <!-- Add Address Button -->
         <button class="cursor-pointer mt-3 mx-auto md:hidden border border-Primary text-Primary font-Dana text-xs rounded-sm h-8 flex items-center justify-center px-7.5 hover:bg-Primary/10">افزودن آدرس جدید</button>
       </div>

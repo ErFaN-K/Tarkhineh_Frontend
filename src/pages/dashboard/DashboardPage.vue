@@ -6,6 +6,7 @@ import MobileProfilePanel from './components/MobileProfilePanel.vue'
 import Footer from "@/components/layout/SiteFooter.vue";
 import MobileMenu from "@/components/ui/MobileMenu.vue";
 import CloseModal from '@/components/shared/closeModal.vue';
+import AddressEditorModal from '@/components/shared/AddressEditorModal.vue';
 import Overlay from "@/components/ui/Overlay.vue";
 </script>
 
@@ -40,6 +41,8 @@ import Overlay from "@/components/ui/Overlay.vue";
   <MobileMenu />
   <!-- Close Modal -->
   <CloseModal />
+  <!-- Address Editor -->
+  <AddressEditorModal />
   <!-- Overlay -->
   <Overlay />
 </template>
