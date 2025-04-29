@@ -17,36 +17,36 @@ const isShowNavigationMenu = ref(false)
         </button>
         <!-- Navigation -->
         <div :class="isShowNavigationMenu ? 'is-show' : 'is-hidden'" class="absolute md:w-36 w-30 z-40 top-[calc(100%+8px)] left-0 px-2 bg-white shadow-drop-down rounded-sm divide-y divide-gray-300">
-            <a href="#" class="h-8 md:h-10 flex items-center gap-x-1 text-gray-800 font-Dana md:text-sm text-custom">
+            <router-link :to="{ name: 'HomePage' }" class="h-8 md:h-10 flex items-center gap-x-1 text-gray-800 font-Dana md:text-sm text-custom">
                 <svg class="size-4 md:size-5">
                     <use href="#user"></use>
                 </svg>
                 <span>پروفایل</span>
-            </a>
-            <a href="#" class="h-8 md:h-10 flex items-center gap-x-1 text-gray-800 font-Dana md:text-sm text-custom">
+            </router-link>
+            <router-link :to="{ name: 'HomePage' }" class="h-8 md:h-10 flex items-center gap-x-1 text-gray-800 font-Dana md:text-sm text-custom">
                 <svg class="size-4 md:size-5">
                     <use href="#order"></use>
                 </svg>
                 <span>پیگیری سفارش</span>
-            </a>
-            <a href="#" class="h-8 md:h-10 flex items-center gap-x-1 text-gray-800 font-Dana md:text-sm text-custom">
+            </router-link>
+            <router-link :to="{ name: 'HomePage' }" class="h-8 md:h-10 flex items-center gap-x-1 text-gray-800 font-Dana md:text-sm text-custom">
                 <svg class="size-4 md:size-5">
                     <use href="#heart"></use>
                 </svg>
                 <span>علاقه‌مندی‌ها</span>
-            </a>
-            <a href="#" class="h-8 md:h-10 flex items-center gap-x-1 text-gray-800 font-Dana md:text-sm text-custom">
+            </router-link>
+            <router-link :to="{ name: 'HomePage' }" class="h-8 md:h-10 flex items-center gap-x-1 text-gray-800 font-Dana md:text-sm text-custom">
                 <svg class="size-4 md:size-5">
                     <use href="#location"></use>
                 </svg>
                 <span>آدرس‌های من</span>
-            </a>
-            <a href="#" class="h-8 md:h-10 flex items-center gap-x-1 text-gray-800 font-Dana md:text-sm text-custom">
+            </router-link>
+            <button class="h-8 md:h-10 flex items-center gap-x-1 text-gray-800 font-Dana md:text-sm text-custom">
                 <svg class="size-4 md:size-5 rotate-180">
                     <use href="#exit"></use>
                 </svg>
                 <span>خروج از حساب</span>
-            </a>
+            </button>
         </div>
     </div>
 </template>

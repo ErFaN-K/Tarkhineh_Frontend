@@ -33,12 +33,12 @@ const toggleSection = (dropDownElementName) => {
     </div>
     <!-- Body -->
     <div class="px-4 divide-y divide-gray-400 space-y-2 *:pb-2 *:text-gray-800">
-      <div class="flex items-center gap-x-1">
+      <router-link :to="{ name: 'HomePage' }" class="flex items-center gap-x-1">
         <svg class="size-4">
           <use href="#home"></use>
         </svg>
         <span class="text-xs font-Dana">صفحه اصلی</span>
-      </div>
+      </router-link>
       <div class="flex flex-col gap-y-2">
         <div
           :class="{
@@ -64,10 +64,10 @@ const toggleSection = (dropDownElementName) => {
           v-show="activeDropDown === 'menu'"
           class="pr-4 w-full *:text-gray-800 *:text-custom *:font-Dana *:block space-y-2"
         >
-          <a href="#">منوی تستی</a>
-          <a href="#">منوی تستی</a>
-          <a href="#">منوی تستی</a>
-          <a href="#">منوی تستی</a>
+          <router-link :to="{ name: 'MenuPage' }">منوی تستی</router-link>
+          <router-link :to="{ name: 'MenuPage' }">منوی تستی</router-link>
+          <router-link :to="{ name: 'MenuPage' }">منوی تستی</router-link>
+          <router-link :to="{ name: 'MenuPage' }">منوی تستی</router-link>
         </div>
       </div>
       <div class="flex flex-col gap-y-2">
@@ -95,24 +95,24 @@ const toggleSection = (dropDownElementName) => {
           v-show="activeDropDown === 'branch'"
           class="pr-4 w-full *:text-gray-800 *:text-custom *:font-Dana *:block space-y-2"
         >
-          <a href="#">شعبه اکباتان</a>
-          <a href="#">شعبه چالوس</a>
-          <a href="#">شعبه شهرک غرب</a>
-          <a href="#">شعبه تستی</a>
+          <router-link :to="{ name: 'BranchPage' }">شعبه اکباتان</router-link>
+          <router-link :to="{ name: 'BranchPage' }">شعبه چالوس</router-link>
+          <router-link :to="{ name: 'BranchPage' }">شعبه شهرک غرب</router-link>
+          <router-link :to="{ name: 'BranchPage' }">شعبه تستی</router-link>
         </div>
       </div>
-      <div class="flex items-center gap-x-1">
+      <router-link :to="{ name: 'AboutUsPage' }" class="flex items-center gap-x-1">
         <svg class="size-4">
           <use href="#about-us"></use>
         </svg>
         <span class="text-xs font-Dana">درباره ما</span>
-      </div>
-      <div class="flex items-center gap-x-1">
+      </router-link>
+      <router-link :to="{ name: 'ContactUsPage' }" class="flex items-center gap-x-1">
         <svg class="size-4">
           <use href="#phone"></use>
         </svg>
         <span class="text-xs font-Dana">تماس باما</span>
-      </div>
+      </router-link>
     </div>
   </div>
 </template>

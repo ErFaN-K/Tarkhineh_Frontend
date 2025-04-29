@@ -90,7 +90,7 @@ export default [
   },
   {
     path: "/dealer-agreement",
-    name: "DealerAgreement",
+    name: "DealerAgreementPage",
     component: () => import("@/pages/dealer-agreement/DealerAgreementPage.vue"),
     meta: {
       title: "ترخینه 🥦 | اعطای نمایندگی",

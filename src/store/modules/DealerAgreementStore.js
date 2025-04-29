@@ -1,5 +1,5 @@
 import { defineStore } from "pinia";
-import { reactive, ref } from "vue";
+import { ref } from "vue";
 
 export const useDealerAgreementStore = defineStore("dealer-agreement", () => {
     const provinces = [

@@ -24,11 +24,11 @@ defineProps({
       alt="Menu Image"
       class="size-30 md:size-60 -mt-15 md:-mt-30"
     />
-    <a
+    <router-link :to="{ name: 'MenuPage', param: link}"
       :href="link"
       class="flex items-center justify-center mt-4 max-xl:mt-6 max-md:mt-2.5 shadow-md text-gray-800 w-24 md:w-38.75 text-xs bg-gray-100 rounded-sm min-h-8 md:min-h-12 md:text-xl font-Dana"
     >
       {{ linkTitle }}
-    </a>
+    </router-link>
   </div>
 </template>

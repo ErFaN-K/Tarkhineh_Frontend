@@ -21,10 +21,10 @@ defineProps({
       >
         {{ content }}
       </h1>
-      <a
+      <router-link :to="{ name: 'MenuPage' }"
         href="#"
         class="flex items-center h-6 px-2 text-custom text-white md:rounded-lg rounded-sm bg-Primary sm:px-4 lg:px-8 sm:h-8 lg:h-10 font-Dana sm:text-base lg:text-lg"
-        >سفارش آنلاین غذا</a
+        >سفارش آنلاین غذا</router-link
       >
     </div>
   </div>

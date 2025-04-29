@@ -32,12 +32,12 @@ defineProps({
       <span class="text-sm md:text-xl text-gray-800 md:font-Morabba-Bold font-Morabba-Medium line-clamp-1">{{ branchName }}</span>
       <!-- Branch Address -->
       <span class="text-custom md:text-sm text-gray-700 font-Dana h-10 max-md:h-8 line-clamp-2 text-center">{{ branchAddress }}</span>
-      <a :href="branchPageLink" class="max-md:hidden h-8 px-6 border rounded-sm border-Primary flex items-center gap-x-1 font-Dana text-Primary text-xs">
+      <router-link :to="{ name: 'BranchPage' }" class="max-md:hidden h-8 px-6 border rounded-sm border-Primary flex items-center gap-x-1 font-Dana text-Primary text-xs">
         <span>صفحه شعبه</span>
         <svg class="size-4">
           <use href="#chevron-left-mini"></use>
         </svg>
-      </a>
+      </router-link>
     </div>
   </div>
 </template>

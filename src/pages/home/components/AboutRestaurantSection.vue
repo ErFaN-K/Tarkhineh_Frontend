@@ -25,7 +25,7 @@ import RestaurantAttributeBox from "./RestaurantAttributeBox.vue";
               شان شما عزیزان ارائه دهیم.
             </p>
             <div class="flex justify-end">
-              <a
+              <router-link :to="{ name: 'AboutUsPage' }"
                 href="#"
                 class="flex items-center justify-center h-8 border border-white rounded-sm gap-x-2 w-38 md:h-10 md:w-46"
               >
@@ -35,7 +35,7 @@ import RestaurantAttributeBox from "./RestaurantAttributeBox.vue";
                 <svg class="md:size-6 size-4">
                   <use href="#chevron-left"></use>
                 </svg>
-              </a>
+              </router-link>
             </div>
           </div>
           <!-- Restaurant Attributes -->
