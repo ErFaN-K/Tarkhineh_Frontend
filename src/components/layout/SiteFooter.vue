@@ -18,22 +18,22 @@
             <div
               class="flex flex-col gap-y-4 max-md:gap-y-1 pr-3 md:pr-2 font-Dana text-custom md:text-sm"
             >
-              <a href="#">پرسش‌های متداول</a>
-              <a href="#">قوانین ترخینه</a>
-              <a href="#">حریم خصوصی</a>
+              <router-link :to="{ name: 'Faq|Questions' }">پرسش‌های متداول</router-link>
+              <router-link :to="{ name: 'Faq|Rules' }">قوانین ترخینه</router-link>
+              <router-link :to="{ name: 'Faq|Privacy' }">حریم خصوصی</router-link>
               <!-- Restaurant Social Media -->
               <div class="flex items-center gap-x-4 max-md:gap-x-2">
-                <a href="#">
+                <a href="https://twitter.com" target="_blank">
                   <svg class="size-4 md:size-6">
                     <use href="#twitter-icon"></use>
                   </svg>
                 </a>
-                <a href="#">
+                <a href="https://instagram.com" target="_blank">
                   <svg class="size-4 md:size-6">
                     <use href="#instagram-icon"></use>
                   </svg>
                 </a>
-                <a href="#">
+                <a href="https://telegram.com" target="_blank">
                   <svg class="size-4 md:size-6">
                     <use href="#telegram-icon"></use>
                   </svg>
@@ -52,10 +52,10 @@
             <div
               class="flex flex-col gap-y-4 max-md:gap-y-1 pr-3 md:pr-2 font-Dana text-custom md:text-sm"
             >
-              <a href="#">شعبه اکباتان</a>
-              <a href="#">شعبه چالوس</a>
-              <a href="#">شعبه اقدسیه</a>
-              <a href="#">شعبه ونک</a>
+              <router-link :to="{ name: 'BranchPage' }">شعبه اکباتان</router-link>
+              <router-link :to="{ name: 'BranchPage' }">شعبه چالوس</router-link>
+              <router-link :to="{ name: 'BranchPage' }">شعبه اقدسیه</router-link>
+              <router-link :to="{ name: 'BranchPage' }">شعبه ونک</router-link>
             </div>
           </div>
           <!-- Form -->
@@ -63,7 +63,7 @@
             <h4
               class="text-xl max-md:text-xs font-Morabba-Bold max-md:font-Morabba-Light mb-2 md:mb-4"
             >
-              تماس با ما
+              تماس با ما &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ( در دسترس نمیباشد )
             </h4>
             <!-- Form  -->
             <form action="#" method="#">
@@ -74,6 +74,7 @@
                 <div class="w-full flex flex-col gap-y-3">
                   <div class="h-10 flex items-center">
                     <input
+                      disabled="true"
                       type="text"
                       class="size-full border border-gray-700 outline-none px-3 rounded-sm placeholder:text-white"
                       placeholder="نام و نام خانوادگی"
@@ -81,6 +82,7 @@
                   </div>
                   <div class="h-10 flex items-center">
                     <input
+                      disabled="true"
                       type="text"
                       class="size-full border border-gray-700 outline-none px-3 rounded-sm placeholder:text-white"
                       placeholder="شماره تماس"
@@ -88,6 +90,7 @@
                   </div>
                   <div class="h-10 flex items-center">
                     <input
+                      disabled="true"
                       type="text"
                       class="size-full border border-gray-700 outline-none px-3 rounded-sm placeholder:text-white"
                       placeholder="آدرس ایمیل (اختیاری)"
@@ -97,6 +100,7 @@
                 <!-- Left Input -->
                 <div class="w-full">
                   <textarea
+                    disabled="true"
                     class="size-full border border-gray-700 outline-none px-3 py-4 rounded-sm placeholder:text-white resize-none custom-scroll"
                     placeholder="پیام شما"
                   ></textarea>
@@ -104,6 +108,7 @@
               </div>
               <div class="w-full flex justify-end">
                 <button
+                  disabled="true"
                   type="submit"
                   class="w-45.75 h-10 rounded-sm border border-gray-700 font-Dana text-sm"
                 >

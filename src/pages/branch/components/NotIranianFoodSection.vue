@@ -55,8 +55,8 @@ import FoodCard from "@/components/shared/VerticalFoodCard.vue";
         </Swiper>
       </div>
       <!-- See All Menu Button -->
-      <a
-        href="#"
+      <router-link :to="{ name: 'MenuPage' }"
+        
         class="h-8 md:h-10 px-4 md:px-2.5 flex items-center md:gap-x-2 gap-x-1 text-Primary border border-Primary rounded-sm mx-auto block w-max"
       >
         <svg class="size-4 md:size-6">
@@ -65,7 +65,7 @@ import FoodCard from "@/components/shared/VerticalFoodCard.vue";
         <span class="font-Morabba-Medium text-xs md:text-base"
           >مشاهده منوی کامل</span
         >
-      </a>
+      </router-link>
     </div>
   </section>
 </template>

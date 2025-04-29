@@ -26,9 +26,7 @@ const publicStore = usePublicStore();
             <ul
               class="flex *:flex items-center *:items-center gap-x-3 lg:gap-x-6 *:h-8 *:font-Dana *:text-gray-700 text-base lg:*:text-xl"
             >
-              <li class="nav__link--active">
-                <a href="#">صفحه اصلی</a>
-              </li>
+                <router-link activeClass="nav__link--active" :to="{ name: 'HomePage' }">صفحه اصلی</router-link>
               <li class="relative cursor-pointer group gap-x-1">
                 <span>شعبه</span>
                 <svg
@@ -40,10 +38,10 @@ const publicStore = usePublicStore();
                 <div
                   class="group-hover:visible invisible top-[calc(100%+10px)] left-0 z-10 absolute *:flex *:items-center bg-white opacity-0 group-hover:opacity-100 shadow-drop-down px-2 rounded-sm divide-y divide-gray-300 w-36 *:w-full *:h-10 *:text-gray-800 *:text-custom lg:*:text-sm delay-100"
                 >
-                  <a href="#">اکباتان</a>
-                  <a href="#">چالوس</a>
-                  <a href="#">اقدسیه</a>
-                  <a href="#">ونک</a>
+                  <router-link activeClass="nav__link--active" :to="{ name: 'BranchPage' }">اکباتان</router-link>
+                  <router-link activeClass="nav__link--active" :to="{ name: 'BranchPage' }">چالوس</router-link>
+                  <router-link activeClass="nav__link--active" :to="{ name: 'BranchPage' }">اقدسیه</router-link>
+                  <router-link activeClass="nav__link--active" :to="{ name: 'BranchPage' }">ونک</router-link>
                 </div>
               </li>
               <li class="relative cursor-pointer delay-100 group gap-x-1">
@@ -55,32 +53,27 @@ const publicStore = usePublicStore();
                 <div
                   class="group-hover:visible invisible top-[calc(100%+10px)] right-0 z-10 absolute *:flex *:items-center bg-white opacity-0 group-hover:opacity-100 shadow-drop-down px-2 rounded-sm divide-y divide-gray-300 w-36 *:w-full *:h-10 *:text-gray-800 *:text-custom lg:*:text-sm delay-100"
                 >
-                  <a href="#">غذای اصلی</a>
-                  <a href="#">پیش غذا</a>
-                  <a href="#">دسر</a>
-                  <a href="#">نوشیدنی</a>
+                  <router-link activeClass="nav__link--active" :to="{ name: 'MenuPage' }">غذای اصلی</router-link>
+                  <router-link activeClass="nav__link--active" :to="{ name: 'MenuPage' }">پیش غذا</router-link>
+                  <router-link activeClass="nav__link--active" :to="{ name: 'MenuPage' }">دسر</router-link>
+                  <router-link activeClass="nav__link--active" :to="{ name: 'MenuPage' }">نوشیدنی</router-link>
                 </div>
               </li>
-              <li>
-                <a href="#">اعطای نمایندگی</a>
-              </li>
-              <li>
-                <a href="#">درباره ما</a>
-              </li>
-              <li>
-                <a href="#">تماس با ما</a>
-              </li>
+                <router-link activeClass="nav__link--active" :to="{ name: 'DealerAgreementPage' }">اعطای نمایندگی</router-link>
+                <router-link activeClass="nav__link--active" :to="{ name: 'AboutUsPage' }">درباره ما</router-link>
+                <router-link activeClass="nav__link--active" :to="{ name: 'ContactUsPage' }">تماس با ما</router-link>
             </ul>
           </nav>
           <!-- Buttons -->
           <div class="flex items-center gap-x-1 md:gap-x-2">
             <!-- Search -->
-            <button
+            <router-link :to="{ name: 'SearchPage' }"
               class="flex items-center justify-center rounded-sm cursor-pointer max-lg:hidden bg-Tint-1 size-10 text-Primary"
             >
               <svg class="size-4 md:size-5 lg:size-6">
                 <use href="#magnifying-glass"></use>
               </svg>
+            </router-link>
             </button>
             <!-- LOGIN -->
             <NavigationMenu v-if="false"/>
