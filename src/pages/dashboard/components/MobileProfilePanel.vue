@@ -3,26 +3,26 @@
         <div class="container">
             <div class="h-16 bg-Primary px-4 w-full flex justify-between items-center gap-x-2 rounded-lg text-white/60">
                 <!-- Routes Link -->
-                <a href="#" class="mobile-profile-panel__link--active">
+                <router-link activeClass="mobile-profile-panel__link--active" :to="{ name: 'Dashboard|Profile' }">
                     <svg class="size-6">
                         <use href="#user"></use>
                     </svg>
-                </a>
-                <a href="#">
+                </router-link>
+                <router-link activeClass="mobile-profile-panel__link--active" :to="{ name: 'Dashboard|Profile' }">
                     <svg class="size-6">
                         <use href="#order"></use>
                     </svg>
-                </a>
-                <a href="#">
+                </router-link>
+                <router-link activeClass="mobile-profile-panel__link--active" :to="{ name: 'Dashboard|Profile' }">
                     <svg class="size-6">
                         <use href="#heart"></use>
                     </svg>
-                </a>
-                <a href="#">
+                </router-link>
+                <router-link activeClass="mobile-profile-panel__link--active" :to="{ name: 'Dashboard|Address' }">
                     <svg class="size-6">
                         <use href="#location"></use>
                     </svg>
-                </a>
+                </router-link>
                 <!-- Logout button -->
                 <button>
                     <svg class="size-6 rotate-180">

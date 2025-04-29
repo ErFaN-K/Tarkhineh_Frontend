@@ -114,7 +114,7 @@
         v-if="false"
         class="block text-center text-custom font-Dana text-gray-800 md:mt-4 mt-2"
         >ورود و عضویت در ترخینه به منزله قبول
-        <a href="#" class="text-Primary">قوانین و مقررات</a> است.</span
+        <router-link :to="{ name: 'Faq|Rules' }" class="text-Primary">قوانین و مقررات</router-link> است.</span
       >
       <!-- Arrows -->
       <span class="md:hidden cursor-pointer absolute md:top-6 md:left-6 top-5 left-5">

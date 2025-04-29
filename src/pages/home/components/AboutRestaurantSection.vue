@@ -26,7 +26,6 @@ import RestaurantAttributeBox from "./RestaurantAttributeBox.vue";
             </p>
             <div class="flex justify-end">
               <router-link :to="{ name: 'AboutUsPage' }"
-                href="#"
                 class="flex items-center justify-center h-8 border border-white rounded-sm gap-x-2 w-38 md:h-10 md:w-46"
               >
                 <span class="text-xs md:text-base font-Dana md:font-Dana-Medium"

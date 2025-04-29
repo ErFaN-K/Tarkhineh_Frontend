@@ -35,7 +35,7 @@ export default [
     ]
   },
   {
-    path: "/branch/:branchName",
+    path: "/branch",
     name: "BranchPage",
     component: () => import("@/pages/branch/BranchPage.vue"),
     meta: {
@@ -46,7 +46,7 @@ export default [
     }
   },
   {
-    path: "/menu/:branchName",
+    path: "/menu",
     name: "MenuPage",
     component: () => import("@/pages/menu/MenuPage.vue"),
     meta: {

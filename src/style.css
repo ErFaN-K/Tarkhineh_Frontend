@@ -93,6 +93,14 @@
     background-color: #417f56;
   }
 
+  .header__button--active {
+    @apply bg-Primary text-white
+  }
+
+  .mobile-profile-panel__link--active {
+    @apply text-white
+  }
+
   .background-config {
     background-repeat: no-repeat;
     background-position: center;
@@ -250,9 +258,6 @@
     background-color: var(--color-Primary);
   }
 
-  .mobile-profile-panel__link--active {
-    @apply text-white
-  }
 }
 
 @layer utilities {

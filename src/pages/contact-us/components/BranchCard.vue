@@ -21,7 +21,7 @@
             <!-- Show In Map Button & Go To Branch Page Button -->
             <div class="flex md:justify-center gap-x-4 md:gap-x-5">
                 <!-- Show In Map Button -->
-                <button class="w-full h-6 md:h-10 flex items-center justify-center md:w-32 border border-Primary text-Primary rounded-sm font-Dana md:font-Dana-Medium text-custom md:text-base">صفحه شعبه</button>
+                <router-link :to="{ name: 'BranchPage' }" class="w-full h-6 md:h-10 flex items-center justify-center md:w-32 border border-Primary text-Primary rounded-sm font-Dana md:font-Dana-Medium text-custom md:text-base">صفحه شعبه</router-link>
                 <!-- Go To Branch Page -->
                 <button disabled="true" class="disabled:opacity-80 w-full h-6 md:h-10 flex items-center justify-center md:w-32 bg-Primary text-white rounded-sm font-Dana md:font-Dana-Medium text-custom md:text-base">
                     نقشه فعال نیست

@@ -17,36 +17,36 @@
         <!-- Dashboard Routes -->
         <div class="pt-2 border-t border-t-gray-700 flex flex-col md:gap-y-1">
             <!-- Route -->
-            <a href="#" class="desktop-profile-panel__link--active h-10 md:h-9.5 flex items-center gap-x-1 px-2 text-gray-800 font-Dana">
+            <router-link activeClass="desktop-profile-panel__link--active" :to="{ name: 'Dashboard|Profile' }" class="h-10 md:h-9.5 flex items-center gap-x-1 px-2 text-gray-800 font-Dana">
                 <svg class="size-4 md:size-5">
                     <use href="#user"></use>
                 </svg>
                 <span class="text-xs md:text-base">پروفایل</span>
-            </a>
-            <a href="#" class="h-10 md:h-9.5 flex items-center gap-x-1 px-2 text-gray-800 font-Dana">
+            </router-link>
+            <router-link activeClass="desktop-profile-panel__link--active" :to="{ name: 'Dashboard|Profile' }" class="h-10 md:h-9.5 flex items-center gap-x-1 px-2 text-gray-800 font-Dana">
                 <svg class="size-4 md:size-5">
                     <use href="#order"></use>
                 </svg>
                 <span class="text-xs md:text-base">پیگیری سفارشات</span>
-            </a>
-            <a href="#" class="h-10 md:h-9.5 flex items-center gap-x-1 px-2 text-gray-800 font-Dana">
+            </router-link>
+            <router-link activeClass="desktop-profile-panel__link--active" :to="{ name: 'Dashboard|Profile' }" class="h-10 md:h-9.5 flex items-center gap-x-1 px-2 text-gray-800 font-Dana">
                 <svg class="size-4 md:size-5">
                     <use href="#heart"></use>
                 </svg>
                 <span class="text-xs md:text-base">علاقمندی‌ها</span>
-            </a>
-            <a href="#" class="h-10 md:h-9.5 flex items-center gap-x-1 px-2 text-gray-800 font-Dana">
+            </router-link>
+            <router-link activeClass="desktop-profile-panel__link--active" :to="{ name: 'Dashboard|Address' }" class="h-10 md:h-9.5 flex items-center gap-x-1 px-2 text-gray-800 font-Dana">
                 <svg class="size-4 md:size-5">
                     <use href="#location"></use>
                 </svg>
                 <span class="text-xs md:text-base">آدرس‌های من</span>
-            </a>
-            <a href="#" class="h-10 md:h-9.5 flex items-center gap-x-1 px-2 text-Error font-Dana">
+            </router-link>
+            <button class="h-10 md:h-9.5 flex items-center gap-x-1 px-2 text-Error font-Dana">
                 <svg class="size-4 md:size-5 rotate-180">
                     <use href="#exit"></use>
                 </svg>
                 <span class="text-xs md:text-base">خروج</span>
-            </a>
+            </button>
         </div>
     </div>
 </template>
