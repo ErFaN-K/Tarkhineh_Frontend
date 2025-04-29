@@ -23,9 +23,9 @@ defineProps({
   <!-- Branch Card ( This Component Is Only For Branch Section ) -->
   <div class="flex md:flex-col items-center border border-gray-400 hover:border-Primary rounded-lg md:rounded-sm overflow-hidden">
     <!-- Branch Card Image -->
-    <a :href="branchPageLink" class="shrink-0 max-md:w-36 h-20 w-full md:h-57.5">
+    <router-link :to="{ name: 'BranchPage' }" class="shrink-0 max-md:w-36 h-20 w-full md:h-57.5">
       <img src="/src/assets/images/branch/Branch-Image.png" alt="Branch Image" class="size-full object-cover">
-    </a>
+    </router-link>
     <!-- Branch Data -->
     <div class="size-full px-2 pt-2 pb-4 max-md:p-2 flex flex-col items-center max-md:justify-between md:gap-y-2">
       <!-- Branch Name -->
