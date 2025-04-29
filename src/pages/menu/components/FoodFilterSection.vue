@@ -1,6 +1,6 @@
 <script setup>
 import SearchInput from "@/components/shared/SearchInput.vue";
-import SortFoodBox from "./SortFoodBox.vue";
+import CategoryFoodBox from "@/components/shared/CategoryFoodBox.vue";
 </script>
 
 <template>
@@ -11,12 +11,12 @@ import SortFoodBox from "./SortFoodBox.vue";
         <div
           class="col-span-4 md:col-span-7 flex items-center gap-x-2 whitespace-nowrap pb-2 overflow-auto custom-scroll"
         >
-          <SortFoodBox filterName="غذاهای ایرانی" filterQuery="#" />
-          <SortFoodBox filterName="غذاهای غیر ایرانی" filterQuery="#" />
-          <SortFoodBox filterName="پیتزاها" filterQuery="#" />
-          <SortFoodBox filterName="ساندویچ‌ها" filterQuery="#" />
-          <SortFoodBox filterName="پرفروش‌ترین" filterQuery="#" />
-          <SortFoodBox filterName="اقتصادی‌ترین" filterQuery="#" />
+          <CategoryFoodBox filterName="غذاهای ایرانی" filterQuery="#" />
+          <CategoryFoodBox filterName="غذاهای غیر ایرانی" filterQuery="#" />
+          <CategoryFoodBox filterName="پیتزاها" filterQuery="#" />
+          <CategoryFoodBox filterName="ساندویچ‌ها" filterQuery="#" />
+          <CategoryFoodBox filterName="پرفروش‌ترین" filterQuery="#" />
+          <CategoryFoodBox filterName="اقتصادی‌ترین" filterQuery="#" />
         </div>
         <!-- Search Box -->
         <div

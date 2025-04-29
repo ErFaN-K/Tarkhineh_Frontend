@@ -32,6 +32,14 @@ export default [
           title: "ترخینه 🥦 | آدرس های من ",
         }
       },
+      {
+        path: "wishlist",
+        name: "Dashboard|Wishlist",
+        component: () => import("@/pages/dashboard/my-favorite-food/FavoriteFoodPage.vue"),
+        meta: {
+          title: "ترخینه 🥦 |  علاقه مندی ها ",
+        }
+      },
     ]
   },
   {

@@ -29,7 +29,7 @@
                 </svg>
                 <span class="text-xs md:text-base">پیگیری سفارشات</span>
             </router-link>
-            <router-link activeClass="desktop-profile-panel__link--active" :to="{ name: 'Dashboard|Profile' }" class="h-10 md:h-9.5 flex items-center gap-x-1 px-2 text-gray-800 font-Dana">
+            <router-link activeClass="desktop-profile-panel__link--active" :to="{ name: 'Dashboard|Wishlist' }" class="h-10 md:h-9.5 flex items-center gap-x-1 px-2 text-gray-800 font-Dana">
                 <svg class="size-4 md:size-5">
                     <use href="#heart"></use>
                 </svg>

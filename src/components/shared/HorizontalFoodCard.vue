@@ -99,7 +99,7 @@
         </div>
         <!-- Order Button -->
         <button
-          class="max-w-25 md:max-w-61 w-full md:h-10 h-8 flex items-center justify-center text-white text-custom md:text-base font-Dana bg-Primary rounded-sm hover:bg-Primary/90"
+          class="cursor-pointer max-w-25 md:max-w-61 w-full md:h-10 h-8 flex items-center justify-center text-white text-custom md:text-base font-Dana bg-Primary rounded-sm hover:bg-Primary/90"
         >
           افزودن به سبد خرید
         </button>

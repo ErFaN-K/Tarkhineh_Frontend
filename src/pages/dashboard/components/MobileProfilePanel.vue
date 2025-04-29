@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full fixed bottom-4 left-0 right-0 flex justify-center">
+    <div class="z-50 w-full fixed bottom-4 left-0 right-0 flex justify-center">
         <div class="container">
             <div class="h-16 bg-Primary px-4 w-full flex justify-between items-center gap-x-2 rounded-lg text-white/60">
                 <!-- Routes Link -->
@@ -13,7 +13,7 @@
                         <use href="#order"></use>
                     </svg>
                 </router-link>
-                <router-link activeClass="mobile-profile-panel__link--active" :to="{ name: 'Dashboard|Profile' }">
+                <router-link activeClass="mobile-profile-panel__link--active" :to="{ name: 'Dashboard|Wishlist' }">
                     <svg class="size-6">
                         <use href="#heart"></use>
                     </svg>
