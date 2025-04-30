@@ -6,6 +6,51 @@ export default [
     meta: { title: `ترخینه 🥦 | صفحه اصلی` },
   },
   {
+    path: "/dashboard",
+    name: "DashboardPage",
+    component: () => import("@/pages/dashboard/DashboardPage.vue"),
+    children: [
+      {
+        // If the user enters the /dashboard Route, they will be redirected to the dashboard/profile Route.
+        path: "",
+        name: "DashboardDefault",
+        redirect: "dashboard/profile"
+      },
+      {
+        path: "profile",
+        name: "Dashboard|Profile",
+        component: () => import("@/pages/dashboard/my-profile/ProfilePage.vue"),
+        meta: {
+          title: "ترخینه 🥦 | پروفایل من ",
+        }
+      },
+      {
+        path: "address",
+        name: "Dashboard|Address",
+        component: () => import("@/pages/dashboard/my-address/AddressPage.vue"),
+        meta: {
+          title: "ترخینه 🥦 | آدرس های من ",
+        }
+      },
+      {
+        path: "wishlist",
+        name: "Dashboard|Wishlist",
+        component: () => import("@/pages/dashboard/my-favorite-foods/FavoriteFoodPage.vue"),
+        meta: {
+          title: "ترخینه 🥦 |  علاقه مندی ها ",
+        }
+      },
+      {
+        path: "orders",
+        name: "Dashboard|Orders",
+        component: () => import("@/pages/dashboard/my-orders/OrdersPage.vue"),
+        meta: {
+          title: "ترخینه 🥦 |  سفارشات ",
+        }
+      }
+    ]
+  },
+  {
     path: "/branch",
     name: "BranchPage",
     component: () => import("@/pages/branch/BranchPage.vue"),

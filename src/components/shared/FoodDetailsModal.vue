@@ -24,9 +24,9 @@ const setThumbsSwiper = (swiper) => {
     <div
     class="shadow-xl md:max-w-202 max-w-80 h-max w-full bg-white text-gray-800 rounded-lg"
   >
-    <!-- Card Header -->
+    <!-- Modal Header -->
     <div class="h-11.25 md:h-22 flex items-center justify-center relative">
-      <!-- Card Title -->
+      <!-- Modal Title -->
       <h2 class="font-Morabba-Bold text-xs md:text-xl">اطلاعات محصول</h2>
       <!-- Close Icon -->
       <span class="absolute cursor-pointer md:top-5.5 top-2.5 md:left-6 left-4">
@@ -35,7 +35,7 @@ const setThumbsSwiper = (swiper) => {
         </svg>
       </span>
     </div>
-    <!-- Card Main -->
+    <!-- Modal Main -->
     <div class="md:h-110.25 h-88 relative">
       <!-- Main Slider -->
       <Swiper
@@ -207,7 +207,7 @@ const setThumbsSwiper = (swiper) => {
         </Swiper>
       </div>
     </div>
-    <!-- Card Footer -->
+    <!-- Modal Footer -->
     <div class="md:p-4 p-2">
       <!-- Food Title & Rate -->
       <div class="flex items-center justify-between mb-1.5 md:mb-2">

@@ -7,7 +7,7 @@ import RestaurantAttributeBox from './RestaurantAttributeBox.vue'
         <div class="container">
             <div class="flex flex-wrap lg:gap-16 md:gap-12 gap-4 justify-center pb-6 md:pb-12 border-b border-gray-400">
                 <RestaurantAttributeBox iconName="bank" attribute="بیش از 20 شعبه فعال در سراسر کشور"/>
-                <RestaurantAttributeBox iconName="card" attribute="تسهیلات راه‌اندازی رستوران و تجهیز آن"/>
+                <RestaurantAttributeBox iconName="cart" attribute="تسهیلات راه‌اندازی رستوران و تجهیز آن"/>
                 <RestaurantAttributeBox iconName="chart" attribute="طرح‌های تشویقی ارتقای فروش"/>
                 <RestaurantAttributeBox iconName="book" attribute="اعطای دستورالعمل پخت غذاها"/>
             </div>

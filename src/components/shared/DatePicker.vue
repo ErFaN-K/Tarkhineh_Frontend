@@ -54,7 +54,7 @@ const jalaaliDateFormated = computed(() => {
 
 <template>
     <!-- Date Picker -->
-    <div class="absolute max-w-83.25 md:p-4 p-3 rounded-lg left-0 right-0 top-[calc(100%+8px)] mx-auto bg-white shadow-lg">
+    <div class="z-20 absolute max-w-83.25 md:p-4 p-3 rounded-lg left-0 right-0 top-[calc(100%+8px)] mx-auto bg-white shadow-lg">
         <div class="flex items-center flex-col gap-y-4">
             <div class="flex items-center justify-center gap-x-4">
                 <!-- Day -->

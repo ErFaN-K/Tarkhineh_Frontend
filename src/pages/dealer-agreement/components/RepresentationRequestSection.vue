@@ -158,7 +158,7 @@ const addFile = (event) => {
                                     </div>
                                 </div>
                                 <div v-else class="flex items-center justify-center md:gap-x-4 gap-x-3 border border-gray-400 rounded-sm md:h-48 h-40">
-                                    <button @click="openFileInput" class="outline-none h-8 md:h-10 flex items-center justify-center border border-Primary text-Primary rounded-sm md:px-6.5 px-4">
+                                    <button @click="openFileInput" class="outline-none h-8 md:h-10 flex items-center justify-center border border-Primary text-Primary rounded-sm md:px-6.5 px-4 cursor-pointer hover:bg-Primary/10">
                                         <svg class="md:size-6 size-4">
                                             <use href="#folder-pluse"></use>
                                         </svg>

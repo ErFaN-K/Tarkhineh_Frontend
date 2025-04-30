@@ -6,7 +6,7 @@ import SearchInput from '@/components/shared/SearchInput.vue'
 <template>
     <div class="is-hidden fixed inset-0 m-auto z-100 px-5 flex items-center justify-center">
         <div class="h-max max-w-150 w-full bg-white rounded-lg overflow-hidden shadow-xl text-gray-800">
-        <!-- Card Header -->
+        <!-- Modal Header -->
         <div class="relative flex items-center justify-center py-6 bg-gray-300">
             <!-- Close Icon -->
             <span class="cursor-pointer absolute top-5 left-5">
@@ -14,10 +14,10 @@ import SearchInput from '@/components/shared/SearchInput.vue'
                     <use href="#x-mark"></use>
                 </svg>
             </span>
-            <!-- Card Title -->
+            <!-- Modal Title -->
             <h2 class="font-Morabba-Bold text-xl">جستجو</h2>
         </div>
-        <!-- Card Main -->
+        <!-- Modal Main -->
         <div class="w-full pt-10 pb-12 px-4 flex items-center flex flex-col gap-y-3">
             <!-- Search Title -->
             <span class="text-base text-center font-Dana">لطفا متن خود را تایپ و سپس دکمه Enter را بزنید.</span>

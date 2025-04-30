@@ -17,9 +17,9 @@
                         <!-- Redirect Buttons -->
                         <div class="flex justify-center gap-x-4 md:gap-x-6">
                             <!-- Go To Home -->
-                            <a href="#" class="md:w-46 w-full h-8 md:h-10 flex items-center justify-center font-Dana md:font-Dana-Medium text-xs md:text-base text-Primary border border-Primary rounded-sm hover:bg-Primary/10">بازگشت به صفحه اصلی</a>
+                            <router-link :to="{ name: 'HomePage' }" class="md:w-46 w-full h-8 md:h-10 flex items-center justify-center font-Dana md:font-Dana-Medium text-xs md:text-base text-Primary border border-Primary rounded-sm hover:bg-Primary/10">بازگشت به صفحه اصلی</router-link>
                             <!-- Order Tracking -->
-                            <a href="#" class="md:w-46 w-full h-8 md:h-10 flex items-center justify-center font-Dana md:font-Dana-Medium text-xs md:text-base text-white bg-Primary rounded-sm hover:bg-Primary/90">پیگیری سفارش</a>
+                            <router-link :to="{ name: 'Dashboard|Profile' }" class="md:w-46 w-full h-8 md:h-10 flex items-center justify-center font-Dana md:font-Dana-Medium text-xs md:text-base text-white bg-Primary rounded-sm hover:bg-Primary/90">پیگیری سفارش</router-link>
                         </div>
                     </div>
                 </div> 

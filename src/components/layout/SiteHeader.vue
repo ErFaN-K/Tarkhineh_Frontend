@@ -67,29 +67,29 @@ const publicStore = usePublicStore();
           <!-- Buttons -->
           <div class="flex items-center gap-x-1 md:gap-x-2">
             <!-- Search -->
-            <router-link :to="{ name: 'SearchPage' }"
+            <router-link activeClass="header__button--active" :to="{ name: 'SearchPage' }"
               class="flex items-center justify-center rounded-sm cursor-pointer max-lg:hidden bg-Tint-1 size-10 text-Primary"
             >
               <svg class="size-4 md:size-5 lg:size-6">
                 <use href="#magnifying-glass"></use>
               </svg>
             </router-link>
+            <!-- LOGIN -->
+            <NavigationMenu v-if="true"/>
             <!-- Profile -->
-            <router-link v-if="false" class="flex items-center justify-center rounded-sm cursor-pointer lg:order-last bg-Tint-1 size-6 md:size-8 lg:size-10 text-Primary">
+            <button v-else class="flex items-center justify-center rounded-sm cursor-pointer lg:order-last bg-Tint-1 size-6 md:size-8 lg:size-10 text-Primary">
               <svg class="size-4 md:size-5 lg:size-6">
                 <use href="#user"></use>
               </svg>
-            </router-link>
-            <!-- LOGIN -->
-            <NavigationMenu v-else/>
+            </button>
             <!-- Cart -->
-            <button
+            <router-link activeClass="header__button--active" :to="{ name: 'HomePage' }"
               class="flex items-center justify-center rounded-sm cursor-pointer max-lg:order-first bg-Tint-1 size-6 md:size-8 lg:size-10 text-Primary"
             >
               <svg class="size-4 md:size-5 lg:size-6">
                 <use href="#shopping-cart"></use>
               </svg>
-            </button>
+            </router-link>
           </div>
         </div>
       </div>
