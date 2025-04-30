@@ -94,7 +94,7 @@ import FoodCard from './FoodCard.vue'
         <div class="mt-4 md:mt-3 flex justify-center">
             <ProgressStepper 
               :stepOneName="'در حال آماده‌سازی'"
-              :stepOneIcon="'#cart'"
+              :stepOneIcon="'#home'"
               :stepOneActive="false"
 
               :stepTwoName="'ارسال پیک'"
@@ -115,5 +115,7 @@ import FoodCard from './FoodCard.vue'
           <FoodCard />
           <FoodCard />
         </div>
+        <!-- Action Button -->
+        <button class="max-md:mx-auto mr-auto mt-4 w-23.5 md:w-30.75 h-8 border border-Error text-Error hover:bg-Error/10 rounded-sm flex items-center justify-center cursor-pointer text-xs font-Dana md:font-Dana-Medium">لغو سفارش</button>
     </div>
 </template>

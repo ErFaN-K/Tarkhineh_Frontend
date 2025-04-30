@@ -16,7 +16,7 @@ defineProps({
 
 <template>
     <!-- Progress Stepper -->
-    <div class="flex items-center">
+    <div class="flex items-center shrink-0">
         <!-- Step 1 -->
         <div :class="{
                 'progress-stepper__step--active': stepOneActive,
