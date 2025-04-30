@@ -23,7 +23,7 @@ const isShowNavigationMenu = ref(false)
                 </svg>
                 <span>پروفایل</span>
             </router-link>
-            <router-link :to="{ name: 'Dashboard|Profile' }" class="h-8 md:h-10 flex items-center gap-x-1 text-gray-800 font-Dana md:text-sm text-custom">
+            <router-link :to="{ name: 'Dashboard|Orders' }" class="h-8 md:h-10 flex items-center gap-x-1 text-gray-800 font-Dana md:text-sm text-custom">
                 <svg class="size-4 md:size-5">
                     <use href="#order"></use>
                 </svg>

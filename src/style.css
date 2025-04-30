@@ -101,6 +101,22 @@
     @apply text-white
   }
 
+  .progress-stepper__step--active { 
+    @apply text-Primary
+  }
+
+  .progress-stepper__step--active div span {
+    @apply text-xs md:text-base md:font-Dana-SemiBold
+  }
+
+  .progress-stepper__step--active div svg {
+    @apply md:size-8 size-4
+  }
+
+  .progress-stepper__step--prev-active {
+    @apply text-Primary
+  }
+
   .background-config {
     background-repeat: no-repeat;
     background-position: center;

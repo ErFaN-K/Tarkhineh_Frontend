@@ -1,6 +1,6 @@
 <script setup>
 import SearchInput from "@/components/shared/SearchInput.vue";
-import CategoryFoodBox from "@/components/shared/CategoryFoodBox.vue";
+import FilterBox from "@/components/shared/FilterBox.vue";
 import FoodCard from './components/FavoriteFoodCard.vue'
 import FoodCardLoader from './components/FavoriteFoodCardLoader.vue'
 </script>
@@ -15,11 +15,11 @@ import FoodCardLoader from './components/FavoriteFoodCardLoader.vue'
       <div class="mt-4 md:mt-3 grid grid-cols-4 md:grid-cols-7 gap-3 items-center">
         <!-- Filter Food -->
         <div class="max-md:hidden col-span-4 flex items-center gap-x-2 whitespace-nowrap overflow-auto hidden-scroll">
-          <CategoryFoodBox filterName="همه" filterQuery="#" />
-          <CategoryFoodBox filterName="غذای اصلی" filterQuery="#" />
-          <CategoryFoodBox filterName="پیش غذا" filterQuery="#" />
-          <CategoryFoodBox filterName="دسر" filterQuery="#" />
-          <CategoryFoodBox filterName="نوشیدنی" filterQuery="#" />
+          <FilterBox filterName="همه" filterQuery="#" />
+          <FilterBox filterName="غذای اصلی" filterQuery="#" />
+          <FilterBox filterName="پیش غذا" filterQuery="#" />
+          <FilterBox filterName="دسر" filterQuery="#" />
+          <FilterBox filterName="نوشیدنی" filterQuery="#" />
         </div>
         <!-- Search Box -->
         <div class="col-span-4 md:col-span-3 h-8 md:h-10 px-4 flex items-center justify-between border border-gray-400 md:rounded-lg rounded-sm">

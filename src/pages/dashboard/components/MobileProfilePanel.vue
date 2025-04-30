@@ -8,7 +8,7 @@
                         <use href="#user"></use>
                     </svg>
                 </router-link>
-                <router-link activeClass="mobile-profile-panel__link--active" :to="{ name: 'Dashboard|Profile' }">
+                <router-link activeClass="mobile-profile-panel__link--active" :to="{ name: 'Dashboard|Orders' }">
                     <svg class="size-6">
                         <use href="#order"></use>
                     </svg>

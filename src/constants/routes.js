@@ -35,11 +35,19 @@ export default [
       {
         path: "wishlist",
         name: "Dashboard|Wishlist",
-        component: () => import("@/pages/dashboard/my-favorite-food/FavoriteFoodPage.vue"),
+        component: () => import("@/pages/dashboard/my-favorite-foods/FavoriteFoodPage.vue"),
         meta: {
           title: "ترخینه 🥦 |  علاقه مندی ها ",
         }
       },
+      {
+        path: "orders",
+        name: "Dashboard|Orders",
+        component: () => import("@/pages/dashboard/my-orders/OrdersPage.vue"),
+        meta: {
+          title: "ترخینه 🥦 |  سفارشات ",
+        }
+      }
     ]
   },
   {

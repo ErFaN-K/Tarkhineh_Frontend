@@ -56,12 +56,12 @@
               <div class="relative md:mb-4 mb-6">
                 <textarea
                   autocomplete="off"
-                  id="addressTitle"
+                  id="fullAddress"
                   placeholder=" "
                   class="resize-none pt-4 w-full md:h-45.5 h-25 border border-gray-400 rounded-sm md:text-sm text-xs px-4 font-Dana outline-none peer focus:border-Primary"
                 ></textarea>
                 <label
-                  for="addressTitle"
+                  for="fullAddress"
                   class="peer-focus:text-Primary peer-focus:!-top-2 peer-placeholder-shown:top-2.5 md:peer-placeholder-shown:top-3 peer-placeholder-shown:right-4 absolute -top-2 right-4 px-1 bg-white text-gray-700 font-Dana md:text-sm text-xs"
                 >آدرس دقیق شما</label>
               </div> 
