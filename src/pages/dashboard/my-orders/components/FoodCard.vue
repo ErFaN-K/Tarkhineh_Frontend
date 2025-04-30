@@ -9,7 +9,7 @@
                 <span class="relative md:top-0.5 top-0.25">1×</span>
             </span>
         </div>
-        <!-- Food Informatiob -->
+        <!-- Food Information -->
         <div class="px-1 py-1 flex flex-col gap-y-1 items-center justify-center text-custom text-gray-800 font-Dana">
             <span class="line-clamp-1">پاستا با نمیدونم چی چی</span>
             <span>۱۸۸٬۰۰۰ تومان</span>
