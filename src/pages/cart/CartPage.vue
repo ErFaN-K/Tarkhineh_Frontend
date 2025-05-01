@@ -1,31 +1,35 @@
 <script setup>
 // Components
 import Header from '@/components/layout/SiteHeader.vue'
-import HeroSection from '@/components/ui/HeroSectionWithoutSlider.vue'
-import BranchSection from './components/BranchSection.vue'
+import StepperSection from './components/StepperSection.vue'
+import MainSection from './components/MainSection.vue'
 import Footer from '@/components/layout/SiteFooter.vue'
 import MobileMenu from "@/components/ui/MobileMenu.vue";
 import LoginForm from "@/components/shared/OtpLogin.vue";
 import SearchBoxModal from "@/components/shared/SearchBoxModal.vue";
-import ChooseBranchModal from '@/components/shared/ChooseBranchModal.vue'
 import Overlay from "@/components/ui/Overlay.vue";
+
+// Codes
+import { ref } from 'vue';
+
+const step = ref(1)
 </script>
 
 <template>
-    <!-- Contact Us Page -->
+    <!-- Cart Page Page -->
     <!----------------------->
-    <!-- Contact Us | Header -->
+    <!-- Cart Page | Header -->
     <Header />
 
-    <!-- Contact Us | Main -->
+    <!-- Cart Page | Main -->
     <main>
-        <!-- Contact Us | Hero Section -->
-        <HeroSection sectionTitle="با ترخینه در تماس باشید." backgroundName="hero__background--contact-us"/>
-        <!-- Contact Us | Branch Section -->
-        <BranchSection />
+        <!-- Cart Page | Stepper Section -->
+        <StepperSection />
+        <!-- Cart Page | Main Section -->
+        <MainSection />
     </main>
 
-    <!-- Contact Us | FOoter -->
+    <!-- Cart Page | FOoter -->
     <Footer />
 
         <!----------------------->
@@ -36,8 +40,6 @@ import Overlay from "@/components/ui/Overlay.vue";
     <LoginForm />
     <!-- Search Box Modal ( For Desktop ) -->
     <SearchBoxModal />
-    <!-- Choose Branch Modal -->
-    <ChooseBranchModal />
     <!-- Overlay -->
     <Overlay />
 </template>
