@@ -1,4 +1,5 @@
 <script setup>
+// Components
 import Header from "@/components/layout/SiteHeader.vue";
 import HeroSection from "@/components/ui/HeroSectionWithSlider.vue";
 import RestaurantMenuSection from "./components/RestaurantMenuSection.vue";

@@ -83,7 +83,7 @@ const publicStore = usePublicStore();
               </svg>
             </button>
             <!-- Cart -->
-            <router-link activeClass="header__button--active" :to="{ name: 'HomePage' }"
+            <router-link activeClass="header__button--active" :to="{ name: 'CartPage' }"
               class="flex items-center justify-center rounded-sm cursor-pointer max-lg:order-first bg-Tint-1 size-6 md:size-8 lg:size-10 text-Primary"
             >
               <svg class="size-4 md:size-5 lg:size-6">

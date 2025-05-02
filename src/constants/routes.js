@@ -51,6 +51,14 @@ export default [
     ]
   },
   {
+    path: "/cart",
+    name: "CartPage",
+    component: () => import("@/pages/cart/CartPage.vue"),
+    meta: {
+      title: "ترخینه 🥦 |  سبد خرید ",
+    }
+  },
+  {
     path: "/branch",
     name: "BranchPage",
     component: () => import("@/pages/branch/BranchPage.vue"),
