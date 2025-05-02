@@ -26,13 +26,13 @@ const step = ref(1)
         <!-- Cart Page | Stepper Section -->
         <StepperSection />
         <!-- Cart Page | Main Section -->
-        <MainSection />
+        <MainSection :step="step"/>
     </main>
 
     <!-- Cart Page | FOoter -->
     <Footer />
 
-        <!----------------------->
+    <!----------------------->
 
     <!-- Hamburger Menu -->
     <MobileMenu />
