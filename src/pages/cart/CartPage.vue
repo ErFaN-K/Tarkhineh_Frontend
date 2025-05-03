@@ -1,6 +1,7 @@
 <script setup>
 // Components
 import Header from '@/components/layout/SiteHeader.vue'
+import MobileTitle from './components/MobileTitle.vue';
 import StepperSection from './components/StepperSection.vue'
 import MainSection from './components/MainSection.vue'
 import Footer from '@/components/layout/SiteFooter.vue'
@@ -23,14 +24,16 @@ const step = ref(1)
 
     <!-- Cart Page | Main -->
     <main>
-        <!-- Cart Page | Stepper Section -->
+        <!-- Cart Page | Mobile Title ( For Mobile Only ) -->
+        <MobileTitle />
+        <!-- Cart Page | Stepper Section ( For Desktop Only ) -->
         <StepperSection />
         <!-- Cart Page | Main Section -->
         <MainSection :step="step"/>
     </main>
 
-    <!-- Cart Page | FOoter -->
-    <Footer />
+    <!-- Cart Page | Footer ( md : Show )-->
+    <Footer class="max-md:hidden"/>
 
     <!----------------------->
 
