@@ -1,9 +1,12 @@
 <script setup>
 import FoodCard from './card-step/Small-FoodCard.vue';
+
+import { useCartStore } from '@/store/modules/cartStore.js' 
+const cartStore = useCartStore()
 </script>
 
 <template>
-    <div class="lg:col-span-5 col-span-4 text-gray-800 p-6 border border-gray-400 rounded-lg divide-y divide-gray-400 space-y-3">
+    <div class="xl:col-span-5 max-xl:col-span-4 col-span-4 text-gray-800 p-6 border border-gray-400 rounded-lg divide-y divide-gray-400 space-y-3">
         <!-- Factor Header -->
         <div class="flex items-center justify-between max-md:hidden pb-3">
             <!-- Cart Count -->
@@ -11,8 +14,8 @@ import FoodCard from './card-step/Small-FoodCard.vue';
         </div>
         <!-- Factor Body -->
         
-        <!-- Product List ( if step = 1 & show in mobile size ) -->
-        <div class="md:hidden flex items-center flex-col h-46.75 overflow-auto custom-scroll pb-3">
+        <!-- Product List ( if step = 1 -> show in mobile size | else show every step ) -->
+        <div :class="cartStore.step === 1 ? 'lg:hidden' : 'max-md:hidden'" class="flex items-center flex-col h-46.75 overflow-auto custom-scroll pb-3">
             <FoodCard />
             <FoodCard />
             <FoodCard />
@@ -33,7 +36,7 @@ import FoodCard from './card-step/Small-FoodCard.vue';
                 <span class="text-gray-700">۰ تومان</span>
             </div>
             <!-- Warning -->
-            <div class="w-full flex items-start gap-x-2 text-Warning text-custom font-Dana">
+            <div v-if="cartStore.step === 1" class="w-full flex items-start gap-x-2 text-Warning text-custom font-Dana">
                 <svg class="shrink-0 size-6">
                     <use href="#warning"></use>
                 </svg>
@@ -46,8 +49,15 @@ import FoodCard from './card-step/Small-FoodCard.vue';
                 <span class="text-sm font-Dana">مبلغ قابل پرداخت</span>
                 <span class="text-Primary">۵۴۲٬۰۰۰ تومان</span>
             </div>
+            <!-- If Loign -->
+            <button @click="cartStore.nextStep(2)" v-if="true" class="flex items-center justify-center gap-x-2 h-8 md:h-10 md:rounded-lg rounded-sm bg-Primary hover:bg-Primary/90 cursor-pointer font-Dana md:font-Dana-Medium text-xs md:text-base text-white">
+                <svg class="size-4 md:size-6">
+                    <use href="#check-circle"></use>
+                </svg>
+                <span>ثبت سفارش</span>
+            </button>
             <!-- if Not Login -->
-            <button class="flex items-center justify-center gap-x-2 h-8 md:h-10 md:rounded-lg rounded-sm bg-Primary hover:bg-Primary/90 cursor-pointer font-Dana md:font-Dana-Medium text-xs md:text-base text-white">
+            <button v-else class="flex items-center justify-center gap-x-2 h-8 md:h-10 md:rounded-lg rounded-sm bg-Primary hover:bg-Primary/90 cursor-pointer font-Dana md:font-Dana-Medium text-xs md:text-base text-white">
                 <svg class="size-4 md:size-6">
                     <use href="#user"></use>
                 </svg>

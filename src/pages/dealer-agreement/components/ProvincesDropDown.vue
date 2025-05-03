@@ -1,5 +1,5 @@
 <script setup>
-import { useDealerAgreementStore } from '@/store/modules/DealerAgreementStore.js'
+import { useDealerAgreementStore } from '@/store/modules/dealerAgreementStore.js'
 const dealerAgreementStore = useDealerAgreementStore()
 
 const emit = defineEmits(['provinceSelect'])

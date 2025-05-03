@@ -9,11 +9,6 @@ import MobileMenu from "@/components/ui/MobileMenu.vue";
 import LoginForm from "@/components/shared/OtpLogin.vue";
 import SearchBoxModal from "@/components/shared/SearchBoxModal.vue";
 import Overlay from "@/components/ui/Overlay.vue";
-
-// Codes
-import { ref } from 'vue';
-
-const step = ref(1)
 </script>
 
 <template>
@@ -29,7 +24,7 @@ const step = ref(1)
         <!-- Cart Page | Stepper Section ( For Desktop Only ) -->
         <StepperSection />
         <!-- Cart Page | Main Section -->
-        <MainSection :step="step"/>
+        <MainSection />
     </main>
 
     <!-- Cart Page | Footer ( md : Show )-->

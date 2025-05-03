@@ -1,5 +1,8 @@
 <script setup>
 import ProgressStepper from '@/components/ui/ProgressStepper.vue'
+
+import { useCartStore } from '@/store/modules/cartStore.js' 
+const cartStore = useCartStore()
 </script>
 
 <template>
@@ -9,13 +12,13 @@ import ProgressStepper from '@/components/ui/ProgressStepper.vue'
                 <ProgressStepper 
                     :stepOneName="'سبد خرید'"
                     :stepOneIcon="'#home'"
-                    :stepOneActive="true"
+                    :stepOneActive="cartStore.step === 1"
                     :stepTwoName="'تکمیل اطلاعات'"
                     :stepTwoIcon="'#check'"
-                    :stepTwoActive="false"
+                    :stepTwoActive="cartStore.step === 2"
                     :stepThreeName="'پرداخت'"
                     :stepThreeIcon="'#money'"
-                    :stepThreeActive="false"
+                    :stepThreeActive="cartStore.step === 3"
                 />
             </div>
         </div>

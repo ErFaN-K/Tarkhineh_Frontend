@@ -1,11 +1,11 @@
 <script setup>
 import FactorPanel from './FactorPanel.vue';
-import FoodsCard from './card-step/FoodCardContainer.vue';
+import FoodCardContainer from './card-step/FoodCardContainer.vue';
+import CompleteInfoStep from './complete-info-step/CompleteInfoStep.vue'
 import NotFound from './card-step/NotFound.vue';
 
-defineProps({
-    step: Number
-})
+import { useCartStore } from '@/store/modules/cartStore.js' 
+const cartStore = useCartStore()
 </script>
 
 <template>
@@ -13,7 +13,8 @@ defineProps({
         <div class="container">
             <NotFound v-if="false"/>
             <div v-else class="grid lg:grid-cols-12 grid-cols-4 items-start lg:gap-x-6 max-lg:gap-y-3">
-                <FoodsCard />
+                <FoodCardContainer v-if="cartStore.step === 1"/>
+                <CompleteInfoStep v-if="cartStore.step === 2"/>
                 <FactorPanel />
             </div>
         </div>

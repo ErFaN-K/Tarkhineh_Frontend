@@ -7,7 +7,7 @@
             <span class="text-custom font-Dana text-gray-700">۱۴۰٬۰۰۰ تومان</span>
         </div>
         <!-- Food Qty -->
-        <div class="flex items-center gap-x-2 py-2 px-1 rounded-sm bg-Tint-1 text-Primary">
+        <div class="flex items-center gap-x-2 h-8 px-1 rounded-sm bg-Tint-1 text-Primary">
             <!-- Add Button -->
             <button>
                 <svg class="size-3">

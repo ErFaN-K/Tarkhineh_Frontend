@@ -1,6 +1,6 @@
 <template>
     <!-- Food Card ( Only For Food Card Container in Cart Page) -->
-  <div class="rounded-lg border border-gray-400 group hover:shadow-xl flex overflow-hidden text-gray-800 bg-white">
+  <div class="shrink-0 rounded-lg border border-gray-400 flex overflow-hidden text-gray-800 bg-white">
         <!-- Food Image -->
         <div class="w-42.25 shrink-0">
           <img
@@ -16,7 +16,8 @@
                 <h4 class="font-Morabba-Bold text-xl line-clamp-1">
                     کوفته برنجی
                 </h4>
-                <span>
+                <!-- Delete Product -->
+                <span class="cursor-pointer">
                     <svg class="size-6">
                         <use href="#trash"></use>
                     </svg>
@@ -40,7 +41,7 @@
             <div class="flex items-center justify-between gap-x-6">
                 <div class="flex items-center gap-x-6">
                     <!-- Rate -->
-                    <div class="flex text-Wraning-Light">
+                    <div class="flex text-Warning-Light">
                         <svg class="size-6">
                             <use href="#star"></use>
                         </svg>
@@ -57,7 +58,32 @@
                             <use href="#star"></use>
                         </svg>
                     </div>
+                    <!-- Add Or Remove Button -->
+                    <div class="flex items-center gap-x-2 h-8 px-1 rounded-sm bg-Tint-1 text-Primary">
+                        <!-- Add Button -->
+                        <button class="cursor-pointer">
+                            <svg class="size-3">
+                                <use href="#pluse"></use>
+                            </svg>
+                        </button>
+                        <!-- Qty -->
+                        <span class="relative top-0.5 font-Dana text-sm">4</span>
+                        <!-- Delete or Minus button -->
+                        <button class="cursor-pointer" v-if="true">
+                            <svg class="size-3">
+                                <use href="#minus"></use>
+                            </svg>
+                        </button>
+                        <!-- Delete button -->
+                        <span v-else class="cursor-pointer">
+                            <svg class="size-4">
+                                <use href="#trash"></use>
+                            </svg>
+                        </span>
+                    </div>
                 </div>
+                <!-- Price -->
+                <span class="text-lg font-Dana">۱۴۰٬۰۰۰تومان</span>
             </div>
         </div>
     </div>
