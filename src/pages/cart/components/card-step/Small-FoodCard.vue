@@ -9,7 +9,7 @@
         <!-- Food Qty -->
         <div class="flex items-center gap-x-2 h-8 px-1 rounded-sm bg-Tint-1 text-Primary">
             <!-- Add Button -->
-            <button>
+            <button class="cursor-pointer">
                 <svg class="size-3">
                     <use href="#pluse"></use>
                 </svg>
@@ -17,13 +17,13 @@
             <!-- Qty -->
             <span class="relative top-0.5 font-Dana text-sm">4</span>
             <!-- Delete or Minus button -->
-            <button v-if="false">
+            <button class="cursor-pointer" v-if="true">
                 <svg class="size-3">
                     <use href="#minus"></use>
                 </svg>
             </button>
             <!-- Delete button -->
-            <span>
+            <span v-else class="cursor-pointer">
                 <svg class="size-4">
                     <use href="#trash"></use>
                 </svg>
