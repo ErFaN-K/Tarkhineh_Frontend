@@ -1,9 +1,13 @@
 <script setup>
 import DeliveryMethod from './DeliveryMethod.vue'
+import CourierMethod from './CourierMethod.vue'
+import OrderDescription from './OrderDescription.vue'
 </script>
 
 <template>
-    <div class="xl:col-span-7 max-xl:col-span-8 flex flex-col md:gap-y-6 gap-y-3">
+    <div class="h-full xl:col-span-7 max-xl:col-span-8 flex flex-col lg:gap-y-6 gap-y-3">
         <DeliveryMethod />
+        <CourierMethod />
+        <OrderDescription />
     </div>
 </template>
