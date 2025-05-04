@@ -1,21 +1,24 @@
 <script setup>
 import ProgressStepper from '@/components/ui/ProgressStepper.vue'
+
+import { useCartStore } from '@/store/modules/cartStore.js' 
+const cartStore = useCartStore()
 </script>
 
 <template>
-    <section class="progress-section md:mt-10 mt-6">
+    <section class="max-md:hidden progress-section md:mt-10 mt-6">
         <div class="container">
             <div class="flex items-center justify-center">
                 <ProgressStepper 
                     :stepOneName="'سبد خرید'"
                     :stepOneIcon="'#home'"
-                    :stepOneActive="false"
+                    :stepOneActive="cartStore.step === 1"
                     :stepTwoName="'تکمیل اطلاعات'"
                     :stepTwoIcon="'#check'"
-                    :stepTwoActive="true"
+                    :stepTwoActive="cartStore.step === 2"
                     :stepThreeName="'پرداخت'"
                     :stepThreeIcon="'#money'"
-                    :stepThreeActive="false"
+                    :stepThreeActive="cartStore.step === 3"
                 />
             </div>
         </div>

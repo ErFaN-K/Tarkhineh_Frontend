@@ -1,6 +1,7 @@
 <script setup>
 // Components
 import Header from '@/components/layout/SiteHeader.vue'
+import MobileTitle from './components/MobileTitle.vue';
 import StepperSection from './components/StepperSection.vue'
 import MainSection from './components/MainSection.vue'
 import Footer from '@/components/layout/SiteFooter.vue'
@@ -8,11 +9,6 @@ import MobileMenu from "@/components/ui/MobileMenu.vue";
 import LoginForm from "@/components/shared/OtpLogin.vue";
 import SearchBoxModal from "@/components/shared/SearchBoxModal.vue";
 import Overlay from "@/components/ui/Overlay.vue";
-
-// Codes
-import { ref } from 'vue';
-
-const step = ref(1)
 </script>
 
 <template>
@@ -23,14 +19,16 @@ const step = ref(1)
 
     <!-- Cart Page | Main -->
     <main>
-        <!-- Cart Page | Stepper Section -->
+        <!-- Cart Page | Mobile Title ( For Mobile Only ) -->
+        <MobileTitle />
+        <!-- Cart Page | Stepper Section ( For Desktop Only ) -->
         <StepperSection />
         <!-- Cart Page | Main Section -->
-        <MainSection :step="step"/>
+        <MainSection />
     </main>
 
-    <!-- Cart Page | FOoter -->
-    <Footer />
+    <!-- Cart Page | Footer ( md : Show )-->
+    <Footer class="max-md:hidden"/>
 
     <!----------------------->
 

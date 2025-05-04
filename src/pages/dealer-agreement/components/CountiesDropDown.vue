@@ -1,5 +1,5 @@
 <script setup>
-import { useDealerAgreementStore } from '@/store/modules/DealerAgreementStore.js'
+import { useDealerAgreementStore } from '@/store/modules/dealerAgreementStore.js'
 import { computed, ref } from 'vue'
 const dealerAgreementStore = useDealerAgreementStore()
 
