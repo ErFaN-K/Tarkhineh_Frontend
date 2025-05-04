@@ -21,7 +21,7 @@ const handleStep = () => {
                 <svg @click="handleStep" class="rotate-180 size-4">
                     <use href="#chevron-left-mini"></use>
                 </svg>
-                <span class="font-Dana-SemiBold text-base">سبد خرید</span>
+                <span class="font-Dana-SemiBold text-base">{{ cartStore.step == 1 ? 'سبد خرید' : cartStore.step == 2 ? 'تکمیل اطلاعات' : cartStore.step == 3 ? 'پرداخت' : '' }}</span>
                 <!-- Delete All Product -->
                 <span v-if="cartStore.step === 1">
                     <svg class="size-4">

@@ -11,8 +11,8 @@ import FoodCard from './FoodCard.vue'
             <h6 class="md:mt-1.5 text-xs md:text-sm font-Dana md:font-Dana-Medium text-gray-700">شعبه اقدسیه</h6>
             <!-- Order Status & Shipping Method -->
             <div class="flex items-center gap-x-2">
-                <span class="block h-5.5 md:h-6.5 flex items-center px-1 md:px-3 bg-gray-300 text-gray-800 rounded-sm text-custom font-Dana md:text-xs">ارسال پیک</span>
-                <span class="block max-md:w-13.5 h-5.5 md:h-6.5 flex items-center justify-center px-1 md:px-3 text-Warning font-Dana text-custom max-md:whitespace-nowrap md:text-xs rounded-sm bg-Warning-EXLight">جاری</span>
+                <span class="h-5.5 md:h-6.5 flex items-center px-1 md:px-3 bg-gray-300 text-gray-800 rounded-sm text-custom font-Dana md:text-xs">ارسال پیک</span>
+                <span class="max-md:w-13.5 h-5.5 md:h-6.5 flex items-center justify-center px-1 md:px-3 text-Warning font-Dana text-custom max-md:whitespace-nowrap md:text-xs rounded-sm bg-Warning-EXLight">جاری</span>
             </div> 
         </div>
         <!-- Order Information -->

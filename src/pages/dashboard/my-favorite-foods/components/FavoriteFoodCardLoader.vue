@@ -1,5 +1,5 @@
 <template>
-    <!-- Food Card Skleton Loader ( Just For Favorite Food Cart ) -->
+    <!-- Food Card Skeleton Loader ( Just For Favorite Food Cart ) -->
     <div class="bg-white rounded-sm md:rounded-lg border border-gray-400">
         <div class="w-full h-26 md:h-35 bg-gray-300 animate-pulse"></div>
         <div class="px-2 pb-2 md:px-4 md:pb-4">

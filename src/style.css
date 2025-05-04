@@ -117,6 +117,10 @@
     @apply text-Primary
   }
 
+  .bank-logo--active {
+    @apply !border-Primary shadow-bank-card
+  }
+
   .background-config {
     background-repeat: no-repeat;
     background-position: center;
@@ -337,6 +341,7 @@
   --shadow-8: 0px 8px 8px rgba(0, 0, 0, 0.25);
   --shadow-12: 0px 12px 12px rgba(0, 0, 0, 0.25);
   --shadow-16: 0px 16px 16px rgba(0, 0, 0, 0.25);
+  --shadow-bank-card: 0px 0px 4px #7CBC91;
   --shadow-drop-down: 0px 0px 6px rgba(0, 0, 0, 0.15);
 
   /* Fonts */

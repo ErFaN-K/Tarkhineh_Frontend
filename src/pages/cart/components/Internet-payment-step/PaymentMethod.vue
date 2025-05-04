@@ -9,18 +9,18 @@ import DeliveryMethodCard from '../MethodCard.vue'
             <svg class="md:size-6 size-4">
                 <use href="#truck"></use>
             </svg>
-            <span class="font-Dana text-sm md:text-base">روش تحویل سفارش</span>
+            <span class="font-Dana text-sm md:text-base">روش پرداخت</span>
         </div>
         <!-- Methods -->
         <div class="max-md:w-full flex md:items-center items-start max-md:justify-center max-md:gap-x-5.5 max-md:gap-y-2 md:gap-x-10">
             <DeliveryMethodCard 
             inputId="courier"
-            mainTitle="ارسال توسط پیک"
+            mainTitle="پرداخت اینترنتی"
             titleDescription="توسط پیک رستوران ارسال شود."
             iconName="truck"/>
             <DeliveryMethodCard 
             inputId="in-person"
-            mainTitle="تحویل حضوری"
+            mainTitle="پرداخت در محل"
             titleDescription="توسط پیک رستوران ارسال شود."
             iconName="user"/>
         </div>

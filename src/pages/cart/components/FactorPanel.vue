@@ -3,6 +3,11 @@ import FoodCard from './card-step/Small-FoodCard.vue';
 
 import { useCartStore } from '@/store/modules/cartStore.js' 
 const cartStore = useCartStore()
+
+const nextStepHandler = () => {
+    if(cartStore.step >= 3) return
+    cartStore.nextStep(cartStore.step + 1)
+}
 </script>
 
 <template>
@@ -50,7 +55,7 @@ const cartStore = useCartStore()
                 <span class="text-Primary">۵۴۲٬۰۰۰ تومان</span>
             </div>
             <!-- If Loign -->
-            <button @click="cartStore.nextStep(2)" v-if="true" class="flex items-center justify-center gap-x-2 h-8 md:h-10 md:rounded-lg rounded-sm bg-Primary hover:bg-Primary/90 cursor-pointer font-Dana md:font-Dana-Medium text-xs md:text-base text-white">
+            <button @click="nextStepHandler" v-if="true" class="flex items-center justify-center gap-x-2 h-8 md:h-10 md:rounded-lg rounded-sm bg-Primary hover:bg-Primary/90 cursor-pointer font-Dana md:font-Dana-Medium text-xs md:text-base text-white">
                 <svg class="size-4 md:size-6">
                     <use href="#check-circle"></use>
                 </svg>
