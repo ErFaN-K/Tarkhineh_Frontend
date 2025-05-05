@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import NotFound from '@/components/ui/404Error.vue'
 </script>
 

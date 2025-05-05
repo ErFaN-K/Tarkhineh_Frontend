@@ -1,4 +1,6 @@
-export default [
+import type { RouteRecordRaw } from 'vue-router'
+
+const routes: RouteRecordRaw[] =  [
   {
     path: "/",
     name: "HomePage",
@@ -63,7 +65,7 @@ export default [
     name: "BranchPage",
     component: () => import("@/pages/branch/BranchPage.vue"),
     meta: {
-      title: (route) => `ترخینه 🥦 | صفحه شعبه ${route.params.branchName}`,
+      title: "ترخینه 🥦 |  صفحه شعبه ",
     },
     beforeEnter: () => {
       // Check Branch selected or not
@@ -74,7 +76,7 @@ export default [
     name: "MenuPage",
     component: () => import("@/pages/menu/MenuPage.vue"),
     meta: {
-      title: (route) => `ترخینه 🥦 | منو شعبه ${route.params.branchName}`,
+      title: "ترخینه 🥦 |  منو شعبه ",
     },
     beforeEnter: () => {
       // Check Branch selected or not
@@ -180,3 +182,5 @@ export default [
     }
   }
 ];
+
+export default routes

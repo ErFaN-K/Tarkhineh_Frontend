@@ -1,22 +1,19 @@
-<script setup>
+<script setup lang="ts">
 // Get Accordion Data
-defineProps({
-    accordionQuestion: {
-        type: String,
-        required: true
-    },
-    accordionAwnser: {
-        type: String,
-        required: false,
-        default: () => 'هنوز برای این سوال جوابی ثبت نشده است'
-    }
+interface Props {
+  accordionQuestion: string
+  accordionAwnser?: string
+}
+
+withDefaults(defineProps<Props>(), {
+    accordionAwnser: 'موردی تا اکنون ثبت نشده است',
 })
 
 import { ref } from "vue"
 
-const isOpen = ref(false)
-const accordionAwnserElement = ref(null)
-const toggleAccordion = (accordionAwnserElement) => {
+const isOpen = ref<boolean>(false)
+const accordionAwnserElement = ref<HTMLElement | null>(null)
+const toggleAccordion = (accordionAwnserElement: HTMLElement): void => {
     if(accordionAwnserElement.classList.contains('hidden')) {
         isOpen.value = true
         accordionAwnserElement.classList.remove('hidden')

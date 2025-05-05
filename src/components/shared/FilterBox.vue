@@ -1,14 +1,8 @@
-<script setup>
-defineProps({
-  filterQuery: {
-    type: String,
-    required: true,
-  },
-  filterName: {
-    type: String,
-    required: true,
-  },
-});
+<script setup lang="ts">
+defineProps<{
+  filterQuery: string;
+  filterName: string;
+}>();
 </script>
 
 <template>

@@ -1,9 +1,11 @@
-<script setup>
-import { useDealerAgreementStore } from '@/store/modules/dealerAgreementStore.js'
+<script setup lang="ts">
+import { useDealerAgreementStore } from '@/store/modules/dealerAgreementStore.ts'
 const dealerAgreementStore = useDealerAgreementStore()
 
-const emit = defineEmits(['provinceSelect'])
-const changeProvinces = (provincesName) => {
+const emit = defineEmits<{
+    (e: 'provinceSelect', provincesName: string): void
+}>()
+const changeProvinces = (provincesName: string): void => {
     dealerAgreementStore.getCountiesByProvince(provincesName)
     emit('provinceSelect', provincesName)
 }

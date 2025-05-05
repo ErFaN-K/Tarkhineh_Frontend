@@ -1,7 +1,6 @@
-<script setup>
-import { ref } from 'vue';
+<script setup lang="ts">
 import DatePicker from '@/components/shared/DatePicker.vue';
-import { datePicker } from '@/composables/useDatePicker'
+import { datePicker } from '@/composables/useDatePicker.ts'
 
 const { dateNumber, getDateFromCustomDatePicker, isOpenCustomDatePicker, showCustomDatePicker, hideCustomDatePicker } = datePicker()
 </script>

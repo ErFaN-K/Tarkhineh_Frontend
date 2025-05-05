@@ -1,9 +1,9 @@
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue';
-import { datePicker } from '@/composables/useDatePicker'
+import { datePicker } from '@/composables/useDatePicker.ts'
 import DatePicker from '@/components/shared/DatePicker.vue'
 
-const isDisabled = ref(true)
+const isDisabled = ref<boolean>(true)
 const { dateNumber, getDateFromCustomDatePicker, isOpenCustomDatePicker, showCustomDatePicker, hideCustomDatePicker } = datePicker()
 </script>
 

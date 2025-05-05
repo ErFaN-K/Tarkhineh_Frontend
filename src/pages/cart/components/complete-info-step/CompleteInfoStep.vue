@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import DeliveryMethod from './DeliveryMethod.vue'
 import CourierMethod from './CourierMethod.vue'
 import OrderDescription from './OrderDescription.vue'

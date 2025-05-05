@@ -1,13 +1,10 @@
-<script setup>
+<script setup lang="ts">
 import FoodCard from "@/components/shared/HorizontalFoodCard.vue";
 import FoodCardLoader from "@/components/ui/HorizontalFoodCardLoader.vue";
 
-defineProps({
-  sectionTitle: {
-    type: String,
-    required: true,
-  },
-});
+defineProps<{
+  sectionTitle: string
+}>()
 </script>
 
 <template>

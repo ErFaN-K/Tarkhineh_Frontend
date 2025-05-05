@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import BenefitText from './BenefitText.vue';
 
 </script>

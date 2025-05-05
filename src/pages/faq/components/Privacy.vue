@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import HeroSection from '@/components/ui/HeroSectionWithoutSlider.vue'
 import FaqMenuSection from './FaqMenuSection.vue'
 import Accordion from './Accordion.vue'

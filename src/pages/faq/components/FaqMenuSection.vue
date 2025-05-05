@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import FaqMenuItem from "@/components/shared/MenuItem.vue";
 </script>
 

@@ -1,17 +1,14 @@
-<script setup>
-defineProps({
-    content: {
-        type: String,
-        default: () => 'موردی تا اکنون ثبت نشده است'
-    },
-    redirectText: {
-        type: String,
-        default: () => 'منوی رستوران'
-    },
-    redirectPage: {
-        type: String,
-        default: () => 'MenuPage'
-    }
+<script setup lang="ts">
+interface Props {
+  content?: string
+  redirectText?: string
+  redirectPage?: string
+}
+
+withDefaults(defineProps<Props>(), {
+  content: 'موردی تا اکنون ثبت نشده است',
+  redirectText: 'منوی رستوران',
+  redirectPage: 'MenuPage'
 })
 </script>
 

@@ -1,10 +1,7 @@
-<script setup>
-defineProps({
-    benefit: {
-        type: String,
-        required: true
-    }
-})
+<script setup lang="ts">
+defineProps<{
+    benefit: string
+}>()
 </script>
 
 <template>

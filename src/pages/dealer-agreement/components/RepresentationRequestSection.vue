@@ -1,38 +1,42 @@
-<script setup>
+<script setup lang="ts">
 import { reactive, ref } from 'vue'
 import CountiesDropDown from './CountiesDropDown.vue'
 import ProvincesDropDown from './ProvincesDropDown.vue'
 
-const isOpenProvinceList = ref(false)
-const isOpenCountyList = ref(false)
+const isOpenProvinceList = ref<boolean>(false)
+const isOpenCountyList = ref<boolean>(false)
 
-const provincInputValue = ref()
-const countyInputValue = ref()
+const provincInputValue = ref<string>()
+const countyInputValue = ref<string>()
 
-const changeProvinceValue = (provinceName) => {
+const changeProvinceValue = (provinceName: string): void => {
     provincInputValue.value = provinceName
     isOpenProvinceList.value = false
 }
 
-const changeCountyValue = (countyName) => {
+const changeCountyValue = (countyName: string): void => {
     countyInputValue.value = countyName
     isOpenCountyList.value = false
 }
 
 // File Input Handlers
-const fileInput = ref(null)
-const files = reactive([])
+const fileInput = ref<HTMLInputElement | null>(null)
+const files = reactive<File[]>([])
 
 // Open File Menu
-const openFileInput = () => fileInput.value.click()
+const openFileInput = (): void => fileInput.value?.click()
 
 // Add File 
-const addFile = (event) => {
-    Array.from(event.target.files).forEach(file => {
-        files.push(file);
-        console.log(file.name)
+const addFile = (event: Event): void => {
+  const target = event.target as HTMLInputElement
+  if (target.files) {
+    Array.from(target.files).forEach(file => {
+      files.push(file)
+      console.log(file.name)
     })
+  }
 }
+
 </script>
 
 <template>

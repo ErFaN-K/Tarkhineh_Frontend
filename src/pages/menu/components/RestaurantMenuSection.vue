@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import RestaurantMenuItem from "@/components/shared/MenuItem.vue";
 </script>
 

@@ -1,14 +1,8 @@
-<script setup>
-defineProps({
-    backgroundName: {
-        type: String,
-        required: true
-    },
-    sectionTitle: {
-        type: String,
-        required: true
-    }
-})
+<script setup lang="ts">
+defineProps<{
+    backgroundName: string;
+    sectionTitle: string;
+}>()
 </script>
 
 <template>

@@ -1,11 +1,11 @@
-<script setup>
-import { useCartStore } from '@/store/modules/cartStore.js' 
+<script setup lang="ts">
+import { useCartStore } from '@/store/modules/cartStore.ts' 
 const cartStore = useCartStore()
 
 import { useRouter } from 'vue-router'
 const router = useRouter()
 
-const handleStep = () => {
+const handleStep = (): void => {
     if(cartStore.step === 1) {
         router.push({ name: "HomePage" })
         return

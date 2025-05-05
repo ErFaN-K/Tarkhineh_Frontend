@@ -1,11 +1,11 @@
-<script setup>
+<script setup lang="ts">
 import { ref } from "vue";
-import { usePublicStore } from "@/store/modules/publicStore.js";
+import { usePublicStore } from "@/store/modules/publicStore.ts";
 
 const publicStore = usePublicStore();
 
-const activeDropDown = ref(null);
-const toggleSection = (dropDownElementName) => {
+const activeDropDown = ref<null | string>(null);
+const toggleSection = (dropDownElementName: string): void => {
   activeDropDown.value = activeDropDown.value === dropDownElementName ? null : dropDownElementName;
 };
 </script>

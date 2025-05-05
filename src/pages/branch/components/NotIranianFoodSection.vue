@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 // Swiper Config
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Autoplay } from "swiper/modules";
@@ -57,7 +57,7 @@ import FoodCard from "@/components/shared/VerticalFoodCard.vue";
       <!-- See All Menu Button -->
       <router-link :to="{ name: 'MenuPage' }"
         
-        class="h-8 md:h-10 px-4 md:px-2.5 flex items-center md:gap-x-2 gap-x-1 text-Primary border border-Primary rounded-sm mx-auto block w-max"
+        class="h-8 md:h-10 px-4 md:px-2.5 flex items-center md:gap-x-2 gap-x-1 text-Primary border border-Primary rounded-sm mx-auto w-max"
       >
         <svg class="size-4 md:size-6">
           <use href="#calender"></use>

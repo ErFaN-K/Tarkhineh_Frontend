@@ -2,31 +2,31 @@ import { defineStore } from "pinia";
 import { reactive, ref } from "vue";
 
 export const usePublicStore = defineStore("public", () => {
-  const isShowHamburgerMenu = ref(false);
-  const isShowOverlay = ref(false);
-  const branchData = reactive({});
+  const isShowHamburgerMenu = ref<boolean>(false);
+  const isShowOverlay = ref<boolean>(false);
+  const branchData = reactive<object>({});
 
   // Funcs -------
 
   // Show Hamburger Menu
-  const showHamburgerMenu = () => {
+  const showHamburgerMenu = (): void => {
     isShowHamburgerMenu.value = true;
     isShowOverlay.value = true;
   };
 
   // Close Hamburger Menu
-  const closeHamburgerMenu = () => {
+  const closeHamburgerMenu = (): void => {
     isShowHamburgerMenu.value = false;
     isShowOverlay.value = false;
   };
 
   // Set Branch Data
-  const setBranchData = (branchData) => {
-    branchData.value = branchData;
+  const setBranchData = (branchData: object) => {
+    branchData = branchData;
   };
 
   // Get Branch Data
-  const getBranchData = () => branchData.value;
+  const getBranchData = (): object => branchData;
 
   return {
     isShowHamburgerMenu,

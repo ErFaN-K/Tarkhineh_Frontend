@@ -1,14 +1,8 @@
-<script setup>
-defineProps({
-  content: {
-    type: String,
-    required: true,
-  },
-  bgName: {
-    type: String,
-    required: true,
-  },
-});
+<script setup lang="ts">
+defineProps<{
+  content: string;
+  bgName: string;
+}>();
 </script>
 
 <template>

@@ -1,18 +1,9 @@
-<script setup>
-defineProps({
-  imageSrc: {
-    type: String,
-    required: true,
-  },
-  link: {
-    type: String,
-    required: true,
-  },
-  linkTitle: {
-    type: String,
-    required: true,
-  },
-});
+<script setup lang="ts">
+defineProps<{
+  imageSrc: string;
+  link: string;
+  linkTitle: string;
+}>();
 </script>
 
 <template>

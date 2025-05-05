@@ -1,14 +1,8 @@
-<script setup>
-defineProps({
-  menuName: {
-    type: String,
-    required: true,
-  },
-  link: {
-    type: String,
-    required: true,
-  },
-});
+<script setup lang="ts">
+defineProps<{
+  menuName: string
+  link: string
+}>();
 </script>
 
 <template>

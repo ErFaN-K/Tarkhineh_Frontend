@@ -1,5 +1,5 @@
 <template>
-  <!-- Horizontal Food Card Skleton Loader ( Just For Food Menu ) -->
+  <!-- Horizontal Food Card Skeleton Loader ( Just For Food Menu ) -->
   <div
     class="rounded-sm md:rounded-lg border border-gray-400 flex overflow-hidden bg-white"
   >

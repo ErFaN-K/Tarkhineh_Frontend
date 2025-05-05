@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import DashboardTitle from '../components/DashboardTitle.vue'
 import FilterBox from "@/components/shared/FilterBox.vue";
 import OrderDetailCard from './components/OrderDetailCard.vue'

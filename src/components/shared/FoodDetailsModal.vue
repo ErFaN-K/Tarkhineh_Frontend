@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 // Swiper Config
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Autoplay, EffectFade, FreeMode, Thumbs } from "swiper/modules";
@@ -12,9 +12,9 @@ import "swiper/css/thumbs";
 import { ref } from "vue";
 
 // Code
-const thumbsSwiper = ref(null);
+const thumbsSwiper = ref<Swiper | null>(null);
 
-const setThumbsSwiper = (swiper) => {
+const setThumbsSwiper = (swiper: Swiper): void => {
   thumbsSwiper.value = swiper;
 };
 </script>

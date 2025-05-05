@@ -1,55 +1,58 @@
-<script setup>
+<script setup lang="ts">
 import { ref, computed, reactive } from 'vue'
 import jalaali from 'jalaali-js'
 
-const emit = defineEmits(['getDate', 'closeDatePicker'])
+const emit = defineEmits<{
+  (event: 'getDate', payload: { gregorianDate: Date; jalaaliDateFormatted: string }): void;
+  (event: 'closeDatePicker', payload: boolean): void;
+}>()
+
 const jalaaliCurrentDate = jalaali.toJalaali(new Date())
-const selectedDate = ref(jalaaliCurrentDate)
+const selectedDate = ref<{ jy: number; jm: number; jd: number }>(jalaaliCurrentDate)
 
-let dayNumber = reactive([])
-let yearNumber = reactive([])
-let monthNumber = reactive([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
+const dayNumber = reactive<number[]>([])
+const yearNumber = reactive<number[]>([])
+const monthNumber = reactive<number[]>([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
 
-const getMonthLength = (year, month) => {
-    dayNumber = [] // Reset dayNumber
-    const monthLength = jalaali.jalaaliMonthLength(year, month)
-    for(let i = 1; i <= monthLength; i++) {
-        dayNumber.push(i)
-    }
+const getMonthLength = (year: number, month: number): void => {
+  dayNumber.length = 0
+  const monthLength = jalaali.jalaaliMonthLength(year, month)
+  for (let i = 1; i <= monthLength; i++) {
+    dayNumber.push(i)
+  }
 }
 
-const calculateMinYear = (minYear) => {
-    yearNumber = [] // Reset yearNumber
-    for(let i = minYear; i <= selectedDate.value.jy; i++) { 
-        yearNumber.push(i)
-    }
+const calculateMinYear = (minYear: number): void => {
+  yearNumber.length = 0
+  for (let i = minYear; i <= selectedDate.value.jy; i++) {
+    yearNumber.push(i)
+  }
 }
 
-// Set Jalaali Date & Refresh Month Lengh
-const setDate = (year, month, day) => {
-    selectedDate.value = {
-        jy: year || selectedDate.value.jy,
-        jm: month || selectedDate.value.jm,
-        jd: day || selectedDate.value.jd
-    };
-    getMonthLength(selectedDate.value.jy, selectedDate.value.jm) 
+const setDate = (year?: number, month?: number, day?: number): void => {
+  selectedDate.value = {
+    jy: year ?? selectedDate.value.jy,
+    jm: month ?? selectedDate.value.jm,
+    jd: day ?? selectedDate.value.jd,
+  }
+  getMonthLength(selectedDate.value.jy, selectedDate.value.jm)
 }
 
-// Send Gregorian Date To Parent
-const sendDate = () => {
-    const gregorianDate = jalaali.toGregorian(selectedDate.value.jy, selectedDate.value.jm, selectedDate.value.jd)
-    emit('getDate', { gregorianDate, jalaaliDateFormated })
-    emit('closeDatePicker', false)
+const sendDate = (): void => {
+  const { gy, gm, gd } = jalaali.toGregorian(selectedDate.value.jy, selectedDate.value.jm, selectedDate.value.jd)
+  const gregorianDate = new Date(gy, gm - 1, gd)
+  const jalaaliDateFormattedStr = jalaaliDateFormatted.value
+
+  emit('getDate', { gregorianDate, jalaaliDateFormatted: jalaaliDateFormattedStr })
+  emit('closeDatePicker', false)
 }
 
 calculateMinYear(1340)
 getMonthLength(selectedDate.value.jy, selectedDate.value.jm)
 
-// Format Gregorian Date To Jalaali
-const jalaaliDateFormated = computed(() => {
-    return `${selectedDate.value.jd} / ${selectedDate.value.jm} / ${selectedDate.value.jy}`
+const jalaaliDateFormatted = computed(() => {
+  return `${selectedDate.value.jd} / ${selectedDate.value.jm} / ${selectedDate.value.jy}`
 })
-
 </script>
 
 <template>
@@ -86,7 +89,7 @@ const jalaaliDateFormated = computed(() => {
                 </div>
             </div>
             <!-- Show Custom Date -->
-            <span class="text-center text-base font-Dana text-Primary">{{ jalaaliDateFormated }}</span>
+            <span class="text-center text-base font-Dana text-Primary">{{ jalaaliDateFormatted }}</span>
             <!-- Submit Date Button -->
             <button @click="sendDate" class="w-full h-10 bg-Primary hover:bg-Primary/90 text-sm cursor-pointer font-Dana-Medium text-white rounded-sm">ثبت تاریخ</button>
         </div>
