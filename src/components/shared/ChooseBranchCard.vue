@@ -1,8 +1,4 @@
 <script setup lang="ts">
-interface Props {
-
-}
-
 defineProps<{
     branchImage: string;
     branchName: string;

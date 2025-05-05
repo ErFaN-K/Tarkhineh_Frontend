@@ -1,7 +1,7 @@
-<script setup>
+<script setup lang="ts">
 import ProgressStepper from '@/components/ui/ProgressStepper.vue'
 
-import { useCartStore } from '@/store/modules/cartStore.js' 
+import { useCartStore } from '@/store/modules/cartStore.ts' 
 const cartStore = useCartStore()
 </script>
 

@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import FoodCard from './FoodCard.vue'
 </script>
 

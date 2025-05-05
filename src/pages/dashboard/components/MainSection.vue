@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import DesktopProfilePanel from './DesktopProfilePanel.vue';
 import MobileProfilePanel from './MobileProfilePanel.vue'
 </script>

@@ -1,26 +1,7 @@
 {
-  "extends": "@vue/tsconfig/tsconfig.json",
-  "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "bundler",
-    "lib": ["ESNext", "DOM"],
-    "strict": true,
-    "esModuleInterop": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "skipLibCheck": true,
-    "allowSyntheticDefaultImports": true,
-    "allowJs": false,
-    "checkJs": false,
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"]
-    },
-    "types": ["vite/client"]
-  },
-  "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
-  "exclude": ["node_modules", "dist"]
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
 }

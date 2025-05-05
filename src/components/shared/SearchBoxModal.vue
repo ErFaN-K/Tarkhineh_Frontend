@@ -1,5 +1,5 @@
 <!-- Search Box ( For Desktop ) -->
-<script setup>
+<script setup lang="ts">
 import SearchInput from '@/components/shared/SearchInput.vue'
 </script>
 

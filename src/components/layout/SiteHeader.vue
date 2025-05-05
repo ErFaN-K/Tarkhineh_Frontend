@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { usePublicStore } from "@/store/modules/publicStore.js";
+import { usePublicStore } from "@/store/modules/publicStore.ts";
 import NavigationMenu from "../ui/NavigationMenu.vue";
 
 const publicStore = usePublicStore();

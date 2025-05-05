@@ -1,12 +1,12 @@
 import { ref } from 'vue'
 
 export function datePicker() {
-  const dateNumber = ref<number | null>(null)
+  const dateNumber = ref<string | null>(null)
 
-  const getDateFromCustomDatePicker = (date: { jalaaliDateFormatted: { value: number } }): void => {
-    dateNumber.value = date.jalaaliDateFormatted.value
+  const getDateFromCustomDatePicker = (date: { gregorianDate: { gy: number; gm: number; gd: number }; jalaaliDateFormatted: string }): void => {
+    dateNumber.value = date.jalaaliDateFormatted
   }
-
+  
   const isOpenCustomDatePicker = ref(false)
 
   const showCustomDatePicker = (): void => {

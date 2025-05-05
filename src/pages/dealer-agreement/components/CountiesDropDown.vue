@@ -1,12 +1,15 @@
-<script setup>
-import { useDealerAgreementStore } from '@/store/modules/dealerAgreementStore.js'
+<script setup lang="ts">
+import { useDealerAgreementStore } from '@/store/modules/dealerAgreementStore.ts'
 import { computed, ref } from 'vue'
 const dealerAgreementStore = useDealerAgreementStore()
 
-const selectedCountyList = computed(() => dealerAgreementStore.selectedCountyList)
+const selectedCountyList = computed<string[]>(() => dealerAgreementStore.selectedCountyList)
 
-const emit = defineEmits(['countySelect'])
-const changeCounty = (countyName) => emit('countySelect', countyName)
+const emit = defineEmits<{
+  (e: 'countySelect', countyName: string): void
+}>()
+
+const changeCounty = (countyName: string): void => emit('countySelect', countyName)
 </script>
 
 <template>

@@ -1,11 +1,11 @@
-<script setup>
+<script setup lang="ts">
 import FactorPanel from './FactorPanel.vue';
 import FoodCardContainer from './card-step/FoodCardContainer.vue';
 import CompleteInfoStep from './complete-info-step/CompleteInfoStep.vue'
 import InternetPaymentStep from './Internet-payment-step/InternetPaymentStep.vue'
 import NotFound from './card-step/NotFound.vue';
 
-import { useCartStore } from '@/store/modules/cartStore.js' 
+import { useCartStore } from '@/store/modules/cartStore.ts' 
 const cartStore = useCartStore()
 </script>
 

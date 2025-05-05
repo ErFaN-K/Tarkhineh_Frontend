@@ -1,9 +1,8 @@
 <script setup lang="ts">
-interface Props {
+defineProps<{
   menuName: string
   link: string
-}
-defineProps<Props>();
+}>();
 </script>
 
 <template>

@@ -1,10 +1,8 @@
 <script setup lang="ts">
-interface Props {
+defineProps<{
   filterQuery: string;
   filterName: string;
-}
-
-defineProps<Props>();
+}>();
 </script>
 
 <template>

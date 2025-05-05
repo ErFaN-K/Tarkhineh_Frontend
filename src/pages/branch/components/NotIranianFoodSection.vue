@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 // Swiper Config
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Autoplay } from "swiper/modules";

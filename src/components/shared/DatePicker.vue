@@ -3,53 +3,55 @@ import { ref, computed, reactive } from 'vue'
 import jalaali from 'jalaali-js'
 
 const emit = defineEmits<{
-  (event: 'getDate', payload: { gregorianDate: Date; jalaaliDateFormated: string }): void;
+  (event: 'getDate', payload: { gregorianDate: Date; jalaaliDateFormatted: string }): void;
   (event: 'closeDatePicker', payload: boolean): void;
 }>()
 
 const jalaaliCurrentDate = jalaali.toJalaali(new Date())
 const selectedDate = ref<{ jy: number; jm: number; jd: number }>(jalaaliCurrentDate)
 
-let dayNumber: number[] = reactive([])
-let yearNumber: number[] = reactive([])
-let monthNumber: number[] = reactive([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
+const dayNumber = reactive<number[]>([])
+const yearNumber = reactive<number[]>([])
+const monthNumber = reactive<number[]>([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
 
 const getMonthLength = (year: number, month: number): void => {
-    dayNumber = [] // Reset dayNumber
-    const monthLength = jalaali.jalaaliMonthLength(year, month)
-    for(let i = 1; i <= monthLength; i++) {
-        dayNumber.push(i)
-    }
+  dayNumber.length = 0
+  const monthLength = jalaali.jalaaliMonthLength(year, month)
+  for (let i = 1; i <= monthLength; i++) {
+    dayNumber.push(i)
+  }
 }
 
 const calculateMinYear = (minYear: number): void => {
-    yearNumber = [] // Reset yearNumber
-    for(let i = minYear; i <= selectedDate.value.jy; i++) { 
-        yearNumber.push(i)
-    }
+  yearNumber.length = 0
+  for (let i = minYear; i <= selectedDate.value.jy; i++) {
+    yearNumber.push(i)
+  }
 }
 
-const setDate = (year: number, month: number, day: number): void => {
-    selectedDate.value = {
-        jy: year || selectedDate.value.jy,
-        jm: month || selectedDate.value.jm,
-        jd: day || selectedDate.value.jd
-    }
-    getMonthLength(selectedDate.value.jy, selectedDate.value.jm)
+const setDate = (year?: number, month?: number, day?: number): void => {
+  selectedDate.value = {
+    jy: year ?? selectedDate.value.jy,
+    jm: month ?? selectedDate.value.jm,
+    jd: day ?? selectedDate.value.jd,
+  }
+  getMonthLength(selectedDate.value.jy, selectedDate.value.jm)
 }
 
 const sendDate = (): void => {
-    const gregorianDate = jalaali.toGregorian(selectedDate.value.jy, selectedDate.value.jm, selectedDate.value.jd)
-    const jalaaliDateFormated = jalaaliDateFormatted.value
-    emit('getDate', { gregorianDate, jalaaliDateFormated })
-    emit('closeDatePicker', false)
+  const { gy, gm, gd } = jalaali.toGregorian(selectedDate.value.jy, selectedDate.value.jm, selectedDate.value.jd)
+  const gregorianDate = new Date(gy, gm - 1, gd)
+  const jalaaliDateFormattedStr = jalaaliDateFormatted.value
+
+  emit('getDate', { gregorianDate, jalaaliDateFormatted: jalaaliDateFormattedStr })
+  emit('closeDatePicker', false)
 }
 
 calculateMinYear(1340)
 getMonthLength(selectedDate.value.jy, selectedDate.value.jm)
 
-const jalaaliDateFormatted = computed<string>(() => {
-    return `${selectedDate.value.jd} / ${selectedDate.value.jm} / ${selectedDate.value.jy}`
+const jalaaliDateFormatted = computed(() => {
+  return `${selectedDate.value.jd} / ${selectedDate.value.jm} / ${selectedDate.value.jy}`
 })
 </script>
 

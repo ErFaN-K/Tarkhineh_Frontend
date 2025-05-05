@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 // Components
 import Header from '@/components/layout/SiteHeader.vue'
 import Footer from "@/components/layout/SiteFooter.vue";

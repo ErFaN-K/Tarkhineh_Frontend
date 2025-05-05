@@ -1,10 +1,10 @@
-<script setup>
-defineProps({
-  inputId: String,
-  mainTitle: String,
-  titleDescription: String,
-  iconName: String
-})
+<script setup lang="ts">
+defineProps<{
+  inputId: string,
+  mainTitle: string,
+  titleDescription: string,
+  iconName: string
+}>()
 </script>
 
 <template>

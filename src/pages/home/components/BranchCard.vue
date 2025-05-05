@@ -1,22 +1,10 @@
-<script setup>
-defineProps({
-  branchImage: {
-    type: String,
-    required: true,
-  },
-  branchName: {
-    type: String,
-    required: true,
-  },
-  branchAddress: {
-    type: String,
-    required: true,
-  },
-  branchPageLink: {
-    type: String,
-    required: true,
-  },
-});
+<script setup lang="ts">
+defineProps<{
+  branchImage: string;
+  branchName: string;
+  branchAddress: string;
+  branchPageLink: string;
+}>()
 </script>
 
 <template>

@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import AddressDetails from '@/components/shared/AddressDetails.vue';
 </script>
 

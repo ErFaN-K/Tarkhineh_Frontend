@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import DashboardTitle from '../components/DashboardTitle.vue'
 import SearchInput from "@/components/shared/SearchInput.vue";
 import FilterBox from "@/components/shared/FilterBox.vue";

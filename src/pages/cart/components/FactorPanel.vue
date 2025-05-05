@@ -1,10 +1,10 @@
-<script setup>
+<script setup lang="ts">
 import FoodCard from './card-step/Small-FoodCard.vue';
 
-import { useCartStore } from '@/store/modules/cartStore.js' 
+import { useCartStore } from '@/store/modules/cartStore.ts' 
 const cartStore = useCartStore()
 
-const nextStepHandler = () => {
+const nextStepHandler = (): void => {
     if(cartStore.step >= 3) return
     cartStore.nextStep(cartStore.step + 1)
 }

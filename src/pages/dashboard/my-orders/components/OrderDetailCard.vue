@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import ProgressStepper from '@/components/ui/ProgressStepper.vue';
 import FoodCard from './FoodCard.vue'
 </script>

@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import Header from '@/components/layout/SiteHeader.vue'
 import HeroSection from '@/components/ui/HeroSectionWithoutSlider.vue'
 import RestaurantAttributeSection from './components/RestaurantAttributeSection.vue'
