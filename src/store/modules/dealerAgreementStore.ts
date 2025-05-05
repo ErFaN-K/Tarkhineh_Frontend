@@ -2,7 +2,7 @@ import { defineStore } from "pinia";
 import { ref } from "vue";
 
 export const useDealerAgreementStore = defineStore("dealer-agreement", () => {
-    const provinces = [
+    const provinces: string[] = [
         "تهران", "فارس", "خراسان رضوی", "اصفهان", "آذربایجان شرقی", 
         "خوزستان", "کرمان", "لرستان", "البرز", "سیستان و بلوچستان",
         "قم", "گیلان", "کردستان", "هرمزگان", "کرمانشاه", "آذربایجان غربی", 
@@ -10,8 +10,8 @@ export const useDealerAgreementStore = defineStore("dealer-agreement", () => {
         "زنجان", "قزوین", "ایلام", "مازندران", "چهارمحال و بختیاری", 
         "خراسان شمالی", "اردبیل", "خراسان جنوبی", "یزد", "خراسان شمالی"
     ];
-    
-    const counties = {
+
+    const counties: Record<string, string[]> = {
         "تهران": ["تهران", "شهریار", "رباط‌کریم", "پاکدشت", "ورامین", "فیروزکوه", "دماوند", "ری", "اسلامشهر", "پردیس"],
         "فارس": ["شیراز", "مرودشت", "کازرون", "لارستان", "فراشبند", "فسا", "زرین‌دشت", "استهبان", "شیراز", "مهر"],
         "خراسان رضوی": ["مشهد", "سبزوار", "تربت‌حیدریه", "نیشابور", "کاشمر", "قوچان", "چناران", "کاشمر", "بردسکن"],
@@ -44,12 +44,11 @@ export const useDealerAgreementStore = defineStore("dealer-agreement", () => {
         "یزد": ["یزد", "اردکان", "بافق", "میبد", "تفت", "اشکذر", "حمیدیا", "صدوق"]
     };
 
-    const selectedCountyList = ref([])
+    const selectedCountyList = ref<string[]>([]);
 
-    const getCountiesByProvince = (provinceName = 'تهران') => {
-        return selectedCountyList.value = counties[provinceName];
-    };
-
+    const getCountiesByProvince = (provinceName: string = 'تهران'): void => {
+        selectedCountyList.value = counties[provinceName] || [];
+    }
     getCountiesByProvince()
 
     return { 

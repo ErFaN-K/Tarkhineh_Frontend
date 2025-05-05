@@ -1,17 +1,17 @@
-<script setup>
-defineProps({
-    stepOneName: String,
-    stepOneIcon: String,
-    stepOneActive: Boolean,
+<script setup lang="ts">
+defineProps<{
+    stepOneName: string;
+    stepOneIcon: string;
+    stepOneActive: boolean;
     
-    stepTwoName: String,
-    stepTwoIcon: String,
-    stepTwoActive: Boolean,
+    stepTwoName: string;
+    stepTwoIcon: string;
+    stepTwoActive: boolean;
     
-    stepThreeName: String,
-    stepThreeIcon: String,
-    stepThreeActive: Boolean,
-})
+    stepThreeName: string;
+    stepThreeIcon: string;
+    stepThreeActive: boolean;
+}>()
 </script>
 
 <template>

@@ -1,14 +1,9 @@
-<script setup>
-defineProps({
-  menuName: {
-    type: String,
-    required: true,
-  },
-  link: {
-    type: String,
-    required: true,
-  },
-});
+<script setup lang="ts">
+interface Props {
+  menuName: string
+  link: string
+}
+defineProps<Props>();
 </script>
 
 <template>

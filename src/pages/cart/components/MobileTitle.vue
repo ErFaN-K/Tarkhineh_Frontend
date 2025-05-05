@@ -1,5 +1,5 @@
 <script setup>
-import { useCartStore } from '@/store/modules/cartStore.js' 
+import { useCartStore } from '@/store/modules/cartStore.فس' 
 const cartStore = useCartStore()
 
 import { useRouter } from 'vue-router'

@@ -1,5 +1,5 @@
 <!-- Hero Section Component With Slider ( For Home & Branch & Menu Page Only Use ) -->
-<script setup>
+<script setup lang="ts">
 // Swiper Config
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Autoplay, Pagination, EffectFade } from "swiper/modules";

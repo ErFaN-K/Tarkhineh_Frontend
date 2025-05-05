@@ -18,7 +18,7 @@ import SearchInput from '@/components/shared/SearchInput.vue'
             <h2 class="font-Morabba-Bold text-xl">جستجو</h2>
         </div>
         <!-- Modal Main -->
-        <div class="w-full pt-10 pb-12 px-4 flex items-center flex flex-col gap-y-3">
+        <div class="w-full pt-10 pb-12 px-4 items-center flex flex-col gap-y-3">
             <!-- Search Title -->
             <span class="text-base text-center font-Dana">لطفا متن خود را تایپ و سپس دکمه Enter را بزنید.</span>
             <!-- Search Input -->

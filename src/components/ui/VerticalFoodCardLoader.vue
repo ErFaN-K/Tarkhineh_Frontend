@@ -1,5 +1,5 @@
 <template>
-  <!-- Vertical Food Card Skleton Loader ( Just For Food Cart ) -->
+  <!-- Vertical Food Card Skeleton Loader ( Just For Food Cart ) -->
   <div
     class="border border-gray-400 md:rounded-lg bg-white rounded-sm overflow-hidden"
   >

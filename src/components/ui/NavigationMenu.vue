@@ -1,7 +1,7 @@
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue';
 
-const isShowNavigationMenu = ref(false)
+const isShowNavigationMenu = ref<Boolean>(false)
 </script>
 
 <template>
