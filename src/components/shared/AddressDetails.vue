@@ -1,3 +1,7 @@
+<script setup lang="ts">
+    import AppIcon from '../ui/AppIcon.vue';
+</script>
+
 <template>
     <!-- Address Details -->
     <div class="p-4 flex flex-col justify-between col-span-1 md:rounded-lg rounded-sm border border-gray-400 bg-gray-100 md:h-28.75 h-23.5">
@@ -7,14 +11,14 @@
             <!-- Controller Button -->
             <div class="flex items-center gap-x-3 text-gray-800">
                <span class="cursor-pointer">
-                    <svg class="size-4 md:size-6 hover:text-Primary">
-                        <use href="#pencil-square"></use>
-                    </svg>
+                    <AppIcon className="size-4 md:size-6 hover:text-Primary" iconName="pencil-square"/>
                </span>
                <span class="cursor-pointer">
                     <svg class="size-4 md:size-6 hover:text-Error">
                         <use href="#trash"></use>
                     </svg>
+                    <AppIcon className="size-4 md:size-6 hover:text-Error" iconName="trash"/>
+
                </span>
             </div>
         </div>

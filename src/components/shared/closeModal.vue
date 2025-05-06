@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import AppIcon from '../ui/AppIcon.vue';
+</script>
+
 <template>
     <div class="is-hidden fixed inset-0 m-auto z-100 px-5 flex items-center justify-center">
         <div class="max-w-98 w-full bg-white md:rounded-lg rounded-sm overflow-hidden shadow-xl">
@@ -5,9 +9,7 @@
             <div class="relative flex items-center justify-center py-6 bg-gray-100">
                 <!-- Close Icon -->
                 <span class="cursor-pointer absolute top-6.5 left-6.5">
-                    <svg class="size-6.5 text-gray-700">
-                        <use href="#x-mark"></use>
-                    </svg>
+                    <AppIcon className="size-6.5 text-gray-700" iconName="x-mark"/>
                 </span>
                 <!-- Popop Title -->
                 <h2 class="md:font-Morabba-Bold font-Morabba-Medium md:text-xl text-sm">تایتل تستی</h2>

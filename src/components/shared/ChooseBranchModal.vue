@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import AppIcon from '../ui/AppIcon.vue';
 import BranchCard from './ChooseBranchCard.vue'
 </script>
 
@@ -9,9 +10,7 @@ import BranchCard from './ChooseBranchCard.vue'
             <div class="relative flex items-center justify-center md:py-6 py-4 max-md:bg-gray-300 mb-6">
                 <!-- Close Icon -->
                 <span class="absolute md:top-5 md:left-5 top-3 left-3">
-                    <svg class="md:size-10 size-6 text-gray-700">
-                        <use href="#x-mark"></use>
-                    </svg>
+                    <AppIcon className="md:size-10 size-6 text-gray-700" iconName="x-mark"/>
                 </span>
                 <!-- Modal Title -->
                 <h2 class="font-Morabba-Bold md:text-xl text-xs">

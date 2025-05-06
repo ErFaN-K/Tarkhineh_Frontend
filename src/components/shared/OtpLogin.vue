@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import AppIcon from '../ui/AppIcon.vue';
+</script>
+
 <template>
   <div class="is-hidden fixed inset-0 m-auto z-100 md:px-5 flex items-center justify-center">
     <div
@@ -5,9 +9,7 @@
     >
       <!-- Tarkhineh Logo -->
       <div class="flex items-center justify-center md:mb-4 mb-20">
-        <svg class="text-Primary md:h-8 md:w-25.5 w-37 h-17.75">
-          <use href="#logo-type"></use>
-        </svg>
+        <AppIcon className="text-Primary md:h-8 md:w-25.5 w-37 h-17.75" iconName="logo-type"/>
       </div>
       <!-- Submit Phone Number -->
       <div v-if="false">
@@ -56,7 +58,7 @@
         <!-- Inputs & Code Resend & Edit Phone Number-->
         <div class="flex flex-col gap-y-2 mb-4 md:mb-5">
           <!-- Inputs -->
-          <div class="flex items-center jusitfy-between gap-x-4 md:h-10 h-8">
+          <div class="flex items-center justify-between gap-x-4 md:h-10 h-8">
             <input
               type="text"
               maxlength="1"
@@ -89,9 +91,7 @@
             <div class="">
               <!-- Time Remaining-->
               <div v-if="true" class="flex items-center gap-x-0.5 text-gray-700">
-                <svg class="size-4">
-                  <use href="#clock"></use>
-                </svg>
+                <AppIcon className="size-4" iconName="clock"/>
                 <!-- Time -->
                 <span>۱:۵۹</span>
                 <span>تا دریافت مجدد کد</span>
@@ -118,18 +118,10 @@
       >
       <!-- Arrows -->
       <span class="md:hidden cursor-pointer absolute md:top-6 md:left-6 top-5 left-5">
-        <svg
-          class="text-gray-700 size-6"
-        >
-          <use href="#x-mark"></use>
-        </svg>
+        <AppIcon className="text-gray-700 size-6" iconName="x-mark"/>
       </span>
       <span class="md:hidden cursor-pointer absolute md:top-6 md:right-6 top-5 right-5" v-if="true">
-        <svg
-          class="text-gray-700 size-6 rotate-180"
-        >
-          <use href="#chevron-left-mini"></use>
-        </svg>
+        <AppIcon className="text-gray-700 size-6 rotate-180" iconName="chevron-left-mini"/>
       </span>
     </div>
   </div>

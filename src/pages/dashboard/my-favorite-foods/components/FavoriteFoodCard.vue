@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import AppIcon from "@/components/ui/AppIcon.vue";
+</script>
+
 <template>
     <!-- Favorite Food Card ( Only For Dashboard | Favorite Page ) -->
     <div class="bg-white md:rounded-lg rounded-sm border border-gray-400 overflow-hidden text-gray-800">
@@ -12,35 +16,24 @@
                 <h3 class="md:font-Morabba-Bold md:text-xl font-Morabba-Medium text-xs line-clamp-1">پاستا سبزیجات </h3>
                 <!-- Heart -->
                 <span>
-                    <svg class="size-4 md:size-6 text-Error">
-                        <use href="#solid-heart"></use>
-                    </svg>
+                    <AppIcon className="size-4 md:size-6 text-Error" iconName="solid-heart"/>
                 </span>
             </div>
             <div class="md:mt-2 mt-1 flex items-center justify-between gap-x-2">
                 <!-- Rate ( For Desktop ) -->
                 <div class="max-md:hidden flex">
-                    <svg class="size-4 md:size-6 text-Warning-Light">
-                        <use href="#star"></use>
-                    </svg>
-                    <svg class="size-4 md:size-6 text-Warning-Light">
-                        <use href="#star"></use>
-                    </svg>
-                    <svg class="size-4 md:size-6 text-Warning-Light">
-                        <use href="#star"></use>
-                    </svg>
-                    <svg class="size-4 md:size-6 text-Warning-Light">
-                        <use href="#star"></use>
-                    </svg>
-                    <svg class="size-4 md:size-6 text-Warning-Light">
-                        <use href="#star"></use>
-                    </svg>
+                    <AppIcon className="size-4 md:size-6 text-Warning-Light" iconName="star"/>
+                    <AppIcon className="size-4 md:size-6 text-Warning-Light" iconName="star"/>
+                    <AppIcon className="size-4 md:size-6 text-Warning-Light" iconName="star"/>
+                    <AppIcon className="size-4 md:size-6 text-Warning-Light" iconName="star"/>
+                    <AppIcon className="size-4 md:size-6 text-Warning-Light" iconName="star"/>
                 </div>
                 <!-- Rate ( For Mobile ) -->
                 <div class="md:hidden flex items-center gap-x-0.5">
                     <svg class="size-3 text-Warning-Light">
                         <use href="#star"></use>
                     </svg>
+                    <AppIcon className="size-3 text-Warning-Light" iconName="star"/>
                     <span class="font-Dana text-xs">۴</span>
                 </div>
                 <!-- Price -->

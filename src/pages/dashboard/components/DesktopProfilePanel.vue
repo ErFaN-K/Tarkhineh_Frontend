@@ -1,3 +1,7 @@
+<script setup lang="ts">
+    import AppIcon from "@/components/ui/AppIcon.vue";
+</script>
+
 <template>  
     <div class="md:py-4 md:px-2 md:border md:rounded-lg rounded-sm max-md:rounded-none border-gray-400">
         <!-- User Profile & User Information -->
@@ -18,33 +22,23 @@
         <div class="pt-2 border-t border-t-gray-700 flex flex-col md:gap-y-1">
             <!-- Route -->
             <router-link activeClass="desktop-profile-panel__link--active" :to="{ name: 'Dashboard|Profile' }" class="h-10 md:h-9.5 flex items-center gap-x-1 px-2 text-gray-800 font-Dana">
-                <svg class="size-4 md:size-5">
-                    <use href="#user"></use>
-                </svg>
+                <AppIcon className="size-4 md:size-5" iconName="user"/>
                 <span class="text-xs md:text-base">پروفایل</span>
             </router-link>
             <router-link activeClass="desktop-profile-panel__link--active" :to="{ name: 'Dashboard|Orders' }" class="h-10 md:h-9.5 flex items-center gap-x-1 px-2 text-gray-800 font-Dana">
-                <svg class="size-4 md:size-5">
-                    <use href="#order"></use>
-                </svg>
+                <AppIcon className="size-4 md:size-5" iconName="order"/>
                 <span class="text-xs md:text-base">پیگیری سفارشات</span>
             </router-link>
             <router-link activeClass="desktop-profile-panel__link--active" :to="{ name: 'Dashboard|Wishlist' }" class="h-10 md:h-9.5 flex items-center gap-x-1 px-2 text-gray-800 font-Dana">
-                <svg class="size-4 md:size-5">
-                    <use href="#heart"></use>
-                </svg>
+                <AppIcon className="size-4 md:size-5" iconName="heart"/>
                 <span class="text-xs md:text-base">علاقمندی‌ها</span>
             </router-link>
             <router-link activeClass="desktop-profile-panel__link--active" :to="{ name: 'Dashboard|Address' }" class="h-10 md:h-9.5 flex items-center gap-x-1 px-2 text-gray-800 font-Dana">
-                <svg class="size-4 md:size-5">
-                    <use href="#location"></use>
-                </svg>
+                <AppIcon className="size-4 md:size-5" iconName="location"/>
                 <span class="text-xs md:text-base">آدرس‌های من</span>
             </router-link>
             <button class="h-10 md:h-9.5 flex items-center gap-x-1 px-2 text-Error font-Dana">
-                <svg class="size-4 md:size-5 rotate-180">
-                    <use href="#exit"></use>
-                </svg>
+                <AppIcon className="size-4 md:size-5 rotate-180" iconName="exit"/>
                 <span class="text-xs md:text-base">خروج</span>
             </button>
         </div>

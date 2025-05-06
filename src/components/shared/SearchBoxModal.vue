@@ -1,5 +1,6 @@
 <!-- Search Box ( For Desktop ) -->
 <script setup lang="ts">
+import AppIcon from '../ui/AppIcon.vue';
 import SearchInput from '@/components/shared/SearchInput.vue'
 </script>
 
@@ -10,9 +11,7 @@ import SearchInput from '@/components/shared/SearchInput.vue'
         <div class="relative flex items-center justify-center py-6 bg-gray-300">
             <!-- Close Icon -->
             <span class="cursor-pointer absolute top-5 left-5">
-                <svg class="size-10 text-gray-700">
-                    <use href="#x-mark"></use>
-                </svg>
+                <AppIcon className="size-10 text-gray-700" iconName="x-mark"/>
             </span>
             <!-- Modal Title -->
             <h2 class="font-Morabba-Bold text-xl">جستجو</h2>

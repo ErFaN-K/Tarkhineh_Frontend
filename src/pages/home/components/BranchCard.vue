@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import AppIcon from "@/components/ui/AppIcon.vue";
+
 defineProps<{
   branchImage: string;
   branchName: string;
@@ -22,9 +24,7 @@ defineProps<{
       <span class="text-custom md:text-sm text-gray-700 font-Dana h-10 max-md:h-8 line-clamp-2 text-center">{{ branchAddress }}</span>
       <router-link :to="{ name: 'BranchPage' }" class="max-md:hidden h-8 px-6 border rounded-sm border-Primary flex items-center gap-x-1 font-Dana text-Primary text-xs">
         <span>صفحه شعبه</span>
-        <svg class="size-4">
-          <use href="#chevron-left-mini"></use>
-        </svg>
+        <AppIcon className="size-4" iconName="chevron-left-mini"/>
       </router-link>
     </div>
   </div>

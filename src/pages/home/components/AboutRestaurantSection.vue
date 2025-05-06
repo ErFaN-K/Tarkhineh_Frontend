@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import RestaurantAttributeBox from "./RestaurantAttributeBox.vue";
+import AppIcon from "@/components/ui/AppIcon.vue";
 </script>
 
 <template>
@@ -31,9 +32,7 @@ import RestaurantAttributeBox from "./RestaurantAttributeBox.vue";
                 <span class="text-xs md:text-base font-Dana md:font-Dana-Medium"
                   >اطلاعات بیشتر</span
                 >
-                <svg class="md:size-6 size-4">
-                  <use href="#chevron-left"></use>
-                </svg>
+                <AppIcon className="md:size-6 size-4" iconName="chevron-left"/>
               </router-link>
             </div>
           </div>

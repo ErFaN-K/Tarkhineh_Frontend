@@ -4,6 +4,10 @@ import routes from "@/constants/routes.ts";
 const router = createRouter({
   history: createWebHistory(),
   routes,
+  // Reset Scroll
+  scrollBehavior(): { top: number } {
+      return { top: 0 };
+  }
 });
 
 // Before Each Route

@@ -1,3 +1,7 @@
+<script setup lang="ts">
+    import AppIcon from '../ui/AppIcon.vue';
+</script>
+
 <template>
   <footer>
     <div class="background-config footer__background">
@@ -22,19 +26,13 @@
               <!-- Restaurant Social Media -->
               <div class="flex items-center gap-x-4 max-md:gap-x-2">
                 <a href="https://twitter.com" target="_blank">
-                  <svg class="size-4 md:size-6">
-                    <use href="#twitter-icon"></use>
-                  </svg>
+                  <AppIcon className="size-4 md:size-6" iconName="twitter-icon"/>
                 </a>
                 <a href="https://instagram.com" target="_blank">
-                  <svg class="size-4 md:size-6">
-                    <use href="#instagram-icon"></use>
-                  </svg>
+                  <AppIcon className="size-4 md:size-6" iconName="instagram-icon"/>
                 </a>
                 <a href="https://telegram.com" target="_blank">
-                  <svg class="size-4 md:size-6">
-                    <use href="#telegram-icon"></use>
-                  </svg>
+                  <AppIcon className="size-4 md:size-6" iconName="telegram-icon"/>
                 </a>
               </div>
             </div>

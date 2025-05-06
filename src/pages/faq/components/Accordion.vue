@@ -1,14 +1,16 @@
 <script setup lang="ts">
+
 // Get Accordion Data
 interface Props {
-  accordionQuestion: string
-  accordionAwnser?: string
+    accordionQuestion: string
+    accordionAwnser?: string
 }
 
 withDefaults(defineProps<Props>(), {
     accordionAwnser: 'موردی تا اکنون ثبت نشده است',
 })
 
+import AppIcon from "@/components/ui/AppIcon.vue";
 import { ref } from "vue"
 
 const isOpen = ref<boolean>(false)
@@ -31,9 +33,7 @@ const toggleAccordion = (accordionAwnserElement: HTMLElement): void => {
         <div @click="toggleAccordion(accordionAwnserElement)" :class="isOpen ? 'accordion--active' : ''" class="px-4 w-full flex items-center justify-between text-gray-800">
             <!-- Accrodion Question -->
             <span class="text-xs md:text-xl font-Dana md:font-Dana-Medium line-clamp-1">{{ accordionQuestion }}</span>
-            <svg class="size-4 md:size-8 -rotate-90">
-                <use href="#chevron-left"></use>
-            </svg>
+            <AppIcon className="size-4 md:size-8 -rotate-90" iconName="chevron-left"/>
         </div>
         <!-- Accrodion Awnser -->
         <p ref="accordionAwnserElement"  class="hidden px-7 md:pt-5 pt-2 text-gray-700 font-Dana text-custom md:text-base">

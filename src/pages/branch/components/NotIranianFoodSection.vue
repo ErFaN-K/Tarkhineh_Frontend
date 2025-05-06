@@ -8,6 +8,7 @@ import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 
 // Components
+import AppIcon from "@/components/ui/AppIcon.vue";
 import FoodCard from "@/components/shared/VerticalFoodCard.vue";
 </script>
 
@@ -59,9 +60,7 @@ import FoodCard from "@/components/shared/VerticalFoodCard.vue";
         
         class="h-8 md:h-10 px-4 md:px-2.5 flex items-center md:gap-x-2 gap-x-1 text-Primary border border-Primary rounded-sm mx-auto w-max"
       >
-        <svg class="size-4 md:size-6">
-          <use href="#calender"></use>
-        </svg>
+        <AppIcon className="size-4 md:size-6" iconName="calender"/>
         <span class="font-Morabba-Medium text-xs md:text-base"
           >مشاهده منوی کامل</span
         >

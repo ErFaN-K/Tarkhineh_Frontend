@@ -1,6 +1,8 @@
 <!-- Hero Section Component With Slider ( For Home & Branch & Menu Page Only Use ) -->
 <script setup lang="ts">
 // Swiper Config
+import { ref } from "vue";
+const paginationEl = ref<HTMLDivElement | null>(null);
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Autoplay, Pagination, EffectFade } from "swiper/modules";
 // Import Swiper styles
@@ -17,7 +19,7 @@ import HeroBannerSlider from "./HeroBannerSlider.vue";
     <!-- Swiper -->
     <Swiper
       :modules="[Autoplay, Pagination, EffectFade]"
-      :pagination="{ clickable: true, el: '.pagination-button--swiper' }"
+      :pagination="{ clickable: true, el: paginationEl }"
       effect="fade"
       :autoplay="{ delay: 5000 }"
       :loop="true"
@@ -46,7 +48,7 @@ import HeroBannerSlider from "./HeroBannerSlider.vue";
       </SwiperSlide>
 
       <!-- Slider Pagination -->
-      <div
+      <div ref="paginationEl"
         class="pagination-button--swiper !bottom-1.25 !translate-x-1/2 !left-1/2 !right-1/2 md:!bottom-2.5 absolute flex items-center justify-center z-50 gap-x-1 *:bg-gray-500 *:!rounded-full md:*:!size-2 *:!size-1 *:!transition-none *:!m-0"
       ></div>
 

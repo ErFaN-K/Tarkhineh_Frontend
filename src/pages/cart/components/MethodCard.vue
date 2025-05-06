@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import AppIcon from "@/components/ui/AppIcon.vue";
+
 defineProps<{
   inputId: string,
   mainTitle: string,
@@ -21,9 +23,7 @@ defineProps<{
           <span class="text-custom max-md:hidden">{{ titleDescription }}</span>
         </div>
       </div>
-      <svg class="size-4 md:size-6">
-        <use :href="`#${iconName}`"></use>
-      </svg>
+      <AppIcon className="size-4 md:size-6" :iconName="iconName"/>
     </label>
   </div>
 </template>

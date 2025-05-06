@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import AddressDetails from '@/components/shared/AddressDetails.vue';
+import AppIcon from "@/components/ui/AppIcon.vue";
 </script>
 
 <template>
@@ -9,9 +10,7 @@ import AddressDetails from '@/components/shared/AddressDetails.vue';
         <h4 class="text-gray-800 font-Dana-SemiBold md:text-xl text-base">آدرس‌ها</h4>
         <!-- IF HAS ADDRESS -->
         <span v-if="false" class="cursor-pointer flex items-center gap-x-1 max-md:hidden text-Primary">
-          <svg class="size-4">
-            <use href="#plus-circle"></use>
-          </svg>
+          <AppIcon className="size-4" iconName="pluse-circle"/>
           <span class="font-Dana text-xs">افزودن آدرس جدید</span>
         </span>
       </div>
@@ -26,9 +25,7 @@ import AddressDetails from '@/components/shared/AddressDetails.vue';
       <!-- IF NO ADDRESS -->
       <div v-else class="relative md:grow-1 max-md:mt-6 max-md:border max-md:rounded-lg max-md:border-gray-400 h-64 flex items-center justify-center">
         <!-- Spider Vector -->
-        <svg class="-z-1 absolute w-50 md:w-81.25 h-48.25 md:h-78.25">
-          <use href="#spider-vector"></use>
-        </svg>
+        <AppIcon className="-z-1 absolute w-50 md:w-81.25 h-48.25 md:h-78.25" iconName="spider-vector"/>
         <!-- Content -->
         <div class="flex flex-col items-center gap-y-4 md:gap-y-8">
           <span class="md:font-Dana-Medium font-Dana text-gray-700 text-custom md:text-xl">شما در حال حاضر هیچ آدرسی ثبت نکرده‌اید!</span>

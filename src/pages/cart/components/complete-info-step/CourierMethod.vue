@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import AddressDetails from '@/components/shared/AddressDetails.vue';
+import AppIcon from "@/components/ui/AppIcon.vue";
 </script>
 
 <template>
@@ -8,16 +9,12 @@ import AddressDetails from '@/components/shared/AddressDetails.vue';
         <!-- Courier Method Header -->
         <div class="flex items-center justify-between border-b border-b-gray-400 pb-2">
             <div class="flex items-center gap-x-1 md:text-base text-sm font-Dana">
-                <svg class="size-4 md:size-6">
-                    <use href="#location"></use>
-                </svg>
+                <AppIcon className="size-4 md:size-6" iconName="location"/>
                 <span>آدرس‌ها</span>
             </div>
             <!-- Add Address Button -->
             <span class="cursor-pointer flex items-center gap-x-1 text-Primary">
-                <svg class="size-4">
-                  <use href="#plus-circle"></use>
-                </svg>
+                <AppIcon className="size-4" iconName="plus-circle"/>
                 <span class="font-Dana text-xs">افزودن آدرس</span>
             </span>
         </div>

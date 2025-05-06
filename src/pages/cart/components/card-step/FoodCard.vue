@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import AppIcon from "@/components/ui/AppIcon.vue";
+</script>
+
 <template>
     <!-- Food Card ( Only For Food Card Container in Cart Page) -->
   <div class="shrink-0 rounded-lg border border-gray-400 flex overflow-hidden text-gray-800 bg-white">
@@ -18,9 +22,7 @@
                 </h4>
                 <!-- Delete Product -->
                 <span class="cursor-pointer">
-                    <svg class="size-6">
-                        <use href="#trash"></use>
-                    </svg>
+                    <AppIcon className="size-6" iconName="trash"/>
                 </span>
             </div>
             <!-- Food Recp... -->
@@ -42,43 +44,27 @@
                 <div class="flex items-center gap-x-6">
                     <!-- Rate -->
                     <div class="flex text-Warning-Light">
-                        <svg class="size-6">
-                            <use href="#star"></use>
-                        </svg>
-                        <svg class="size-6">
-                            <use href="#star"></use>
-                        </svg>
-                        <svg class="size-6">
-                            <use href="#star"></use>
-                        </svg>
-                        <svg class="size-6">
-                            <use href="#star"></use>
-                        </svg>
-                        <svg class="size-6">
-                            <use href="#star"></use>
-                        </svg>
+                        <AppIcon className="size-6" iconName="star"/>
+                        <AppIcon className="size-6" iconName="star"/>
+                        <AppIcon className="size-6" iconName="star"/>
+                        <AppIcon className="size-6" iconName="star"/>
+                        <AppIcon className="size-6" iconName="star"/>
                     </div>
                     <!-- Add Or Remove Button -->
                     <div class="flex items-center gap-x-2 h-8 px-1 rounded-sm bg-Tint-1 text-Primary">
                         <!-- Add Button -->
                         <button class="cursor-pointer">
-                            <svg class="size-3">
-                                <use href="#pluse"></use>
-                            </svg>
+                            <AppIcon className="size-3" iconName="pluse"/>
                         </button>
                         <!-- Qty -->
                         <span class="relative top-0.5 font-Dana text-sm">4</span>
                         <!-- Delete or Minus button -->
                         <button class="cursor-pointer" v-if="true">
-                            <svg class="size-3">
-                                <use href="#minus"></use>
-                            </svg>
+                            <AppIcon className="size-3" iconName="minus"/>
                         </button>
                         <!-- Delete button -->
                         <span v-else class="cursor-pointer">
-                            <svg class="size-4">
-                                <use href="#trash"></use>
-                            </svg>
+                            <AppIcon className="size-4" iconName="trash"/>
                         </span>
                     </div>
                 </div>

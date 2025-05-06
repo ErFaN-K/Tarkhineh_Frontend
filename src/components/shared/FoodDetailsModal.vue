@@ -9,6 +9,7 @@ import "swiper/css/free-mode";
 import "swiper/css/thumbs";
 
 // Import Vue Module
+import AppIcon from "../ui/AppIcon.vue";
 import { ref } from "vue";
 
 // Code
@@ -30,9 +31,7 @@ const setThumbsSwiper = (swiper: Swiper): void => {
       <h2 class="font-Morabba-Bold text-xs md:text-xl">اطلاعات محصول</h2>
       <!-- Close Icon -->
       <span class="absolute cursor-pointer md:top-5.5 top-2.5 md:left-6 left-4">
-        <svg class="size-6 md:size-10 text-gray-700">
-          <use href="#x-mark"></use>
-        </svg>
+        <AppIcon className="size-6 md:size-10 text-gray-700" iconName="x-mark"/>
       </span>
     </div>
     <!-- Modal Main -->
@@ -217,21 +216,11 @@ const setThumbsSwiper = (swiper: Swiper): void => {
         </h2>
         <!-- Rate -->
         <div class="flex">
-          <svg class="size-4 md:size-6 text-Warning-Light">
-            <use href="#star"></use>
-          </svg>
-          <svg class="size-4 md:size-6 text-Warning-Light">
-            <use href="#star"></use>
-          </svg>
-          <svg class="size-4 md:size-6 text-Warning-Light">
-            <use href="#star"></use>
-          </svg>
-          <svg class="size-4 md:size-6 text-Warning-Light">
-            <use href="#star"></use>
-          </svg>
-          <svg class="size-4 md:size-6 text-Warning-Light">
-            <use href="#star"></use>
-          </svg>
+          <AppIcon className="size-4 md:size-6 text-Warning-Light" iconName="star"/>
+          <AppIcon className="size-4 md:size-6 text-Warning-Light" iconName="star"/>
+          <AppIcon className="size-4 md:size-6 text-Warning-Light" iconName="star"/>
+          <AppIcon className="size-4 md:size-6 text-Warning-Light" iconName="star"/>
+          <AppIcon className="size-4 md:size-6 text-Warning-Light" iconName="star"/>
         </div>
       </div>
       <!-- Food Recipe & Comment Count -->

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import AppIcon from './AppIcon.vue';
+
 defineProps<{
     stepOneName: string;
     stepOneIcon: string;
@@ -24,9 +26,7 @@ defineProps<{
             }" 
             class="flex items-center md:gap-x-2 gap-x-1 text-gray-400 font-Dana text-custom md:text-sm">
             <div class="flex items-center gap-x-0.5 md:gap-x-1">
-                <svg class="md:size-6 size-3">
-                    <use :href="stepOneIcon"></use>
-                </svg>
+                <AppIcon className="md:size-6 size-3" :iconName="stepOneIcon"/>
                 <span>{{ stepOneName }}</span>
             </div>
             <!-- Line between steps -->
@@ -42,9 +42,7 @@ defineProps<{
             <!-- Line between steps -->
             <span>- - -</span>
             <div class="flex items-center gap-x-0.5 md:gap-x-1">
-                <svg class="md:size-6 size-3">
-                    <use :href="stepTwoIcon"></use>
-                </svg>
+                <AppIcon className="md:size-6 size-3" :iconName="stepTwoIcon"/>
                 <span>{{ stepTwoName }}</span>
             </div>
             <!-- Line between steps -->
@@ -59,9 +57,7 @@ defineProps<{
             <!-- Line between steps -->
             <span>- - -</span>
             <div class="flex items-center gap-x-0.5 md:gap-x-1">
-                <svg class="md:size-6 size-3">
-                    <use :href="stepThreeIcon"></use>
-                </svg>
+                <AppIcon className="md:size-6 size-3" :iconName="stepThreeIcon"/>
                 <span>{{ stepThreeName }}</span>
             </div>
         </div>

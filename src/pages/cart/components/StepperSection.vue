@@ -11,13 +11,13 @@ const cartStore = useCartStore()
             <div class="flex items-center justify-center">
                 <ProgressStepper 
                     :stepOneName="'سبد خرید'"
-                    :stepOneIcon="'#home'"
+                    :stepOneIcon="'home'"
                     :stepOneActive="cartStore.step === 1"
                     :stepTwoName="'تکمیل اطلاعات'"
-                    :stepTwoIcon="'#check'"
+                    :stepTwoIcon="'check'"
                     :stepTwoActive="cartStore.step === 2"
                     :stepThreeName="'پرداخت'"
-                    :stepThreeIcon="'#money'"
+                    :stepThreeIcon="'money'"
                     :stepThreeActive="cartStore.step === 3"
                 />
             </div>

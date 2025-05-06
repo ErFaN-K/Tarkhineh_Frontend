@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import AppIcon from "./AppIcon.vue";
 import { ref } from "vue";
 import { usePublicStore } from "@/store/modules/publicStore.ts";
 
@@ -21,22 +22,16 @@ const toggleSection = (dropDownElementName: string): void => {
     <!-- Top Frame -->
     <div class="background-config mobile-menu__top-frame--img px-4 py-8 mb-2 relative text-white">
       <span>
-        <svg class="w-16.75 h-7.5">
-          <use href="#logo-type"></use>
-        </svg>
+        <AppIcon className="w-16.75 h-7.5" iconName="logo-type"/>
       </span>
       <span class="absolute top-4 left-4" @click="publicStore.closeHamburgerMenu()">
-        <svg class="size-6">
-          <use href="#x-mark"></use>
-        </svg>
+        <AppIcon className="size-6" iconName="x-mark"/>
       </span>
     </div>
     <!-- Body -->
     <div class="px-4 divide-y divide-gray-400 space-y-2 *:pb-2 *:text-gray-800">
       <router-link :to="{ name: 'HomePage' }" class="flex items-center gap-x-1">
-        <svg class="size-4">
-          <use href="#home"></use>
-        </svg>
+        <AppIcon className="size-4" iconName="home"/>
         <span class="text-xs font-Dana">صفحه اصلی</span>
       </router-link>
       <div class="flex flex-col gap-y-2">
@@ -48,15 +43,11 @@ const toggleSection = (dropDownElementName: string): void => {
           @click="toggleSection('menu')"
         >
           <div class="flex items-center gap-x-1">
-            <svg class="size-4">
-              <use href="#home-modern"></use>
-            </svg>
+            <AppIcon className="size-4" iconName="home-modern"/>
             <span class="text-xs font-Dana">منو</span>
           </div>
           <span>
-            <svg class="size-4">
-              <use href="#chevron-down-mini"></use>
-            </svg>
+            <AppIcon className="size-4" iconName="chevron-down-mini"/>
           </span>
         </div>
         <!-- DropDown -->
@@ -79,15 +70,11 @@ const toggleSection = (dropDownElementName: string): void => {
           @click="toggleSection('branch')"
         >
           <div class="flex items-center gap-x-1">
-            <svg class="size-4">
-              <use href="#home-modern"></use>
-            </svg>
+            <AppIcon className="size-4" iconName="home-modern"/>
             <span class="text-xs font-Dana">شعبه</span>
           </div>
           <span>
-            <svg class="size-4">
-              <use href="#chevron-down-mini"></use>
-            </svg>
+            <AppIcon className="size-4" iconName="chevron-down-mini"/>
           </span>
         </div>
         <!-- DropDown -->
@@ -102,15 +89,11 @@ const toggleSection = (dropDownElementName: string): void => {
         </div>
       </div>
       <router-link :to="{ name: 'AboutUsPage' }" class="flex items-center gap-x-1">
-        <svg class="size-4">
-          <use href="#about-us"></use>
-        </svg>
+        <AppIcon className="size-4" iconName="about-us"/>
         <span class="text-xs font-Dana">درباره ما</span>
       </router-link>
       <router-link :to="{ name: 'ContactUsPage' }" class="flex items-center gap-x-1">
-        <svg class="size-4">
-          <use href="#phone"></use>
-        </svg>
+        <AppIcon className="size-4" iconName="phone"/>
         <span class="text-xs font-Dana">تماس باما</span>
       </router-link>
     </div>

@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import AppIcon from '../ui/AppIcon.vue';
+</script>
+
 <template>
   <!-- Food Card -->
   <div
@@ -27,17 +31,13 @@
           <!-- Add To Favorite Button -->
           <div class="flex items-center gap-x-1 text-gray-500 text-custom">
             <span class="cursor-pointer">
-              <svg class="size-4">
-                <use href="#heart"></use>
-              </svg>
+              <AppIcon className="size-4" iconName="heart"/>
             </span>
             <span class="max-md:hidden font-Dana">افزودن به علاقمندی‌ها</span>
           </div>
           <!-- Rate -->
           <div class="flex items-center md:gap-x-1 gap-x-0.5 md:py-1">
-            <svg class="size-4 text-Warning-Light">
-              <use href="#star"></use>
-            </svg>
+            <AppIcon className="size-4 text-Warning-Light" iconName="star"/>
             <!-- Rate Number -->
             <span
               class="relative top-0.5 md:text-sm text-custom md:font-Dana-Medium font-Dana"

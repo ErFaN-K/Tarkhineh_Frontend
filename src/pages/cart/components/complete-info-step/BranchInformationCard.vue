@@ -1,11 +1,13 @@
+<script setup lang="ts">
+    import AppIcon from "@/components/ui/AppIcon.vue";
+</script>
+
 <template>
     <!-- In Person Method -->
     <div class="border border-gray-400 rounded-lg p-4 md:px-6 flex max-md:flex-col md:justify-between max-md:gap-y-4 md:items-center">
         <!-- Title ( For Mobile ) -->
         <div class="md:hidden w-full flex items-center gap-x-1 pb-2 border-b border-b-gray-400 text-gray-800">
-            <svg class="size-4">
-                <use href="#location"></use>
-            </svg>
+            <AppIcon className="size-4" iconName="location"/>
             <span class="text-sm font-Dana">آدرس شعبه اکباتان</span>
         </div>
         <!-- Branch Information ( For Mobile ) -->
@@ -21,9 +23,7 @@
         <!-- Branch Information ( For Desktop ) -->
         <div class="max-md:hidden flex flex-col gap-y-6">
             <div class="flex items-center gap-x-1 text-gray-800 text-base font-Dana">
-                <svg class="size-6">
-                    <use href="#location"></use>
-                </svg>
+                <AppIcon className="size-6" iconName="location"/>
                 <span>آدرس شعبه اکباتان</span>
             </div>
             <!-- Branch Information ( For Desktop ) -->

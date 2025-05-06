@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import AppIcon from "@/components/ui/AppIcon.vue";
 import FoodCard from './card-step/Small-FoodCard.vue';
 
 import { useCartStore } from '@/store/modules/cartStore.ts' 
@@ -42,9 +43,7 @@ const nextStepHandler = (): void => {
             </div>
             <!-- Warning -->
             <div v-if="cartStore.step === 1" class="w-full flex items-start gap-x-2 text-Warning text-custom font-Dana">
-                <svg class="shrink-0 size-6">
-                    <use href="#warning"></use>
-                </svg>
+                <AppIcon className="shrink-0 size-6" iconName="warning"/>
                 <p class="">هزینه ارسال در ادامه بر اساس آدرس، زمان و نحوه ارسال انتخابی شما محاسبه و به این مبلغ اضافه خواهد شد.</p>
             </div>
         </div>
@@ -56,16 +55,12 @@ const nextStepHandler = (): void => {
             </div>
             <!-- If Loign -->
             <button @click="nextStepHandler" v-if="true" class="flex items-center justify-center gap-x-2 h-8 md:h-10 md:rounded-lg rounded-sm bg-Primary hover:bg-Primary/90 cursor-pointer font-Dana md:font-Dana-Medium text-xs md:text-base text-white">
-                <svg class="size-4 md:size-6">
-                    <use href="#check-circle"></use>
-                </svg>
+                <AppIcon className="size-4 md:size-6" iconName="check-circle"/>
                 <span>ثبت سفارش</span>
             </button>
             <!-- if Not Login -->
             <button v-else class="flex items-center justify-center gap-x-2 h-8 md:h-10 md:rounded-lg rounded-sm bg-Primary hover:bg-Primary/90 cursor-pointer font-Dana md:font-Dana-Medium text-xs md:text-base text-white">
-                <svg class="size-4 md:size-6">
-                    <use href="#user"></use>
-                </svg>
+                <AppIcon className="size-4 md:size-6" iconName="user"/>
                 <span>ورود/ثبت‌نام</span>
             </button>
         </div>

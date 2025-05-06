@@ -1,3 +1,7 @@
+<script setup lang="ts">
+    import AppIcon from '../ui/AppIcon.vue';
+</script>
+
 <template>
     <div class="is-hidden fixed inset-0 m-auto z-100 flex items-center justify-center">
         <div class="shadow-xl md:max-w-150 w-full max-md:h-full md:bg-white max-md:pt-6 bg-transparent max-md:bg-white md:rounded-lg md:overflow-hidden">
@@ -7,9 +11,7 @@
                 <h2 class="md:text-xl text-base font-Morabba-Bold text-center">ثبت آدرس</h2>
                 <!-- Close Icon -->
                 <span class="absolute cursor-pointer md:top-5.5 top-0 md:left-6 left-4">
-                  <svg class="size-6 md:size-10 text-gray-700">
-                    <use href="#x-mark"></use>
-                  </svg>
+                  <AppIcon className="size-6 md:size-10 text-gray-700" iconName="x-mark"/>
                 </span>
             </div>
             <!-- Modal Main -->

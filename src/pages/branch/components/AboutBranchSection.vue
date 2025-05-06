@@ -9,6 +9,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // Components
+import AppIcon from "@/components/ui/AppIcon.vue";
 import BranchDetailsBox from "./BranchDetailsBox.vue";
 </script>
 
@@ -66,18 +67,14 @@ import BranchDetailsBox from "./BranchDetailsBox.vue";
           class="flex items-center justify-center absolute left-0 bottom-0 top-0 w-12 md:w-34 bg-linear-to-r from-black/90 to-black/0 z-10"
         >
           <span class="swiper-navigation--next cursor-pointer">
-            <svg class="text-white size-6 md:size-12">
-              <use href="#chevron-left-mini"></use>
-            </svg>
+            <AppIcon className="text-white size-6 md:size-12" iconName="chevron-left-mini"/>
           </span>
         </div>
         <div
           class="flex items-center justify-center absolute right-0 bottom-0 top-0 w-12 md:w-34 bg-linear-to-l from-black/90 to-black/0 z-10"
         >
           <span class="swiper-navigation--prev cursor-pointer">
-            <svg class="text-white size-6 md:size-12 rotate-180">
-              <use href="#chevron-left-mini"></use>
-            </svg>
+            <AppIcon className="text-white size-6 md:size-12 rotate-180" iconName="chevron-left-mini"/>
           </span>
         </div>
       </Swiper>

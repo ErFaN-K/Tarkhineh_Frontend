@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
+import AppIcon from "@/components/ui/AppIcon.vue";
 import { datePicker } from '@/composables/useDatePicker.ts'
 import DatePicker from '@/components/shared/DatePicker.vue'
 
@@ -145,9 +146,7 @@ const { dateNumber, getDateFromCustomDatePicker, isOpenCustomDatePicker, showCus
         </div>
         <!-- Edit Information Button -->
         <button @click="isDisabled = false" v-if="isDisabled" class="max-md:mt-3 mx-auto max-w-38 w-full md:max-w-69.5 md:h-10 h-8 flex items-center justify-center gap-x-1 md:gap-x-2 rounded-sm border border-Primary text-Primary hover:bg-Primary/10 cursor-pointer">
-          <svg class="size-4 md:size-6">
-              <use href="#pencil-square"></use>
-          </svg>
+          <AppIcon className="size-4 md:size-6" iconName="pencil-square"/>
           <span class="text-xs md:text-base md:font-Dana-Medium font-Dana">ویرایش اطلاعات شخصی</span>
         </button>
         <!-- Save Information Data -->

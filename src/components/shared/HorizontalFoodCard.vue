@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import AppIcon from '../ui/AppIcon.vue';
+</script>
+
 <template>
   <!-- Food Card -->
   <div
@@ -25,9 +29,7 @@
         <span
           class="max-md:hidden cursor-pointer opacity-0 invisible group-hover:opacity-100 group-hover:visible"
         >
-          <svg class="size-6 text-gray-700">
-            <use href="#heart"></use>
-          </svg>
+          <AppIcon className="size-6 text-gray-700" iconName="heart"/>
         </span>
         <!-- Offer ( If Have It ) ( Mobile ) -->
         <div class="max-md:flex hidden items-center gap-x-2">
@@ -75,27 +77,15 @@
       <div class="flex items-center justify-between">
         <!-- Add To Fav... Button -->
         <span class="md:hidden cursor-pointer">
-          <svg class="size-4 text-gray-700">
-            <use href="#heart"></use>
-          </svg>
+          <AppIcon className="size-4 text-gray-700" iconName="heart"/>
         </span>
         <!-- Rate -->
         <div class="flex">
-          <svg class="md:size-6 size-4 text-Warning-Light">
-            <use href="#star"></use>
-          </svg>
-          <svg class="md:size-6 size-4 text-Warning-Light">
-            <use href="#star"></use>
-          </svg>
-          <svg class="md:size-6 size-4 text-Warning-Light">
-            <use href="#star"></use>
-          </svg>
-          <svg class="md:size-6 size-4 text-Warning-Light">
-            <use href="#star"></use>
-          </svg>
-          <svg class="md:size-6 size-4 text-Warning-Light">
-            <use href="#star"></use>
-          </svg>
+          <AppIcon className="size-4 md:size-6 text-Warning-Light" iconName="star"/>
+          <AppIcon className="size-4 md:size-6 text-Warning-Light" iconName="star"/>
+          <AppIcon className="size-4 md:size-6 text-Warning-Light" iconName="star"/>
+          <AppIcon className="size-4 md:size-6 text-Warning-Light" iconName="star"/>
+          <AppIcon className="size-4 md:size-6 text-Warning-Light" iconName="star"/>
         </div>
         <!-- Order Button -->
         <button
