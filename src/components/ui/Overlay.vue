@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { usePublicStore } from "@/store/modules/publicStore.ts";
 const publicStore = usePublicStore();
 </script>
